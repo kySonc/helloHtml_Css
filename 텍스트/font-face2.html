@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>글꼴 관련 스타일</title>
+  </head>
+  <style>
+    @font-face {
+      font-family: "trana"; /*글꼴*/
+      src: local("trana"), url("trana.eot"), url("trana.woff") format("woff"),
+        url("trana.ttf") format("truetype");
+    }
+    .ng-font {
+      font-family: "trana", sans-serif; /*웹 폰트 지정*/
+    }
+  </style>
+  <body>
+    <h1 class="ng-font">font-face</h1>
+    <h3>font-face 속성</h3>
+    <ol>
+      <li>직접 웹 폰트 업로드해 사용하기</li>
+      <li>
+        웹 폰트 파일 준비
+        <ul>
+          <li>-eot파일, woff파일</li>
+        </ul>
+        <ul>
+          <li>-기존 ttf파일을 변환해서 사용할 수도 있음</li>
+        </ul>
+      </li>
+      <li>
+        다운로드하기 전에 사용자 시스템에 있는지 확인
+        <ul>
+          <li>-local(글꼴이름)</li>
+        </ul>
+      </li>
+      <li>IE8이하 버전을 위해 eot파일 먼저 선언</li>
+      <li>woff파일 선언</li>
+      <li>용량이 큰ttf파일을 마지막에 선언</li>
+    </ol>
+  </body>
+</html>
