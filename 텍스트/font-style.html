@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>글꼴 관련 스타일</title>
+  </head>
+  <style>
+    p {
+      font-variant: small-caps; /*작은 대문자*/
+      font-weight: bold; /*굵게*/
+      font-style: italic;
+    }
+    #txt {
+      font-style: normal;
+    }
+  </style>
+  <body>
+    <h1>font-style</h1>
+    <h3>font 속성</h3>
+
+    <ul>
+      <li>글꼴 관련 속성들을 한꺼번에 묶어 표기</li>
+      <p id="txt">
+        font: \font-style \font-variant \ font-size/line-height \ font-family
+        |caption | icon | menu | message-box | small-caption | status-bar
+      </p>
+      <h3>속성 값</h3>
+      <li>font-* : font-로 시작하는 글꼴 관련 속성을 한꺼번에 나열</li>
+      <li>caption : 캡션에 어울리는 글꼴 스타일로 표시</li>
+      <li>icon : 아이콘에 어울리는 글꼴 스타일로 표시</li>
+      <li>menu : 드롭다운 메뉴에 어울리느 글꼴 스타일로 표시</li>
+      <li>message-box : 대화상자에 어울리는 글꼴 스타일로 표시</li>
+      <li>small-caption : 작은 캡션에 어울리는 글꼴 스타일로 표시</li>
+      <li>status-bar : 상태 표시줄에 어울리는 글꼴 스타일로 표시</li>
+    </ul>
+    <p>
+      line-height는 줄 간격 조절 속성인데 font 속성은 아니지만 글자 크기와 줄
+      간격이 밀접한 관련이 있기 때문에 font-size/line-height처럼 하나의 속성처럼
+      사용하기도 함
+    </p>
+  </body>
+</html>
