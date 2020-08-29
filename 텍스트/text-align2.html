@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문단 스타일</title>
+  </head>
+  <style>
+    p {
+      border: 1px solid #ccc; /*테두리 - 1픽셀 회색 실선*/
+      padding: 10px; /*테두리와 내용 사이의 패딩 여백*/
+      margin: 10px; /*단락 주변의 마진 여백*/
+    }
+
+    .align-left {
+      text-align: left; /*왼쪽 정렬*/
+    }
+
+    .align-rigth {
+      text-align: right; /*오른쪽 정렬*/
+    }
+
+    .align-center {
+      text-align: center; /*가운데 정렬*/
+    }
+
+    div.align-justify {
+      border: 1px solid red;
+      text-align: justify; /*지원 안함*/
+    }
+  </style>
+  <body>
+    <h1>text-align</h1>
+    <h3>text-align 속성</h3>
+    <ul>
+      <li>텍스트 정렬 방법 지정</li>
+      <li>
+        기본형 text-align : start | end | left | right | center | justify |
+        match-parent
+      </li>
+      <p class="align-left">Lorem ipsum dolor sit amet</p>
+      <p class="align-rigth">Lorem ipsum dolor sit amet</p>
+      <p class="align-center">Lorem ipsum dolor sit amet</p>
+      <div class="align-justify"><span>Lorem</span> ipsum dolor sit amet</div>
+    </ul>
+  </body>
+</html>
