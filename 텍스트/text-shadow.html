@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>텍스트 스타일</title>
+  </head>
+  <style>
+    h1 {
+      font-size: 100px; /*글자 크기*/
+      font-family: "Arial Rounded MT;"; /*글꼴*/
+    }
+    .shadow1 {
+      color: orchid; /*글자 색*/
+      text-shadow: 1px 1px; /*텍스트 그림자*/
+    }
+    .shadow2 {
+      text-shadow: 5px 5px 3px #f00; /*텍스트 그림자*/
+    }
+    .shadow3 {
+      color: black;
+      text-shadow: 7px -7px 5px #000; /*텍스트 그림자*/
+    }
+  </style>
+  <body>
+    <h1>text-shadow</h1>
+    <h3>text-shadow 속성</h3>
+
+    <ul>
+      <li class="shadow1">텍스트에 그림자 효과를 추가하는 속성</li>
+      <li>
+        기본형 text-shadow : none | <가로 거리> <세로 거리> <번짐 정도> <색상>
+      </li>
+      <h3 class="shadow2">속성 값</h3>
+      <li>
+        <가로거리> : 텍스트부터 그림자까지의 가로 거리를 입력. 양수 값은 글자
+        오른쪽, 음수 값은 글자 왼쪽에 그림자를 만든다. 필수 속성
+      </li>
+      <li>
+        <세로거리> : 텍스트부터 그림자까지의 세로 거리를 입력. 양수 값은 글자
+        아래쪽, 음수 값은 글자 위쪽에 그림자를 만든다. 필수 속성
+      </li>
+      <li>
+        <번짐 정도> : 그림자가 얼마나 번지는지를 나타냄. 양수 값을 사용하면
+        그림자가 모든 방향으로 퍼져나가 그림자가 크게 표시. 반대로 음수 값은
+        그림자가 모든 방향으로 축소되어 보인다.기본 값은 0
+      </li>
+      <li class="shadow3">
+        <색상> : 그림자 색상을 지정.한 가지만 지정할 수도 있고 공백으로 구분해
+        여러 색상을 지정할 수 있음. 기본 값은 현재 글자색
+      </li>
+    </ul>
+  </body>
+</html>
