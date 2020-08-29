@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문단 스타일</title>
+  </head>
+  <style>
+    .content {
+      border: 1px solid #ccc; /*테두리*/
+      width: 300px; /*단락의 너비*/
+      white-space: nowrap; /*줄바꿈 없음*/
+      overflow: hidden; /*넘치는 부분 감춤*/
+      text-overflow: ellipsis; /*말줄임표*/
+    }
+    .content:hover {
+      overflow: visible; /*넘치는 부분 보여줌*/
+    }
+  </style>
+  <body>
+    <h1>text-overflow</h1>
+    <h3>text-overflow 속성</h3>
+    <ul>
+      <li>지정한 영역을 벗어나는 텍스트를 어떻게 할지 지정</li>
+      <li>
+        해당 요소의 overflow 속성 값이 hidden일 때, 또는 overflow가 scroll,
+        auto, 이면서 white-space:nowrap일때만 적용됨
+      </li>
+      <li>기본형 text-overflow : clip | ellipsis</li>
+      <h3>속성 값</h3>
+      <li>clip : 넘치는 텍스트를 잘라 버린다</li>
+      <li>ellipsis : 말 줄임표(...)로 잘린 텍스트가 있다고 표시</li>
+    </ul>
+    <p class="content">
+      귀리는 베타글루칸(항암 및 면역증강작용을 가지고 있는 불소화성
+      다당류)성분을 포함하고 있다
+    </p>
+  </body>
+</html>
