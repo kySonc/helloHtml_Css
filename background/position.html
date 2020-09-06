@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>배경 색과 배경 이미지</title>
+  </head>
+  <style>
+    #bg1 {
+      width: 500px;
+      height: 300px;
+      border: 1px solid black;
+      background-image: URL(http://2.bp.blogspot.com/--5yqttOEAsw/Urr9mw2ptsI/AAAAAAAADME/uR7L1d-5y50/s1600/howways-logo2-94x94.png);
+      background-repeat: no-repeat;
+      background-position: right top;
+      padding-top: 150px;
+    }
+    #bg2 {
+      width: 500px;
+      height: 300px;
+      border: 1px solid black;
+      background-image: URL(http://2.bp.blogspot.com/--5yqttOEAsw/Urr9mw2ptsI/AAAAAAAADME/uR7L1d-5y50/s1600/howways-logo2-94x94.png);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  </style>
+  <body>
+    <h1>background-position 속성</h1>
+    <h2>배경 이미지를 반복하지 않을 경우, 배경 이미지를 표시할 위치 지정</h2>
+    <fieldset>
+      <legend>
+        기본형 background-position:<수평 위치> <수직 위치>;<br />
+        수평 위치 : left | center | right | <백분율> | <길이 값><br />
+        수직 위치 : top | center | bottom | <백분율> | <길이 값>
+      </legend>
+      <ul>
+        <li>
+          백분율 : 배경 이미지의 가로 위치와 세로 위치를 %로 나타냄<br />예)background-position:
+          0% 0%
+        </li>
+        <li>
+          길이 값 : 배경 이미지의 위치를 직접 길이로 지정<br />예)background-position:30px
+          20px;
+        </li>
+        <li>
+          키워드 : top, left, center, right, top, middle, bottom<br />가로
+          배치는 left와 center,right 중에서 선택<br />세로 배치는 top과
+          bottom,center중에서 선택<br />예)background-position:center bottom;
+        </li>
+      </ul>
+    </fieldset>
+    <div id="bg1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, dolorum
+      nemo illum porro quaerat possimus ipsum eius hic sed culpa! Beatae ipsa
+      eos excepturi facilis culpa architecto! Similique, excepturi obcaecati!
+    </div>
+    <div id="bg2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, dolorum
+      nemo illum porro quaerat possimus ipsum eius hic sed culpa! Beatae ipsa
+      eos excepturi facilis culpa architecto! Similique, excepturi obcaecati!
+    </div>
+  </body>
+</html>
