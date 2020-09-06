@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>배경 색과 배경 이미지</title>
+  </head>
+  <style>
+    body {
+      background-image: url("http://webguru.dothome.co.kr/images/bg1.png");
+      barkground-repeat: repeat-y;
+    }
+  </style>
+  <body>
+    <h1>background-image 속성</h1>
+    <fieldset>
+      <legend>기본형 background-image:url(파일 경로)</legend>
+      <ul>
+        <li>
+          border-box : 박스 모델의 가장 외곽인 테두리(border)까지 적용합니다
+        </li>
+        <li>
+          padding-box : 박스 모델에서 테두리를 뺀 패딩(padding)범위까지
+          적용합니다
+        </li>
+        <li>content-box : 박스 모델에서 내용 부분에만 적용합니다</li>
+      </ul>
+    </fieldset>
+    <h1>background-repeat 속성</h1>
+    <h2>배경 이미지 반복 여부 및 반복 반향 지정</h2>
+    <fieldset>
+      <legend>
+        기본형 background-repeat : repeat | repeat-x | repeat-y | no-repeat
+      </legend>
+      <ul>
+        <li>
+          repeat : 브라우저 화면에 가득 찰 때까지 배경 이미지를 가로와 세로로
+          반복
+        </li>
+        <li>
+          repeat-x : 브라우저 창 너비와 같아질 때가지 배경 이미지를 가로로 반복
+        </li>
+        <li>
+          repeat-y : 브라우저 창 너비와 같아질 때가지 배경 이미지를 세로로 반복
+        </li>
+        <li>no-repeat : 배경 이미지를 한 번만 표시하고 반복하지 않는다</li>
+      </ul>
+    </fieldset>
+  </body>
+</html>
