@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>배경 색과 배경 이미지</title>
+  </head>
+  <style>
+    div {
+      width: 400px;
+      height: 200px;
+      border: 1px solid black;
+      background-image: URL(http://2.bp.blogspot.com/--5yqttOEAsw/Urr9mw2ptsI/AAAAAAAADME/uR7L1d-5y50/s1600/howways-logo2-94x94.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  </style>
+  <body>
+    <h1>background-size 속성</h1>
+    <h2>배경 이미지 크기 조절</h2>
+    <fieldset>
+      <legend>
+        기본형 background-size: auto | contain | cover | <크기 값> | <백분율>
+      </legend>
+      <ul>
+        <li>auto : 원래 배경 이미지 크리만큼 표시</li>
+        <li>contian : 요소 안에 배경 이미지가 다 들어오도록 확대/축소</li>
+        <li>cover : 배경 이미지로 요소를 모두 덮도록 확대/축소</li>
+        <li>
+          <크기 값> : 너비 값과 높이 값을 지정. 너비 값만 지정할 경우, 원래 배경
+          이미지 크기를 기준으로 축소/확대 비율을 자동으로 계산해 높이 값을 지정
+        </li>
+        <li><백분 율> : 원래 배경 이미지 크기를 기준으로 확대하거나 축소</li>
+      </ul>
+    </fieldset>
+    <div></div>
+  </body>
+</html>
