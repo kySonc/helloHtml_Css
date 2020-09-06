@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>그러데이션 효과로 배경 꾸미기</title>
+  </head>
+  <style>
+    .grad {
+      background: blue; /*그러데이션을 지원하지 않는 브라우저용*/
+      background: -webkit-linear-gradient(
+        left top,
+        blue,
+        white
+      ); /*초기 모던 브라우저*/
+      background: -moz-linear-gradient(
+        left top,
+        blue,
+        white
+      ); /*초기 모던 브라우저*/
+      background: -o-linear-gradient(
+        left top,
+        blue,
+        white
+      ); /*초기 모던 브라우저*/
+      background: linear-gradient(to right bottom, blue, white); /*표준 구문*/
+    }
+  </style>
+  <body>
+    <h1>그러데이션과 브라우저 접두사</h1>
+
+    <fieldset class="grad">
+      <legend>그러데이션과 브라우저 접두사</legend>
+      <ul>
+        <li>
+          그러데이션은 크기가 없는 배경 이미지이므로 background-image나
+          background속성에서 사용
+        </li>
+        <li>그러데이션 속성은 표준화 됨</li>
+        <li>하지만 구형 모던 브라우저에서는 브라우저 접두사를 붙여야 동작함</li>
+      </ul>
+    </fieldset>
+  </body>
+</html>
