@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>그러데이션 효과로 배경 꾸미기</title>
+  </head>
+  <style>
+    .grad { 
+      background:#06f; /*css3미지원 브라우저*/
+      background-image: -webkit-linear-gradient(top,#06f,white 30%,#06f); /*초기 모던 브라우저*/
+      background-image: -moz-linear-gradient(bottom,#06f,white 30%,#06f); /*초기 모던 브라우저*/
+      background: -o-linear-gradient(bottom,#06f,white 30%,#06f); /*초기 모던 브라우저*/
+      background: linear-gradient(bottom,#06f,white 30%,#06f);/*최신 모던 브라우저*/
+    }
+  </style>
+  <body>
+    <h1>선형 그러데이션</h1>
+    <h2>색상 중지점</h2>
+    <fieldset class="grad">
+      <legend></legend>
+      <ul>
+        <li>색상이 바뀌는 지점</li>
+        <li>색상만 지정할 수도 있고 색상과 함께 중지 점의 위치도 함께 지정할 수도 있음</li>
+    </ul>
+  </body>
+</html>
