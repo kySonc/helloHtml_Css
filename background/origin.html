@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>배경 색과 배경 이미지</title>
+  </head>
+  <style>
+    #bg1 {
+        width: 300px;
+      height: 150px;
+      border: 1px solid black;
+      background-image: URL(http://2.bp.blogspot.com/--5yqttOEAsw/Urr9mw2ptsI/AAAAAAAADME/uR7L1d-5y50/s1600/howways-logo2-94x94.png);
+      background-repeat: no-repeat;
+      background-origin: border-box;
+      padding-top: 150px;
+
+    }
+    #bg2 {
+      width: 300px;
+      height: 100px;
+      border: 1px solid black;
+      background-image: URL(http://2.bp.blogspot.com/--5yqttOEAsw/Urr9mw2ptsI/AAAAAAAADME/uR7L1d-5y50/s1600/howways-logo2-94x94.png);
+      background-repeat: no-repeat;
+      padding: 50px;
+      border:10px solid blue;
+      background-origin: padding-box;
+    }
+    #bg3 {
+      width: 500px;
+      height: 300px;
+      border: 1px solid black;
+      background-image: URL(http://2.bp.blogspot.com/--5yqttOEAsw/Urr9mw2ptsI/AAAAAAAADME/uR7L1d-5y50/s1600/howways-logo2-94x94.png);
+      background-repeat: no-repeat;
+      padding: 50px;
+      background-origin: content-box;
+    }
+  </style>
+  <body>
+    <h1>background-origin 속성</h1>
+    <h2>배경 이미지를 배치하기 위한 기준 설정</h2>
+    <fieldset>
+      <legend>
+        기본형 background-origin:border-box | padding-box | content-box
+      </legend>
+      <ul>
+        <li>border-box : 박스 모델의 가장 외관인 테두리(border)가 가준이 된다</li>
+        <li>padding-box : 박스 모델에서 테두리를 뺀 패딩(padding)이 기준이 된다</li>
+        <li>content-box : 박스 모델에서 내용 부분이 기준이 된다</li>
+    </fieldset>
+    <div id="bg1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, dolorum
+        nemo illum porro quaerat possimus ipsum eius hic sed culpa! Beatae ipsa
+        eos excepturi facilis culpa architecto! Similique, excepturi obcaecati!
+      </div>
+      <div id="bg2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, dolorum
+        nemo illum porro quaerat possimus ipsum eius hic sed culpa! Beatae ipsa
+        eos excepturi facilis culpa architecto! Similique, excepturi obcaecati!
+      </div>
+      <div id="bg3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, dolorum
+        nemo illum porro quaerat possimus ipsum eius hic sed culpa! Beatae ipsa
+        eos excepturi facilis culpa architecto! Similique, excepturi obcaecati!
+      </div>
+  </body>
+</html>
