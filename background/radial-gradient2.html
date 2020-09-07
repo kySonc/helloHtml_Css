@@ -6,37 +6,34 @@
     <title>그러데이션 효과로 배경 꾸미기</title>
   </head>
   <style>
-    .grad1 {
-      height: 400px;
-      background: blue;
-      background: -webkit-radial-gradient(10% 10%, circle, white, blue);
-      background: -moz-radial-gradient(10% 10%, circle, white, blue);
-      background: -o-radial-gradient(10% 10%, circle, white, blue);
-      background: radial-gradient( circle at 10% 10%, white, blue);
-    }
     .grad2 {
       height: 400px;
-      background: red;
-      background: -webkit-radial-gradient(circle, white, yellow, red);
-      background: -moz-radial-gradient(circle, white, yellow, red);
-      background: -o-radial-gradient(circle, white, yellow, red);
-      background: radial-gradient(circle, white, yellow, red);
+      background: radial-gradient(circle closest-corner at 15%, white, yellow, red);
+    }
+    .grad3 {
+      margin: 0px auto;
+			width: 400px;
+			height: 400px;
+			background: radial-gradient(closest-corner at 30% 20%, yellow, red, brown);
     }
   </style>
   <body>
     <h1>원형 그러데이션</h1>
-    <h2></h2>
-    <fieldset class="grad1">
-      <legend>원형 그러데이션</legend>
+    <h2>크기</h2>
+    <fieldset class="grad3">
+      <legend>그러데이션 원의 크기 지정</legend>
       <ul>
         <li>
-          원이나 타원의 중심부터 동심원을 그리며 바깥 방향으로 색상이 바뀌는
-          그러데이션
+          closest-side : [원] 그러데이션 가장자리가 그러데이션 중심에서 가장 가까운 요소의 모서리와 만남
+          <br>[타원] 그러데이션 중심에서 가장 가까운 요소의 수평축이나 수직축과 만남</br>
         </li>
         <li>
-          색상이 바뀌기 시작하는 원의 중심과 크기를 지정하고 그러데이션의 모양을
-          지정해야 함
+          closest-corner : 그러데이션 가장자리가 그러데이션 중심에서 가장 가까운 요소의 코너에 닿도록 함
         </li>
+        <li>farthest-side : [원] 그러데이션 가장자리가 그러데이션 중심에서 가장 먼 모서리와 만남
+          <br>[타원] 그러데이션 가장자리가 그러데이션 중심에서 가장 먼 모서리와 만남
+        </li>
+        <li>farthest-corner : 그러데이션 가장자리가 그러데이션 중심에서 가장 먼 코너에 닿도록 함. 기본값.</li>
       </ul>
     </fieldset>
     <h3>
@@ -44,7 +41,7 @@
       [color-stop...])
     </h3>
     <fieldset class="grad2">
-      <legend>위치</legend>
+      <legend>크기</legend>
       <ul정>
         <li>
           그러데이션이 시작하는 원의 중심 지정
