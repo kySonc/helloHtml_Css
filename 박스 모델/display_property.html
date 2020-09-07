@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS와 박스 모델</title>
+  </head>
+  <style>
+   img{
+     width:200px;
+     display:block;
+     margin:10px;
+   }
+   div li{
+     display:inline-block;
+     margin:20px;
+     background:orchid; 
+   }
+   div {
+     border:1px solid blue;
+   }
+  </style>
+  <body>
+    <fieldset>
+      <h1>display 속성</h1>
+      <h3>블록 레벨 요소를 인라인 레벨 요소로 바꾸거나 인라인 레벨 요소를 블록 레벨 요소로 바꿈</h3>
+      <h3>기본형 display : none | contents | block | inline-block | table | table-cell 등
+      <table border="1">
+        <thead>
+          <tr>
+            <th>속성 값</th>
+            <th>설명</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>display:block</td>
+            <td>
+              해당 요소를 블록 레벨로 지정
+            </td>
+          </tr>
+          <tr>
+            <td>display:inline</td>
+            <td>
+              블록 레벨 요소를 인라인 레벨로 지정
+            </td>
+          </tr>
+          <tr>
+            <td>display:inline-block</td>
+            <td>박스 모델의 너비와 높이 값이 콘텐츠 양에 따라 자동으로 결정</td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+    <img src="\images\P1234.png">
+    <img src="\images\P1235.png">
+    <img src="\images\P1236.png">
+    <div>
+      <ul>
+        <li>애완견 종류</li>
+        <li>입양하기</li>
+        <li>건강돌보기</li>
+        <li>더불어살기</li>
+      </ul>
+    </div>
+  </body>
+</html>
