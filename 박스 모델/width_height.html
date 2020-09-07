@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS와 박스 모델</title>
+  </head>
+  <style>
+    .box1 {
+      width: 200px; /*고정 너지*/
+      height: 100px; /*높이*/
+      background: #ff6a00; /*배경색*/
+    }
+    .box2 {
+      width: 50%; /*가변 너비 - 브라우저 창 너비의 50%*/
+      height: 100px; /*높이*/
+      background: #0094ff; /*배경색*/
+    }
+    div {
+      margin: 10px; /*div 간의 여백*/
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>width, height 속성</h1>
+      <h3>실제 콘텐츠 영역의 크기 지정</h3>
+      <h3>기본형 width: <크기> | <백분율> | aute</h3>
+      <h3>기본형 height: <크기> | <백분율> | aute</h3>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>속성 값</th>
+            <th>설명</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><크기></td>
+            <td>
+              너비나 높이 값을 px(픽셀)이나 cm(센티미터)같은 단위와 함께 수치로
+              지정
+            </td>
+          </tr>
+          <tr>
+            <td><백분율></td>
+            <td>
+              박스 모델을 포함하는 부모 요소를 기준으로 너비나 높이 값을
+              백분율(%)로 저정
+            </td>
+          </tr>
+          <tr>
+            <td>auto</td>
+            <td>박스 모델의 너비와 높이 값이 콘텐츠 양에 따라 자동으로 결정</td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+    <fieldset>
+      <legend>실제 콘텐츠 너비 계산하기</legend>
+      <ul>
+        <li>
+          모던 브라우저에서 박스 모델의 전체 너비 = width 값 + 좌우 패딩 + 좌우
+          테두리
+        </li>
+        <li>
+          인터넷 익스플로러 6에서 박스 모델의 width 값 = 콘텐츠 너비 + 좌우 패딩
+          + 좌우 테두리
+        </li>
+      </ul>
+    </fieldset>
+    <div class="box1"></div>
+    <div class="box2"></div>
+  </body>
+</html>
