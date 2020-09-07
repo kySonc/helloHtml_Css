@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>그러데이션 효과로 배경 꾸미기</title>
+  </head>
+  <style>
+    .grad1 {
+      height: 500px;
+      background: skyblue;
+      background: -webkit-repeating-linear-gradient(
+        yellow,
+        yellow 20px,
+        skyblue 20px,
+        skyblue 40px
+      );
+      background: -moz-repeating-linear-gradient(
+        yellow,
+        yellow 20px,
+        skyblue 20px,
+        skyblue 40px
+      );
+      background: -o-repeating-linear-gradient(
+        yellow,
+        yellow 20px,
+        skyblue 20px,
+        skyblue 40px
+      );
+      background: repeating-linear-gradient(
+        yellow,
+        yellow 20px,
+        skyblue 20px,
+        skyblue 40px
+      );
+    }
+    .grad2 {
+      height: 500px;
+      background: red;
+      background: -webkit-radial-gradient(white, yellow 20%, red);
+      background: -moz-radial-gradient(white, yellow 20%, red);
+      background: -o-radial-gradient(white, yellow 20%, red);
+      background: radial-gradient(white, yellow 20%, red);
+    }
+  </style>
+  <body>
+    <h1>그러데이션 반복</h1>
+    <h2></h2>
+    <fieldset class="grad1">
+      <legend>그러데이션 반복</legend>
+      <ul>
+        <li>
+          단순히 그러데이션을 반복하는 것이 아니라 '패턴'을 만들어 반복시킴
+        </li>
+      </ul>
+    </fieldset>
+    <h3>
+      기본 형 : radial-gradient(<최종 모양> <크기> at <위치>, color-stop,
+      [color-stop...])
+    </h3>
+    <fieldset class="grad2">
+      <legend>모양</legend>
+      <ul>
+        <li>
+          원형 그러데이션에서 만들어지는 모양은 circale(원형)과 ellipse(타원형)
+        </li>
+        <li>따로 지정하지 않으면 ellipse로 인식</li>
+      </ul>
+    </fieldset>
+  </body>
+</html>
