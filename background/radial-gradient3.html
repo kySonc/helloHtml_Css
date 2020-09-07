@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>그러데이션 효과로 배경 꾸미기</title>
+  </head>
+  <style>
+    .grad1 {
+      height: 500px;
+      background: skyblue;
+      background: -webkit-radial-gradient(yellow, red, skyblue);
+      background: -moz-radial-gradient(yellow, red, skyblue);
+      background: -o-radial-gradient(yellow, red, skyblue);
+      background: radial-gradient(yellow, red, skyblue);
+    }
+    .grad2 {
+      height: 500px;
+      background: red;
+      background: -webkit-radial-gradient(white, yellow 20%, red);
+      background: -moz-radial-gradient(white, yellow 20%, red);
+      background: -o-radial-gradient(white, yellow 20%, red);
+      background: radial-gradient(white, yellow 20%, red);
+    }
+  </style>
+  <body>
+    <h1>원형 그러데이션</h1>
+    <h2></h2>
+    <fieldset class="grad1">
+      <legend>색상 중지점</legend>
+      <ul>
+        <li>색상이 바뀌는 지점</li>
+        <li>
+          색상만 지정할 수도 있고 색상과 함께 중지 점의 위치도 함께 지정할 수도
+          있음
+        </li>
+      </ul>
+    </fieldset>
+    <h3>
+      기본 형 : radial-gradient(<최종 모양> <크기> at <위치>, color-stop,
+      [color-stop...])
+    </h3>
+    <fieldset class="grad2">
+      <legend>모양</legend>
+      <ul>
+        <li>
+          원형 그러데이션에서 만들어지는 모양은 circale(원형)과 ellipse(타원형)
+        </li>
+        <li>따로 지정하지 않으면 ellipse로 인식</li>
+      </ul>
+    </fieldset>
+  </body>
+</html>
