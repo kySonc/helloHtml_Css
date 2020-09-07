@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS와 박스 모델</title>
+  </head>
+  <style>
+    img {
+      width: 200px;
+      display: block;
+      margin: 10px;
+    }
+    div li {
+      display: inline-block;
+      margin: 20px;
+      background: orchid;
+    }
+    div {
+      border: 1px solid blue;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>display 속성</h1>
+      <h2>display:none</h2>
+      <h3>해당 요소를 화면에 표시하지 않음</h3>
+      <h3>화면에서 공간도 차지하지 않음</h3>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>속성 값</th>
+            <th>설명</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>inherit</td>
+            <td>상위 요소의 display속성을 상속받습니다.</td>
+          </tr>
+          <tr>
+            <td>table</td>
+            <td>블록 레벨의 표로 만듭니다</td>
+          </tr>
+          <tr>
+            <td>inline-table</td>
+            <td>인라인 레벨의 표로 만듭니다(table 태그 사용한 것처럼)</td>
+          </tr>
+          <tr>
+            <td>table-row</td>
+            <td>표의 행으로 만듭니다.(tr 태그 사용한 것처럼)</td>
+          </tr>
+          <tr>
+            <td>table-row-group</td>
+            <td>표의 행 그룹으로 만듭니다.(tbody 태그 사용한 것처럼)</td>
+          </tr>
+          <tr>
+            <td>table-header-group</td>
+            <td>
+              표의 제목 영역(header)그룹으로 만듭니다.(theard 태그 사용한
+              것처럼)
+            </td>
+          </tr>
+          <tr>
+            <td>table-footer-group</td>
+            <td>
+              표의 요약 영역(footer)그룹으로 만듭니다.(tfooter 태그 사용한
+              것처럼)
+            </td>
+          </tr>
+          <tr>
+            <td>table-column</td>
+            <td>표의 열로 만듭니다.(col 태그 사용한 것처럼)</td>
+          </tr>
+          <tr>
+            <td>table-column-group</td>
+            <td>표의 열 그룹으로 만듭니다.(colgroup 태그 사용한 것처럼)</td>
+          </tr>
+          <tr>
+            <td>table-cell</td>
+            <td>표에서 하나의 셀로 만듭니다( td 나 th 태그 사용한 것처럼)</td>
+          </tr>
+          <tr>
+            <td>table-caption</td>
+            <td>표의 캡션을 만듭니다( caption 태그 사용한 것처럼)</td>
+          </tr>
+          <tr>
+            <td>list-item</td>
+            <td>목록의 항목을 표시할 수 있도록 기본적인 블록 박스와 표시자 박스를 만듭니다( li 태그 사용한 것처럼)</td>
+          </tr>
+        </tbody>
+      </table>
+  </body>
+</html>
