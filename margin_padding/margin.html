@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>여백을 조절하는 속성들</title>
+  </head>
+  <style>
+    .box1 {
+      display: inline-block;
+      background-color: aqua;
+      width: 200px;
+      height: 100px;
+      margin: 10px;
+      border: 2px dotted red; /*모든 방향 - 3px짜리 검정 점선*/
+      border-top-left-radius: 100px 50px;
+      box-shadow: 2px -2px 5px 0px black;
+    }
+    .box2 {
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      background: url(../images/P1234.png) no-repeat; /*배경 이미지*/
+      background-size: cover; /*영역을 다채우게*/
+      border: 2px dotted blue; /*모든 방향 - 3px짜리 검정 점선*/
+      border-bottom-right-radius: 50% 30%;
+      box-shadow: 5px 5px 15px 5px gray;
+    }
+    .box3 {
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      background: url(../images/P1234.png) no-repeat; /*배경 이미지*/
+      background-size: cover; /*영역을 다채우게*/
+      border: 2px dotted blue; /*모든 방향 - 3px짜리 검정 점선*/
+      border-top-right-radius: 100px; /*모서리 20px 만큼 라운딩*/
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>margin 속성</h1>
+      <h2>현재 요소 주변의 여백</h2>
+      <h2>마진을 이용하면 요소와 요소 간의 간격 조절 가능</h2>
+      <h3>기본형 magin-top : <크기> | <백분율> | auto</h3>
+      <h3>기본형 magin-right : <크기> | <백분율> | auto</h3>
+      <h3>기본형 magin-bottom : <크기> | <백분율> | auto</h3>
+      <h3>기본형 magin-left : <크기> | <백분율> | auto</h3>
+      <h3>기본형 magin : <크기> | <백분율> | auto</h3>
+    </fieldset>
+    <fieldset>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>속성 값</th>
+            <th>설명</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><크기></td>
+            <td>
+              너비나 높이 값을 px(픽셀)이나 cm(센티미터) 같은 단위와 함께 수치로
+              지정
+            </td>
+          </tr>
+          <tr>
+            <td><백분율></td>
+            <td>
+              박스 모델을 포함하고 있는 부모 요소를 기준으로 너비나 높이 값을
+              %로 지정
+            </td>
+          </tr>
+          <tr>
+            <td>auto</td>
+            <td>display 속성에서 지정한 값에 맞게 적절한 값을 자동으로 지정</td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+    <h3>1)margin 속성 값이 1개라면</h3>
+    <ul>
+      <li>네 방향 모두에 값은 값 적용</li>
+      <li>P{ margin:50px;} /*네 방향 마진 모두 50px */</li>
+    </ul>
+    <h3>2)margin 속성 값이 2개라면</h3>
+    <ul>
+      <li>첫 번째 값은 위아래, 두 번째 값은 좌우 마진 값</li>
+      <li>P{ margin:30px 50px;} /* 위 아래 마진 - 30px, 좌우 마진 - 50px */</li>
+    </ul>
+    <h3>3)margin 속성 값이 3개라면</h3>
+    <ul>
+      <li>빠진 값은 마주 보는 방향의 속성 값 사용</li>
+      <li>
+        P{ margin:30px 20px 50px;} /* 위 마진 - 30px, 좌우 마진 - 20px, 아래
+        마진 - 50px */
+      </li>
+    </ul>
+    <h3>4)margin 속성 값이 4개라면</h3>
+    <ul>
+      <li>top, right, bottom, left 순으로 적용</li>
+      <li>
+        P{ margin:30px 50px 30px 50px;} /*위 아래 마진 - 30px, 좌우 마진 -
+        50px*/
+      </li>
+    </ul>
+  </body>
+</html>
