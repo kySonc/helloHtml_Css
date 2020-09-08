@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 포지셔닝과 주요 속성들</title>
+  </head>
+  <style>
+    #wrap {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      border: 1px solid #ccc;
+    }
+    .box {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: #0094ff;
+    }
+    #crd1 {
+      top: 0;
+      left: 0;
+    }
+    #crd2 {
+      top: 0;
+      right: 0;
+    }
+    #crd3 {
+      bottom: 0;
+      right: 0;
+    }
+    #crd4 {
+      bottom: 0;
+      left: 0;
+    }
+    #crd5 {
+      position: fixed; /*브라우저 창 화면을 스크롤하더라도 계속 같은 위치 고정*/
+      top: 400px;
+      left: 100px;
+    }
+    p {
+      width: 300px;
+      height: 1000px;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>position 속성</h1>
+      <h2>fixed</h2>
+      <ul>
+        <li>문서의 흐름과는 상관없이 원하는 위치에 요소를 배치</li>
+        <li>
+          부모 요소가 아닌 브라우저 창 기준 ->브라우저 창 왼쪽 위 꼭지점(0,0)
+          기준으로 좌표 계산
+        </li>
+        <li>브라우저 창 화면을 스크롤하더라도 계속 같은 위치에 고정</li>
+      </ul>
+    </fieldset>
+    <div id="wrap">
+      <div class="box" id="crd1">box1</div>
+      <div class="box" id="crd2">box2</div>
+      <div class="box" id="crd3">box3</div>
+      <div class="box" id="crd4">box4</div>
+      <div class="box" id="crd5">box5</div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+      obcaecati ducimus quam quos impedit ad consequuntur perferendis? Mollitia,
+      consequatur. Et dolor aliquid in nesciunt velit eaque ad doloribus cum
+      perferendis. Animi possimus sed mollitia, voluptas quibusdam unde iusto
+      laborum porro ducimus natus sit iure fugiat omnis minus assumenda magnam
+      delectus, quisquam repellat tempore inventore est, vero dolore. Nulla
+      natus consectetur rerum eligendi voluptatem, totam odit deserunt
+      perspiciatis at. Dolorum necessitatibus blanditiis asperiores sed illo
+      magnam consectetur perspiciatis quasi, obcaecati officia iure magni
+      similique explicabo soluta repellat inventore animi vitae aperiam laborum
+      unde iusto nihil ut. Ducimus, cum, quod laborum est fugit soluta
+      laboriosam vitae accusantium sequi voluptates odio harum facere sunt, sit
+      consequatur accusamus a. Consequatur accusantium suscipit aliquam delectus
+      magni? Et esse eaque aliquam officia consequatur molestias blanditiis
+      aperiam dolorem consectetur doloribus pariatur quas officiis soluta enim
+      vero sint, in distinctio id harum! Earum iste voluptate impedit omnis
+      ducimus illo necessitatibus ratione hic cum maiores assumenda labore
+      inventore non placeat quisquam provident enim illum quasi totam laboriosam
+      ipsam, deleniti, temporibus laudantium. Tempora nostrum totam voluptates
+      sequi molestiae nihil veritatis unde pariatur consectetur nam reiciendis
+      rem temporibus similique aut ullam sit, hic perspiciatis. Cupiditate,
+      ipsam asperiores minus ex ullam sapiente.
+    </p>
+  </body>
+</html>
