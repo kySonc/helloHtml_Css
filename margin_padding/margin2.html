@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>여백을 조절하는 속성들</title>
+  </head>
+  <style>
+    .body {
+      margin: 0;
+      padding: 0;
+    }
+    .box1 {
+      display: inline-block;
+      background-color: aqua;
+      width: 300px;
+      height: 300px;
+    }
+    .box2 {
+      width: 200px;
+      height: 200px;
+      margin: 30px 50px 30px 50px;
+      background: url(../images/P1234.png) no-repeat; /*배경 이미지*/
+      background-size: cover; /*영역을 다채우게*/
+      border: 2px dotted blue; /*모든 방향 - 3px짜리 검정 점선*/
+      border-bottom-right-radius: 50% 30%;
+      box-shadow: 5px 5px 15px 5px gray;
+      background-color: rgba(255, 0, 0, 1);
+    }
+    .box3 {
+      display: inline-block;
+      background-color: aqua;
+      width: 300px;
+      height: 300px;
+    }
+    .box4 {
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      background: url(../images/P1234.png) no-repeat; /*배경 이미지*/
+      background-size: cover; /*영역을 다채우게*/
+      border: 2px dotted blue; /*모든 방향 - 3px짜리 검정 점선*/
+      border-bottom-right-radius: 50% 30%;
+      box-shadow: 5px 5px 15px 5px gray;
+      background-color: rgba(255, 0, 0, 1);
+    }
+    .box5 {
+      display: inline-block;
+      background-color: aqua;
+      width: 300px;
+      height: 300px;
+    }
+    .box6 {
+      width: 200px;
+      height: 200px;
+      margin: 50px;
+      background: url(../images/P1234.png) no-repeat; /*배경 이미지*/
+      background-size: cover; /*영역을 다채우게*/
+      border: 2px dotted blue; /*모든 방향 - 3px짜리 검정 점선*/
+      border-bottom-right-radius: 50% 30%;
+      box-shadow: 5px 5px 15px 5px gray;
+      background-color: rgba(255, 0, 0, 1);
+    }
+    .box7 {
+      display: inline-block;
+      background-color: aqua;
+      width: 300px;
+      height: 300px;
+    }
+    .box8 {
+      width: 200px;
+      height: 200px;
+      margin: 30px 5px 10px;
+      background: url(../images/P1234.png) no-repeat; /*배경 이미지*/
+      background-size: cover; /*영역을 다채우게*/
+      border: 2px dotted blue; /*모든 방향 - 3px짜리 검정 점선*/
+      border-bottom-right-radius: 50% 30%;
+      box-shadow: 5px 5px 15px 5px gray;
+      background-color: rgba(255, 0, 0, 1);
+    }
+    .box9 {
+      background-color: aqua;
+      width: 500px;
+      height: 500px;
+      margin-top: 10px;
+    }
+    .box10 {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+      background: url(../images/P1234.png) no-repeat; /*배경 이미지*/
+      background-size: cover; /*영역을 다채우게*/
+      border: 2px dotted blue; /*모든 방향 - 3px짜리 검정 점선*/
+      border-bottom-right-radius: 50% 30%;
+      box-shadow: 5px 5px 15px 5px gray;
+      background-color: rgba(255, 0, 0, 1);
+    }
+  </style>
+  <body>
+    <fieldset class="box1">
+      <div class="box2">
+        <h1>margin 속성</h1>
+      </div>
+    </fieldset>
+    <fieldset class="box3">
+      <div class="box4">
+        <h1>margin 속성</h1>
+      </div>
+    </fieldset>
+    <fieldset class="box5">
+      <div class="box6">
+        <h1>margin 속성</h1>
+      </div>
+    </fieldset>
+    <fieldset class="box7">
+      <div class="box8">
+        <h1>margin 속성</h1>
+      </div>
+    </fieldset>
+    <div class="box9">
+      <div class="box10">1</div>
+    </div>
+  </body>
+</html>
