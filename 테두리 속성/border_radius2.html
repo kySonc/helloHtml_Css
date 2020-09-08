@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>테두리 관련 속성들</title>
+  </head>
+  <style>
+    .box1 {
+      display: inline-block;
+      background-color: aqua;
+      width: 200px;
+      height: 100px;
+      margin: 10px;
+      border: 2px dotted red; /*모든 방향 - 3px짜리 검정 점선*/
+      border-top-left-radius: 100px 50px;
+    }
+    .box2 {
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      background: url(../images/P1234.png) no-repeat; /*배경 이미지*/
+      background-size: cover; /*영역을 다채우게*/
+      border: 2px dotted blue; /*모든 방향 - 3px짜리 검정 점선*/
+      border-bottom-right-radius: 50% 30%;
+    }
+    .box3 {
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      background: url(../images/P1234.png) no-repeat; /*배경 이미지*/
+      background-size: cover; /*영역을 다채우게*/
+      border: 2px dotted blue; /*모든 방향 - 3px짜리 검정 점선*/
+      border-top-right-radius: 100px; /*모서리 20px 만큼 라운딩*/
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>border-radius 속성</h1>
+      <h2>가로 반지름 크기와 세로 반지름 크기를 함께 지정</h2>
+      <h2></h2>
+      <h3>기본형 border-top-left-radius : <가로 크기> | <세로 크기></h3>
+      <h3>기본형 border-top-right-radius : <가로 크기> | <세로 크기></h3>
+      <h3>기본형 border-bottom-right-radius : <가로 크기> | <세로 크기></h3>
+      <h3>기본형 border-bottom-left-radius : <가로 크기> | <세로 크기></h3>
+      <h3>기본형 border-radius : <가로 크기> | <세로 크기></h3>
+    </fieldset>
+    <p class="box1"></p>
+    <p class="box2"></p>
+    <p class="box3"></p>
+  </body>
+</html>
