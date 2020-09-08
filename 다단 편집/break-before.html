@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>다단으로 편집하기</title>
+  </head>
+  <style>
+    .multi {
+      column-count: 4;
+      column-rule: 2px dotted #000;
+      text-align: justify;
+    }
+    .multi h3 {
+      break-before: column;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>다단 위치 지정</h1>
+      <h2>특정 요소의 앞이나 뒤(주로 인쇄 목적)</h2>
+      <ul>
+        <li>break-before:column</li>
+        <li>break-before:avoid-column</li>
+        <li>break-after:column</li>
+        <li>break-after:avoid-column</li>
+      </ul>
+    </fieldset>
+    <h2>다단으로 편집하기</h2>
+    <div class="multi">
+      <h3>다단</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A delectus
+        fugit cum pariatur aut voluptatibus est assumenda optio quibusdam,
+        consectetur dolor. Facilis iusto amet non qui voluptatum eaque mollitia,
+        illo, cum eius, aliquid quibusdam in repellendus! Maxime iste aspernatur
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ex quod
+        fuga. Cumque inventore itaque repudiandae obcaecati minus, eius in quo
+        nemo doloremque explicabo iusto atque? Nemo, tenetur veritatis possimus
+      </p>
+      <h3>으로</h3>quibusdam esse architecto rem laudantium officiis voluptatem iste illo
+        culpa aliquam recusandae fuga nobis at nisi ab perferendis quo eveniet
+        harum obcaecati! Animi expedita voluptatibus, ipsam modi totam maxime,
+        illo porro ratione, est possimus labore unde quos doloribus. Ducimus
+        voluptatibus quaerat eum natus voluptates deserunt possimus nihil
+        molestias suscipit minus reiciendis incidunt quo fugiat quae alias,
+        maxime quis mollitia consectetur exercitationem porro, fugit ea ratione
+      </p>
+      <h3>편집</h3>
+      <p>
+        praesentium inventore et necessitatibus debitis ipsum quas iste
+        cupiditate at cumque eveniet eligendi quaerat tenetur, molestias autem.
+        Molestiae mollitia nihil, expedita vero id porro tenetur quisquam harum
+        quidem quaerat quam minus itaque blanditiis officiis sed assumenda
+        fugiat libero, ab delectus? Iste culpa qui nostrum dicta ex, accusantium
+      </p>
+      <h3>하기</h3>
+      quos fuga rem. Qui, quidem enim autem vel facere quia tempora esse, quos
+      perspiciatis deleniti saepe dolore quam dignissimos! Distinctio
+      asperiores, ipsam laudantium modi sed, magni fugit veniam odio fuga
+      quaerat voluptatibus debitis mollitia et ex. Et adipisci maxime saepe
+      ducimus nobis, est repudiandae totam! Dignissimos eaque libero,
+      consequuntur beatae cum quaerat incidunt natus! Omnis eos tempora enim,
+      excepturi dignissimos iusto, et optio corrupti ea provident iste corporis
+      quam id tenetur fugit dolorum beatae a nihil quos mollitia adipisci rerum
+      alias, laborum nam? Maiores sunt architecto ducimus ullam deserunt
+      temporibus sapiente necessitatibus sint!
+    </div>
+  </body>
+</html>
