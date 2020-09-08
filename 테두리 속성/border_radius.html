@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>테두리 관련 속성들</title>
+  </head>
+  <style>
+    .box2 {
+      height: 200px;
+      padding: 10px;
+      margin: 10px;
+      border: 2px dotted red; /*모든 방향 - 3px짜리 검정 점선*/
+      border-radius: 20px; /*모서리 20px 만큼 라운딩*/
+    }
+    .box3 {
+      width: 500px;
+      height: 500px;
+      background: url(../images/P1234.png) no-repeat; /*배경 이미지*/
+      background-size: cover; /*영역을 다채우게*/
+      border: 2px dotted blue; /*모든 방향 - 3px짜리 검정 점선*/
+      border-radius: 20px; /*모서리 20px 만큼 라운딩*/
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>border-radius 속성</h1>
+      <h2>박스 모서리 부분을 둥글게 처리</h2>
+      <h2></h2>
+      <h3>기본형 border-top-left-radius : <크기> | <백분율></h3>
+      <h3>기본형 border-top-right-radius : <크기> | <백분율></h3>
+      <h3>기본형 border-bottom-right-radius : <크기> | <백분율></h3>
+      <h3>기본형 border-bottom-left-radius : <크기> | <백분율></h3>
+      <h3>기본형 border-radius : <크기> | <백분율></h3>
+    </fieldset>
+    <p class="box2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque blanditiis
+      temporibus accusamus eaque eum eligendi. Vero aut ut aspernatur, illo nisi
+      libero odit. Assumenda est cupiditate corrupti, asperiores sed quisquam?
+    </p>
+    <p class="box3"></p>
+  </body>
+</html>
