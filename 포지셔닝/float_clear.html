@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 포지셔닝과 주요 속성들</title>
+  </head>
+  <style>
+    .box {
+      border: 1px solid gold;
+      margin: 5px;
+      height: 40px;
+    }
+    .box1 {
+      background-color: green;
+      float: left;
+    }
+    .box2 {
+      background-color: grey;
+      float: left;
+    }
+    .box3 {
+      background: red;
+      float: left;
+    }
+    .box4 {
+      background: blue;
+      float: right;
+    }
+    .box5 {
+      background-color: green;
+      float: left;
+      margin: 5px;
+    }
+    .box6 {
+      background-color: grey;
+      float: left;
+      margin: 5px;
+    }
+    .box7 {
+      background: red;
+      height: 40px;
+    }
+    .box8 {
+      background: blue;
+      clear: both;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>float 속성</h1>
+      <h2>요소를 왼쪽이나 오른쪽에 떠 있게 만듦</h2>
+    </fieldset>
+    <fieldset>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>속성 값</th>
+            <th>설명</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>left</td>
+            <td>해당 요소를 문서의 왼쪽으로 배치한다</td>
+          </tr>
+          <tr>
+            <td>right</td>
+            <td>해당 요소를 문서의 오른쪽으로 배치한다</td>
+          </tr>
+          <tr>
+            <td>none</td>
+            <td>좌우 어느 쪽으로도 배치하지 않는다</td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+    <div class="box">
+      <div class="box1">box1</div>
+      <div class="box2">box2</div>
+      <div class="box3">box3</div>
+      <div class="box4">box4</div>
+    </div>
+    <fieldset>
+      <h1>clear 속성</h1>
+      <h2>float 속성을 무효화 시키는 속성</h2>
+    </fieldset>
+    <h3>기본형 clear : none | left | right | both</h3>
+    <p class="box5">box5</p>
+    <p class="box6">box6</p>
+    <p class="box7">box7</p>
+    <p class="box8">box8</p>
+  </body>
+</html>
