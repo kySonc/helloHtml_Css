@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>테두리 관련 속성들</title>
+  </head>
+  <style>
+    .box1 {
+      display: inline-block;
+      background-color: aqua;
+      width: 200px;
+      height: 100px;
+      margin: 10px;
+      border: 2px dotted red; /*모든 방향 - 3px짜리 검정 점선*/
+      border-top-left-radius: 100px 50px;
+      box-shadow: 2px -2px 5px 0px black;
+    }
+    .box2 {
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      background: url(../images/P1234.png) no-repeat; /*배경 이미지*/
+      background-size: cover; /*영역을 다채우게*/
+      border: 2px dotted blue; /*모든 방향 - 3px짜리 검정 점선*/
+      border-bottom-right-radius: 50% 30%;
+      box-shadow: 5px 5px 15px 5px gray;
+    }
+    .box3 {
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      background: url(../images/P1234.png) no-repeat; /*배경 이미지*/
+      background-size: cover; /*영역을 다채우게*/
+      border: 2px dotted blue; /*모든 방향 - 3px짜리 검정 점선*/
+      border-top-right-radius: 100px; /*모서리 20px 만큼 라운딩*/
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>box-shdow 속성</h1>
+      <h2>선택한 요소에 그림자 효과 내기</h2>
+      <h3>기본형 box-shdow :none | <그림자 값> [,<그림자 값]*;</h3>
+      <h3>
+        <그림자 값> = <수평거리> <수직거리> <흐림정도> <번짐정도> <색상> inset
+      </h3>
+    </fieldset>
+    <fieldset>
+      <h2>수평 거리와 수직 거리는 필수, 기타 속성 값은 옵션</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>속성 값</th>
+            <th>설명</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><수평 거리></td>
+            <td>
+              그림자의 수평 옵셋 거리(수평으로 얼마나 떨어져 있는지).양수 값은
+              요소의 오른쪽,음수 값은 요소의 왼쪽에 그림자를 만듬.필수 속성
+            </td>
+          </tr>
+          <tr>
+            <td><수직 거리></td>
+            <td>
+              그림자의 수직 옵셋 거리(세로롤 얼마나 떨어져 있는지).양수 값은
+              요소의 아래쪽,음수 값은 요소의 위쪽에 그림자를 만듬.필수 속성
+            </td>
+          </tr>
+          <tr>
+            <td><흐림정도></td>
+            <td>
+              그림자의 흐림정도(blur radius)를 지정. 이 값을 생략하면 0을 기본
+              값으로 해 진한 그림자를 표시. 이 값이 커질수록 부드러운 그림자를
+              표시하며 음수 값은 사용할 수 없다.
+            </td>
+          </tr>
+          <tr>
+            <td><번짐정도></td>
+            <td>
+              그림자의 번지는 정도를 나타냄. 양수 값을 사용하면 그림자가 모든
+              방향으로 퍼져 나가기 때문에 그림자가 박스보다 크게 표시. 반대로
+              음수 값은 그림자가 모든 방향으로 축소되어 보임.기본 값은 0.
+            </td>
+          </tr>
+          <tr>
+            <td><색상></td>
+            <td>
+              그림자의 색상 지정. 한 가지만 지정할 수도 있고 공백으로 구분해
+              여러 개의 색상을 지정. 필요한 경우에만 사용하는 옵션 값이며 기본
+              값은 현재 글자 색
+            </td>
+          </tr>
+          <tr>
+            <td>inset</td>
+            <td>
+              이 키워드를 함께 표시하면 안쪽 그림자로 그려진다. 필요한 경우에만
+              사용하는 옵션 값
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+    <p class="box1"></p>
+    <p class="box2"></p>
+    <p class="box3"></p>
+  </body>
+</html>
