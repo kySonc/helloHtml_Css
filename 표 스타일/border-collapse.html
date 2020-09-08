@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>표 스타일</title>
+    <meta charset="utf-8" />
+  </head>
+  <style>
+      .table1 {
+        border:1px solid blue;
+        border-collapse:collapse;
+      }
+      .table1 th,td{
+        border:1px solid blue;        
+      }
+      .table2 {
+        border:1px solid blue;
+        border-collapse:collapse;
+      }
+      .table2 th{
+        border:1px dashed red;        
+      }
+      .table2 td{
+        border:1px dashed red;        
+      }
+  </style>
+  <body>
+    <h1>표 스타일</h1>
+    <h3>border-collapse</h3>
+    <h3>표 테두리와 셀 테두리를 합칠 것인지 설정</h3>
+    <h3>기본형 border-collapse : collapse | separate</h3>
+    <fieldset>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>속성 값</th>
+            <th>설명</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>collapse</td>
+            <td>테두리를 하나로 합쳐 표시</td>
+          </tr>
+          <tr>
+            <td>separate</td>
+            <td>테두리를 따로 표시. 기본 값</td>
+          </tr>
+        </tbody>
+      </table>
+      </fieldset>
+    <hr />
+    <table class="table1" >
+      <colgroup>
+        <col style="width: 100px" />
+        <col style="width: 100px" />
+        <col style="width: 300px" />
+      </colgroup>
+      <caption>
+        <strong>제목이 위쪽 중앙에 표시됨</strong>
+        <p>국내에서 자주 사용하는 모던 브라우저</p>
+      </caption>
+      <tr>
+        <th>브라우저</th>
+        <td>제조업체</td>
+        <td>다운로드</td>
+      </tr>
+      <tr>
+        <th>크롬</th>
+        <td>goole</td>
+        <td>HttPS://www....</td>
+      </tr>
+      <tr>
+        <th>파이어폭스</th>
+        <td>Mozila</td>
+        <td>HttPS://www....</td>
+      </tr>
+    </table>
+    <br /><br />
+    <table class="table2" >
+        <colgroup>
+          <col style="width: 100px" />
+          <col style="width: 100px" />
+          <col style="width: 300px" />
+        </colgroup>
+        <figure>
+        <figcaption>
+          <strong>제목이 왼쪽에 표시됨</strong>
+          <p>국내에서 자주 사용하는 모던 브라우저</p>
+        </figcaption>
+        <tr>
+          <th>브라우저</th>
+          <td>제조업체</td>
+          <td>다운로드</td>
+        </tr>
+        <tr>
+          <th>크롬</th>
+          <td>goole</td>
+          <td>HttPS://www....</td>
+        </tr>
+        <tr>
+          <th>파이어폭스</th>
+          <td>Mozila</td>
+          <td>HttPS://www....</td>
+        </tr>
+      </table>
+    </figure>
+  </body>
+</html>
