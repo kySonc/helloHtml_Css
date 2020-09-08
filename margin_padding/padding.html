@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>여백을 조절하는 속성들</title>
+  </head>
+  <style>
+    div {
+      width: 200px; /*너비*/
+      height: auto; /*높이*/
+      background: #0094ff; /*배경색*/
+      display: inline-block; /*가로로 배치*/
+      margin: 15px; /*마진 - 15px 15px 15px 15px*/
+      color: white; /*글자색*/
+    }
+    .box1 {
+      border: 1px solid red;
+      padding: 10px 30px 10px 30px;
+    }
+    .box2 {
+      border: 1px solid red;
+      padding: 10px 30px;
+    }
+    .box3 {
+      border: 1px solid red;
+      padding: 10px;
+      background-clip: content-box;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>padding 속성</h1>
+      <h2>콘텐츠 영역과 테두리 사이의 여백(테두리 안쪽 여백)</h2>
+      <h3>기본형 padding-top : <크기> | <백분율> | auto</h3>
+      <h3>기본형 padding-right : <크기> | <백분율> | auto</h3>
+      <h3>기본형 padding-bottom : <크기> | <백분율> | auto</h3>
+      <h3>기본형 padding-left : <크기> | <백분율> | auto</h3>
+      <h3>기본형 padding : <크기> | <백분율> | auto</h3>
+    </fieldset>
+    <div class="box1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reiciendis?
+      Soluta!
+    </div>
+    <div class="box2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reiciendis?
+      Soluta!
+    </div>
+    <div class="box3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia reiciendis?
+      Soluta!
+    </div>
+  </body>
+</html>
