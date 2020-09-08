@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 포지셔닝과 주요 속성들</title>
+  </head>
+  <style>
+    div {
+      margin-top: 20px;
+      border: 100px solid blue;
+    }
+    img {
+      border: 1px solid red;
+      width: 200px;
+      height: 150px;
+      margin: 10px;
+      padding: 5px;
+      position: absolute;
+    }
+    .b1 {
+      z-index: 1;
+      top: 300px;
+      left: 0px;
+      background: rgba(220, 0, 0, 1);
+    }
+    .b2 {
+      z-index: 3;
+      top: 400px;
+      left: 20px;
+      background: rgba(010, 0, 0, 5);
+    }
+    .b3 {
+      z-index: 1;
+      top: 350px;
+      left: 60px;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>z-index 속성</h1>
+      <h2>요소 쌓는 순서 정하기</h2>
+      <h3>z-index 값이 크면 값이 작은 요소보다 위에 쌓인다</h3>
+      <h3>z-index 값을 명시하지 않으면 1부터 시작해서 1씩 커진다</h3>
+    </fieldset>
+    <div>
+      <img class="b1" src="\images\P1234.png" />
+      <img class="b2" src="\images\P1235.png" />
+      <img class="b3" src="\images\P1236.png" />
+    </div>
+  </body>
+</html>
