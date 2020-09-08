@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 포지셔닝과 주요 속성들</title>
+  </head>
+  <style>
+    .box {
+      border: 1px solid gold;
+      margin: 5px;
+      height: 40px;
+    }
+    .box1 {
+      float: left;
+      width: 100px;
+      background: green;
+      margin-right: 10px;
+      position: static;
+      padding: 20px;
+    }
+    .box2 {
+      position: relative;
+      left: -50px;
+      top: 30px;
+      width: 300px;
+      background-color: grey;
+      float: left;
+      padding: 20px;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>position 속성</h1>
+      <h2>relative</h2>
+      <ul>
+        <li>자연스럽게 배치</li>
+        <li>고정되어 있지 않고 다른 요소에 의해 바뀔 수 있다.</li>
+        <li>상대적인 위치를 사용하기 때문에 다른 요소와 조화를 이룬다</li>
+        <li>left나 top 속성을 이용해 요소의 위치를 옮길 수 있다</li>
+      </ul>
+    </fieldset>
+    <div class="box">
+      <div class="box1">box1</div>
+      <div class="box2">box2</div>
+    </div>
+  </body>
+</html>
