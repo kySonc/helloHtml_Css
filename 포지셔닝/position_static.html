@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 포지셔닝과 주요 속성들</title>
+  </head>
+  <style>
+    .box {
+      border: 1px solid gold;
+      margin: 5px;
+      height: 40px;
+    }
+    .box1 {
+      position: static;
+      float: left;
+      width: 100px;
+      top: 300px;
+      background: green;
+      margin-right: 10px;
+      padding: 20px;
+    }
+    .box2 {
+      position: static;
+      width: 300px;
+      background-color: grey;
+      float: left;
+      padding: 20px;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>position 속성</h1>
+      <h2>웹 문서 안에 요소들을 배치하기 위한 속성</h2>
+      <h3>기본형 position : static | relative | absolute | fixed</h3>
+    </fieldset>
+    <fieldset>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>속성 값</th>
+            <th>설명</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>static</td>
+            <td>요소를 문서의 흐름에 맞추어 배치</td>
+          </tr>
+          <tr>
+            <td>relative</td>
+            <td>
+              이전 요소에 자연스럽게 연결해 배치하되 위치를 지정할 수 있다.
+            </td>
+          </tr>
+          <tr>
+            <td>absolute</td>
+            <td>원하는 위치를 지정해 배치</td>
+          </tr>
+          <tr>
+            <td>fixed</td>
+            <td>지정한 위치에 고정해 배치.화면에서 요소가 잘릴 수 있다</td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+    <div class="box">
+      <div class="box1">box1</div>
+      <div class="box2">box2</div>
+    </div>
+  </body>
+</html>
