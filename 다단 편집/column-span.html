@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>다단으로 편집하기</title>
+  </head>
+  <style>
+    .multi {
+      column-count: 3;
+      column-rule: 2px dotted #000;
+    }
+    .no col {
+      column-span:all;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>여러 단을 하나로 합치기</h1>
+      <h2>기본형 column-span: 1 | all</h2>
+    </fieldset>
+    <fieldset>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>속성 값</th>
+            <th>설명</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>단을 하나만 합치는 것이므로 합치지 않는 것과 같다.기본 값</td>
+          </tr>
+          <tr>
+            <td>all</td>
+            <td>전체 단을 하나로 합쳐 표현.단의 일부만 합칠 수 없다</td>
+          </tr>
+        </tbody>
+      </table>
+      </fieldset>
+    <h2>다단으로 편집하기</h2>
+    <div class="multi">
+      <h3>다단</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A delectus
+        fugit cum pariatur aut voluptatibus est assumenda optio quibusdam,
+        consectetur dolor. Facilis iusto amet non qui voluptatum eaque mollitia,
+        illo, cum eius, aliquid quibusdam in repellendus! Maxime iste aspernatur
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ex quod
+        fuga. Cumque inventore itaque repudiandae obcaecati minus, eius in quo
+        nemo doloremque explicabo iusto atque? Nemo, tenetur veritatis possimus
+      </p>
+      <h3>으로</h3>quibusdam esse architecto rem laudantium officiis voluptatem iste illo
+        culpa aliquam recusandae fuga nobis at nisi ab perferendis quo eveniet
+        harum obcaecati! Animi expedita voluptatibus, ipsam modi totam maxime,
+        illo porro ratione, est possimus labore unde quos doloribus. Ducimus
+        voluptatibus quaerat eum natus voluptates deserunt possimus nihil
+        molestias suscipit minus reiciendis incidunt quo fugiat quae alias,
+        maxime quis mollitia consectetur exercitationem porro, fugit ea ratione
+      </p>
+      <h3>편집</h3>
+      <p>
+        praesentium inventore et necessitatibus debitis ipsum quas iste
+        cupiditate at cumque eveniet eligendi quaerat tenetur, molestias autem.
+        Molestiae mollitia nihil, expedita vero id porro tenetur quisquam harum
+        quidem quaerat quam minus itaque blanditiis officiis sed assumenda
+        fugiat libero, ab delectus? Iste culpa qui nostrum dicta ex, accusantium
+      </p>
+    </div>
+    <div class="no-col">
+      <h3>하기</h3>
+      quos fuga rem. Qui, quidem enim autem vel facere quia tempora esse, quos
+      perspiciatis deleniti saepe dolore quam dignissimos! Distinctio
+      asperiores, ipsam laudantium modi sed, magni fugit veniam odio fuga
+      quaerat voluptatibus debitis mollitia et ex. Et adipisci maxime saepe
+      ducimus nobis, est repudiandae totam! Dignissimos eaque libero,
+      consequuntur beatae cum quaerat incidunt natus! Omnis eos tempora enim,
+      excepturi dignissimos iusto, et optio corrupti ea provident iste corporis
+      quam id tenetur fugit dolorum beatae a nihil quos mollitia adipisci rerum
+      alias, laborum nam? Maiores sunt architecto ducimus ullam deserunt
+      temporibus sapiente necessitatibus sint!
+    </div>
+  </body>
+</html>
