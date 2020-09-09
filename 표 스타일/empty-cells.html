@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>표 스타일</title>
+    <meta charset="utf-8" />
+  </head>
+  <style>
+      .table1{
+          border-collapse: separate;
+      }
+      th,td{
+        border:1px solid red;
+      }
+      #td1 td{
+        empty-cells:show;
+      }
+      #td2 td{
+        empty-cells:hide;
+      }
+  </style>
+  <body>
+    <h1>표 스타일</h1>
+    <h3>empty-cell</h3>
+    <ul>
+        <li>border-collapse:separate를 사용해 셀들을 분리했을 경우, 내용이 없는 빈 셀들의 표시 여부를 지정</li>
+    </ul>
+    <h3>기본형 empty-cell: show | hide</h3>
+    <hr />
+    <table class="table1" id="tb1">
+      <colgroup>
+        <col style="width: 100px" />
+        <col style="width: 100px" />
+        <col style="width: 300px" />
+      </colgroup>
+      <caption>
+        <strong>제목이 위쪽 중앙에 표시됨</strong>
+        <p>국내에서 자주 사용하는 모던 브라우저</p>
+      </caption>
+      <tr>
+        <th>브라우저</th>
+        <td>제조업체</td>
+        <td>다운로드</td>
+        <td>생산년도</td>
+      </tr>
+      <tr>
+        <th>크롬</th>
+        <td>goole</td>
+        <td>HttPS://www....</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>파이어폭스</th>
+        <td>Mozila</td>
+        <td>HttPS://www....</td>
+        <td></td>
+      </tr>
+    </table>
+    <br /><br />
+    <table class="table1" id="td2">
+        <colgroup>
+          <col style="width: 100px" />
+          <col style="width: 100px" />
+          <col style="width: 300px" />
+        </colgroup>
+        <figure>
+        <figcaption>
+          <strong>제목이 왼쪽에 표시됨</strong>
+          <p>국내에서 자주 사용하는 모던 브라우저</p>
+        </figcaption>
+        <tr>
+          <th>브라우저</th>
+          <td>제조업체</td>
+          <td>다운로드</td>
+          <td>생산년도</td>
+        </tr>
+        <tr>
+          <th>크롬</th>
+          <td>goole</td>
+          <td>HttPS://www....</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>파이어폭스</th>
+          <td>Mozila</td>
+          <td>HttPS://www....</td>
+          <td></td>
+        </tr>
+    </table>
+  </body>
+</html>
