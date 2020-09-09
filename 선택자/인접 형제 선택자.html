@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연결 선택자</title>
+  </head>
+  <style>
+    p + ul {
+      color: blue;
+      font-size: 30px;
+    }
+  </style>
+  <body>
+    <h1>연결 선택자</h1>
+    <h2>인접 형제 선택자</h2>
+    <ul>
+      <li>같은 부모를 가진 형제 요소 중 첫 번째 동생 요소에만 스타일 적용</li>
+      <li>
+        요소 1과 요소 2는 같은 레벨이면서 요소 1 이후 맨 먼저 오는 요소 2에
+        스타일을 적용
+      </li>
+    </ul>
+    <section id="container">
+      <p>예약 방법 및 요금</p>
+      <ul>
+        <li>
+          직접 통화
+          <ul>
+            <li>예약 취소</li>
+            <p>예약 시간</p>
+          </ul>
+        </li>
+        <li>문자 남기기</li>
+      </ul>
+      <ul>
+        <li>1인 : 40,000원</li>
+        <li>2인 : 60,000원</li>
+        <li>3인 : 80,000원</li>
+        <li>4인 : 100,000원</li>
+      </ul>
+    </section>
+  </body>
+</html>
