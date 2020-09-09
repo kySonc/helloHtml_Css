@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문서 구조를 위한 HTML5 시맨틱 태그</title>
+    <style>
+      .content {
+        border: 1px solid red;
+        width: 500px;
+        float: left;
+      }
+      .banner img {
+        width: 400px;
+      }
+      .sidebar {
+        border: 1px solid blue;
+        width: 500px;
+        float: left;
+      }
+      .sidebar img {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>문서 구조를 위한 HTML5 시맨틱 태그</h1>
+    <h2>section 태그 - 주제별 콘텐츠 영역</h2>
+    <ul>
+      <li>문서에서 주제별로 콘텐츠를 묶을 때 사용</li>
+      <li>섹션 제목을 나타내는 hn 태그가 함께 사용됨</li>
+    </ul>
+    <h2>article 태그 - 콘텐츠 내용</h2>
+    <ul>
+      <li>웹 상의 실제 내용</li>
+      <li>
+        태그 적용 부분을 떼어내 독립적으로 배포하거나 재사용 하더라도 완전히
+        하나의 콘텐츠
+      </li>
+    </ul>
+    <h2>aside 태그 - 본문 이외의 내용</h2>
+    <ul>
+      <li>본문 내용 외에 주변에 표시되는 기타 내용들</li>
+      <li>
+        필수 요소가 아니므로 광고나 링크 모음 등 문서의 메인 내용에 영향을
+        미치지 않는 내용들을 넣을 때 사용
+      </li>
+    </ul>
+    <hr />
+    <article>
+      <section class="content">
+        <h2>HTML5 시맨틱 태그</h2>
+        <p>
+          실제로 웹사이트를 만들 때는 수천 줄의 소스를 일일이 살펴보면서 헤더
+          부분이 어디인지, 메뉴는 어디에 있는지, 사이드 바 내용이 있는 부분은
+          어디인지 등 찾는 것이 쉽지 않다
+        </p>
+        <p>
+          WHATWG에서는 웹 문서의 레이아웃을 어느 정도 표준화할 수 있겠다고
+          생각하고, 레이아웃을 만들 때 사용하는 주요 태그를 미리 약속해 놓고
+          해당 태그만 보면 어느 부분이 헤더이고 어느 부분이 실제 내용인지 쉽게
+          알 수 있도록 했다.
+        </p>
+        <div class="banner"><img src="../images/P1234.png" alt="자동차" /></div>
+      </section>
+    </article>
+    <aside class="sidebar">
+      <h3>aside 태그</h3>
+      <p>
+        필수 요소가 아니므로 광고나 링크 모음 등 문서의 메인 내용에 영향을
+        미치지 않는 내용들을 넣을 때 사용
+      </p>
+      <img src="../images/P1235.png" alt="" />
+      <img src="../images/P1236.png" alt="" />
+      <img src="../images/P1237.png" alt="" />
+    </aside>
+  </body>
+</html>
