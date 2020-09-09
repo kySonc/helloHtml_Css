@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>표 스타일</title>
+    <meta charset="utf-8" />
+  </head>
+  <style>
+      .table1{
+          border-collapse: collapse;
+          width:700px;          
+      }
+      th,td{
+        border:1px solid red;
+        padding:5px;
+        text-align:center;
+      }
+      #td1 td{
+        empty-cells:show;
+      }
+      
+  </style>
+  <body>
+    <h1>표 스타일</h1>
+    <h3>width, height</h3>
+    <ul>
+        <li>너비나 높이를 지정하지 않으면 셀 안의 내용이 표시될 만큼만 표시</li>
+        <li>width 값을 지정할 경우 padding 속성을 이용해 여백을 넣어주면 보기 좋게 꾸밀 수 있다.</li>
+    </ul>
+    <hr />
+    <table class="table1" id="tb1">
+      <colgroup>
+        <col style="width: 100px" />
+        <col style="width: 100px" />
+        <col style="width: 300px" />
+      </colgroup>
+      <caption>
+        <strong>제목이 위쪽 중앙에 표시됨</strong>
+        <p>국내에서 자주 사용하는 모던 브라우저</p>
+      </caption>
+      <tr>
+        <th>브라우저</th>
+        <td>제조업체</td>
+        <td>다운로드</td>
+        <td>생산년도</td>
+      </tr>
+      <tr>
+        <th>크롬</th>
+        <td>goole</td>
+        <td>HttPS://www....</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>파이어폭스</th>
+        <td>Mozila</td>
+        <td>HttPS://www....</td>
+        <td></td>
+      </tr>
+    </table>
+    <br /><br />
+    <table class="table1" id="td2">
+        <colgroup>
+          <col style="width: 100px" />
+          <col style="width: 100px" />
+          <col style="width: 300px" />
+        </colgroup>
+        <figure>
+        <figcaption>
+          <strong>제목이 왼쪽에 표시됨</strong>
+          <p>국내에서 자주 사용하는 모던 브라우저</p>
+        </figcaption>
+        <tr>
+          <th>브라우저</th>
+          <td>제조업체</td>
+          <td>다운로드</td>
+          <td>생산년도</td>
+        </tr>
+        <tr>
+          <th>크롬</th>
+          <td>goole</td>
+          <td>HttPS://www....</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>파이어폭스</th>
+          <td>Mozila</td>
+          <td>HttPS://www....</td>
+          <td></td>
+        </tr>
+    </table>
+  </body>
+</html>
