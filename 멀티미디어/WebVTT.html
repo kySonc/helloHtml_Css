@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오디오 & 비디오 재생하기</title>
+  </head>
+  <style></style>
+  <body>
+    <fieldset>
+      <h1>오디오 & 비디오 재생하기</h1>
+      <h2>WebVTT 자막 파일</h2>
+      <ul>
+        <li>웹 비디오 텍스트 트랙(Web Video Text Track)</li>
+        <li>모든 브라우저에서 공식적으로 지원하는 자막 파일 형식</li>
+        <li>자막 내용과 시간 정보를 함께 담고 있음</li>
+        <li>비디오에서 자막을 확인하려면 서버에 올린 후 확인</li>
+      </ul>
+      <h2>기본형 시작시간 --> 종료시간 자막내용</h2>
+    </fieldset>
+    <video autoplay>
+      <source src="media/Painting.ogv" type="video/ogg"></source>
+      <source src="media/Painting.mp4" type="video/mp4"></source>
+      <source src="media/Painting.webm" type="video/webm"></source>
+      <track src="media/Painting.vtt" srclang="ko" label="korean" default>
+    </video>
+  </body>
+</html>
