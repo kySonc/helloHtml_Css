@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연결 선택자</title>
+  </head>
+  <style>
+    p ~ ul {
+      color: blue;
+      font-size: 30px;
+    }
+  </style>
+  <body>
+    <h1>연결 선택자</h1>
+    <h2>형제 선택자</h2>
+    <ul>
+      <li>형제 요소들에 스타일 적용</li>
+      <li>인접 형제 선택자와 다른 점은 모든 형제 요소에 다 적용된다는 것</li>
+    </ul>
+    <section id="container">
+      <p>예약 방법 및 요금</p>
+      <ul>
+        <li>
+          직접 통화
+          <ul>
+            <li>예약 취소</li>
+            <p>예약 시간</p>
+          </ul>
+        </li>
+        <li>문자 남기기</li>
+      </ul>
+      <ul>
+        <li>1인 : 40,000원</li>
+        <li>2인 : 60,000원</li>
+        <li>3인 : 80,000원</li>
+        <li>4인 : 100,000원</li>
+      </ul>
+      <p>퇴실</p>
+    </section>
+  </body>
+</html>
