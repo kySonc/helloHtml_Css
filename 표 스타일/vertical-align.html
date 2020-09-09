@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>표 스타일</title>
+    <meta charset="utf-8" />
+  </head>
+  <style>
+    .tb1 {
+      border: 1px solid red;
+      width: 500px;
+      height: 500px;
+      margin-bottom: 20px;
+    }
+    div {
+      display: inline-block;
+      border: 1px solid red;
+      width: 200px;
+      height: 500px;
+    }
+    .align1 {
+      text-align: left;
+      vertical-align: top;
+    }
+    .align2 {
+      text-align: right;
+      vertical-align: bottom;
+    }
+    .align3 {
+    }
+  </style>
+  <body>
+    <h1>표 스타일</h1>
+    <h3>vertical-align</h3>
+    <h3>셀 안에서의 수직 정렬 방법</h3>
+    <fieldset>
+      <legend></legend>
+      <table border="1">
+        <tr>
+          <th>속성 값</th>
+          <th>설명</th>
+        </tr>
+        <tr>
+          <th>top</th>
+          <th>위쪽 패딩 가장자리에 내용의 윗부분을 맞춘다</th>
+        </tr>
+        <tr>
+          <th>bottom</th>
+          <th>아래쪽 패딩 가장자리에 내용의 아랫부분을 맞춘다.</th>
+        </tr>
+        <tr>
+          <th>middle</th>
+          <th>패딩의 중앙에 내용의 중앙을 맞춘다.</th>
+        </tr>
+      </table>
+    </fieldset>
+    <hr />
+    <table class="tb1" border="1">
+      <tr>
+        <th>속성 값</th>
+        <th>설명</th>
+      </tr>
+      <tr>
+        <th class="align1">top</th>
+        <td></td>
+      </tr>
+      <tr>
+        <th class="align2">bottom</th>
+        <td></td>
+      </tr>
+      <tr>
+        <th class="align3">middle</th>
+        <td></td>
+      </tr>
+    </table>
+    <div class="align1">align1</div>
+    <div class="align2">align2</div>
+    <div class="align3">align3</div>
+  </body>
+</html>
