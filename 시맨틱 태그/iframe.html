@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문서 구조를 위한 HTML5 시맨틱 태그</title>
+    <style>
+      .content {
+        border: 1px solid red;
+        width: 500px;
+        float: left;
+      }
+      .banner img {
+        width: 400px;
+      }
+      .sidebar {
+        border: 1px solid blue;
+        width: 500px;
+        float: left;
+      }
+      .sidebar img {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>문서 구조를 위한 HTML5 시맨틱 태그</h1>
+    <h2>iframe 태그 - 외부 문서 삽입</h2>
+    <ul>
+      <li>웹 문서 안에 다른 외부 문서 삽입 - 인라인 프레임</li>
+    </ul>
+    <h2>기본형 iframe src="삽입할 문서 주소" [속성 = "속성 값"]</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>속성 값</th>
+          <th>설명</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>width</td>
+          <td>인라인 프레임의 너비. 픽셀이나 백분율 값으로 표시</td>
+        </tr>
+        <tr>
+          <td>height</td>
+          <td>인라인 프레임의 높이. 픽셀이나 백분율 값으로 표시</td>
+        </tr>
+        <tr>
+          <td>name</td>
+          <td>인라인 프레임의 이름</td>
+        </tr>
+        <tr>
+          <td>src</td>
+          <td>프레임에 표시할 문서의 주소를 지정</td>
+        </tr>
+        <tr>
+          <td>seamless</td>
+          <td>
+            프레임의 테두리를 없애 마치 본문의 일부처럼 보이도록 만들며 속성 값
+            없이 seamless라고 쓰면 된다. 이 속성은 아직 크롬과 사파리에서만 지원
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>iframe 태그를 이용해 외부 문서(사이트) 포함시키기</h2>
+    <div class="content">
+      <iframe src="http://www.easyspub.co.kr/" width="95%" height="500">
+      </iframe>
+    </div>
+  </body>
+</html>
