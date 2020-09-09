@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오디오 & 비디오 재생하기</title>
+  </head>
+  <style></style>
+  <body>
+    <fieldset>
+      <h1>오디오 & 비디오 재생하기</h1>
+      <h2>source 태그</h2>
+      <ul>
+        <li>
+          사용자들의 브라우저 환경을 고려해서 최신 브라우저와 이전 브라우저에서
+          모두 재생할 수 있도록 여러 코덱의 파일을 함께 지정
+        </li>
+      </ul>
+      <h3>source src="video.ogv" type="video/ogg"; codecs="theora,vorbis"></h3>
+    </fieldset>
+    <fieldset>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>속성 값</th>
+            <th>설명</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>src</td>
+            <td>
+              미디어 파일의 경로를 지정하는 필수 속성으로 파일 경로를 지정할
+              때는 경로에 공백이 있으면 안된다
+            </td>
+          </tr>
+          <tr>
+            <td>type</td>
+            <td>
+              웹 브라우저가 해당 미디어 파일을 재생할 수 있는지 여부를 확인할 수
+              있도록 미디어 파일의 유형을 알려 준다
+            </td>
+          </tr>
+          <tr>
+            <td>codecs</td>
+            <td>비디오 코덱을 지정</td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+    <hr />
+    <video controls>
+      <source src="media/Painting.ogv" type="video/ogg"></source>
+      <source src="media/Painting.mp4" type="video/mp4"></source>
+      <source src="media/Painting.webm" type="video/webm"></source>
+    </video>
+    <hr />
+    <h2>HTML5를 지원하지 않는 브라우저에서는?</h2>
+    <ul>
+      <li>HTML5 지원 브라우저가 필요하다는 대체 텍스트 표시</li>
+    </ul>
+    <video controls>
+      <source src="media/Painting.mp4" type="video/mp4">
+      <source src="media/Painting.webm" type="video/webm">
+      <source src="media/Painting.ogv" type="video/ogg">
+        이 영상을 보기 위해서는 HTML5를 지원하는 브라우저가 필요합니다.
+    </video>
+    <ul>
+      <li>플래시 무비로 변환한 후 embed 태그나 object 태그로 삽입</li>
+    </ul>
+    <video controls>
+      <source src="media/Painting.mp4" type="video/mp4">
+      <source src="media/Painting.webm" type="video/webm">
+      <source src="media/Painting.ogv" type="video/ogg">
+      <object data="media/Painting.swf" type="application/x-shockwave-flash"></object>
+    </video>
+  </body>
+</html>
