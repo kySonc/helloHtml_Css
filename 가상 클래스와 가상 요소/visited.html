@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상 클래스와 가상 요소</title>
+  </head>
+  <style>
+    .navi a:link,
+    .navi a:visited {
+      display: block;
+      padding: 10px 10px 10px 10px;
+      width: 150px;
+      color: red;
+      text-decoration: none; /*밑줄 없음*/
+      border: 1px solid yellow;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>가상 클래스와 가상 요소</h1>
+      <h2>:visited</h2>
+      <h3>방문한 링크에 스타일 적용</h3>
+      <table border="1">
+        <colgroup>
+          <col style="width: 100px" />
+          <col style="width: 1000px" />
+        </colgroup>
+        <tr>
+          <th>표기</th>
+          <th>설명</th>
+        </tr>
+        <tr>
+          <td>:visited</td>
+          <td>
+            문서의 링크 중에서 한번 이상 방문한 링크에 대한 스타일 적용. 방문한
+            텍스트 링크는 기본적으로 자주색(purple)으로 표시 되는데 사용자가
+            방문했던 링크도 일반 텍스트 링크와 색상이 달라지지 않게 하려면
+            :visited 선택자를 사용해 조절
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+    <hr />
+    <nav class="navi">
+      <ul>
+        <li>
+          <a href="#">이용 안내</a>
+        </li>
+        <li>
+          <a href="#">객실 소개</a>
+        </li>
+        <li>
+          <a href="#">예약 방법 및 요금</a>
+        </li>
+        <li>
+          <a href="#">예약하기</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
