@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상 클래스와 가상 요소</title>
+  </head>
+  <style>
+    input:disabled {
+      background: burlywood;
+      border: 1px solid red;
+    }
+    input:checked + span {
+      color: blue;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>가상 클래스와 가상 요소</h1>
+      <h2>UI 요소 상태에 따른 가상 클래스</h2>
+      <h2>:enabled / :disabled</h2>
+      <h3>요소를 사용할 수 있을 때와 없을 때의 스타일 지정</h3>
+      <table border="1">
+        <colgroup>
+          <col style="width: 100px" />
+          <col style="width: 1000px" />
+        </colgroup>
+        <tr>
+          <th>표기</th>
+          <th>설명</th>
+        </tr>
+        <tr>
+          <td>:enabled / :disabled</td>
+          <td>
+            해당 요소가 사용 가능한 상태일 때의 스타일을 지정하려면 :enabled
+            클래스를 사용하고 해당 요소가 사용 불가능한 상태일 때의 스타일을
+            지정하려면 :disabled 클래스를 사용. 예를 들어 여러 줄의 텍스트를
+            입력할 수 있는 텍스트 영역 필드(textarea 필드)를 게시판 입력
+            화면으로 사용할 때는 enabled 상태이지만 회원 약관 등을 보여 줄 때는
+            사용자가 내용을 보기만 해야 하므로 disabled 상태로 만들어야 한다
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+    <hr />
+    <form>
+      <fieldset>
+        <legend>사용자 정보</legend>
+        <label>이름 <input type="text" disabled /></label>
+      </fieldset>
+      <fieldset>
+        <legend>신청 과목</legend>
+        <p>이 달에 신청할 과목을 선택하세요</p>
+        <label
+          ><input type="radio" name="subject" value="speaking" /><span
+            >회화</span
+          ></label
+        >
+        <label
+          ><input type="radio" name="subject" value="grammar" /><span
+            >문법</span
+          ></label
+        >
+        <label
+          ><input type="radio" name="subject" value="writing" /><span
+            >작문</span
+          ></label
+        >
+      </fieldset>
+    </form>
+  </body>
+</html>
