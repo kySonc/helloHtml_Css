@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>속성 선택자</title>
+  </head>
+  <style>
+    a[href*="w3"] {
+      background: yellow;
+      font-size: 30px;
+    }
+  </style>
+  <body>
+    <h1>속성 선택자</h1>
+    <h2>[속성 *= 값] 선택자</h2>
+    <ul>
+      <li>값의 일부가 일치하는 속성을 가진 요소를 찾아 스타일 적용</li>
+    </ul>
+    <ul>
+      <li>외국어 서비스</li>
+      <li>
+        <a href="http://www.w3c.org/TR/html" title="us">HTML 표준안 사이트</a>
+      </li>
+      <li>
+        <a href="http://www.webplatform.org" title="us-english"
+          >튜토리얼과 아티클</a
+        >
+      </li>
+      <li>
+        <a href="http://caniuse.com" title="jap anese">HTML 지원 여부 체크</a>
+      </li>
+      <li>
+        <a href="http://www.Tw3cb.org/TR/css3-mediaqueries" title="jap"
+          >미디어쿼리</a
+        >
+      </li>
+    </ul>
+  </body>
+</html>
