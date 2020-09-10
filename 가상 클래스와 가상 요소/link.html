@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상 클래스와 가상 요소</title>
+  </head>
+  <style>
+    .navi a:link {
+      display: block;
+      padding: 10px 10px 10px 10px;
+      width: 150px;
+      color: #fff;
+      text-decoration: none; /*밑줄 없음*/
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>가상 클래스와 가상 요소</h1>
+      <h2>:link</h2>
+      <table border="1">
+        <colgroup>
+          <col style="width: 100px" />
+          <col style="width: 1000px" />
+        </colgroup>
+        <tr>
+          <th>표기</th>
+          <th>설명</th>
+        </tr>
+        <tr>
+          <td>:link</td>
+          <td>
+            문서 안의 하이퍼링크 중에서 사용자가 아직 방문하지 않은 링크에
+            스타일을 적용. 텍스트 링크는 기본적으로 파란색(blue)글자와 밑줄로
+            표시되는데 링크의 밑줄을 없애거나 색상을 바꾸려고 할 때 :link
+            선택자를 사용
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+    <hr />
+    <nav class="navi">
+      <ul>
+        <li>
+          <a href="#">이용 안내</a>
+        </li>
+        <li>
+          <a href="#">객실 소개</a>
+        </li>
+        <li>
+          <a href="#">예약 방법 및 요금</a>
+        </li>
+        <li>
+          <a href="#">예약하기</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
