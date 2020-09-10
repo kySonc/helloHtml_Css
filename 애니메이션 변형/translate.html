@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3와 애니메이션</title>
+  </head>
+  <style>
+    .origin {
+      border: 3px solid aqua;
+      display: inline-block;
+      width: 250px;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .movex:hover {
+      transform: translateX(50px);
+    }
+    .movey:hover {
+      transform: translateY(50px);
+    }
+    .movexyz:hover {
+      transform: translate3d(50px, -50px, 100px);
+    }
+  </style>
+  <body>
+    <h1>변형</h1>
+    <h2>transform 함수</h2>
+    <h3>지정한 방향으로 이동할 거리를 지정하면 해당 요소를 이동시킴</h3>
+    <fieldset>
+      <legend>2차원 변형</legend>
+      <ul>
+        <li>기본형 translate(tx,ty)</li>
+        <li>기본형 translateX(tx)</li>
+        <li>기본형 translateY(ty)</li>
+        <li>기본형 translate3d(tx, ty, tz)</li>
+      </ul>
+    </fieldset>
+    <div class="origin">
+      <div class="movex"><img src="../images/P1234.png" alt="" /></div>
+    </div>
+    <div class="origin">
+      <div class="movey"><img src="../images/P1234.png" alt="" /></div>
+    </div>
+    <div class="origin">
+      <div class="movexyz"><img src="../images/P1234.png" alt="" /></div>
+    </div>
+  </body>
+</html>
