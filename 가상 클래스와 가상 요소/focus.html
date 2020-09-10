@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상 클래스와 가상 요소</title>
+  </head>
+  <style>
+    .navi a:link {
+      display: block;
+      padding: 10px 10px 10px 10px;
+      border: 1px solid yellow;
+    }
+    .navi a:focus {
+      background-color: #f00; /*배경색*/
+      color: burlywood;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>가상 클래스와 가상 요소</h1>
+      <h2>:focus</h2>
+      <h3>웹 요소에 초점이 맞추어졌을 때의 스타일 적용</h3>
+      <table border="1">
+        <colgroup>
+          <col style="width: 100px" />
+          <col style="width: 1000px" />
+        </colgroup>
+        <tr>
+          <th>표기</th>
+          <th>설명</th>
+        </tr>
+        <tr>
+          <td>:focus</td>
+          <td>
+            웹 요소에 초점이 맞추어졌을 때의 스타일을 지정. 예를 들어 아이디를
+            입력하기 위해 텍스트 필드 안에 마우스 커서를 갖다 놓거나 탭을 눌러
+            초점을 이동했을 때의 스타일을 지정.
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+    <hr />
+    <nav class="navi">
+      <ul>
+        <li>
+          <a href="#">이용 안내</a>
+        </li>
+        <li>
+          <a href="#">객실 소개</a>
+        </li>
+        <li>
+          <a href="#">예약 방법 및 요금</a>
+        </li>
+        <li>
+          <a href="#">예약하기</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
