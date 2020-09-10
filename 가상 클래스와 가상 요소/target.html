@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상 클래스와 가상 요소</title>
+  </head>
+  <style>
+    a {
+      display: block;
+      width: 100px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      margin: 0 auto;
+      background: #000;
+      color: #fff;
+      text-decoration: none;
+    }
+    #intro {
+      width: 100%;
+      max-width: 500px;
+      margin: 30px auto;
+      padding: 30px;
+      background: #ccc;
+    }
+    #intro:target {
+      background: blue;
+      color: #fff;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>가상 클래스와 가상 요소</h1>
+      <h2>:target</h2>
+      <h3>앵커로 연결된 부분(목적지)에 스타일 지정</h3>
+    </fieldset>
+    <hr />
+    <a href="#intro">click</a>
+    <div id="intro">id=intro</div>
+  </body>
+</html>
