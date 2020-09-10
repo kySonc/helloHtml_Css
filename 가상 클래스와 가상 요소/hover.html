@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상 클래스와 가상 요소</title>
+  </head>
+  <style>
+    .navi a:link {
+      display: block;
+      padding: 10px 10px 10px 10px;
+      border: 1px solid #fff;
+    }
+    .navi a:hover {
+      background-color: #222; /*배경 색*/
+      color: #fff; /*글자 색*/
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>가상 클래스와 가상 요소</h1>
+      <h2>:hover</h2>
+      <h3>웹 요소에 마우스 커서를 올려놓을 때의 스타일 적용</h3>
+      <table border="1">
+        <colgroup>
+          <col style="width: 100px" />
+          <col style="width: 1000px" />
+        </colgroup>
+        <tr>
+          <th>표기</th>
+          <th>설명</th>
+        </tr>
+        <tr>
+          <td>:hover</td>
+          <td>
+            웹 요소 위로 마우스 커서를 올려놓을 때의 스타일을 지정. 이 가상
+            클래스 선택자를 응용하면 이미지 위로 마우스 커서를 올려놓으면 다른
+            이미지로 바뀌었다가 마우스 커서를 치우면 원래 이미지로 돌아오는
+            롤오버 효과(rollover)를 만들 수 있다.
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+    <hr />
+    <nav class="navi">
+      <ul>
+        <li>
+          <a href="#">이용 안내</a>
+        </li>
+        <li>
+          <a href="#">객실 소개</a>
+        </li>
+        <li>
+          <a href="#">예약 방법 및 요금</a>
+        </li>
+        <li>
+          <a href="#">예약하기</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
