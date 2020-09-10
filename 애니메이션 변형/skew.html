@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3와 애니메이션</title>
+  </head>
+  <style>
+    .origin {
+      border: 2px solid aqua;
+      display: inline-block;
+      width: 250px;
+      perspective: 200px; /*입체적으로 보일 수 있는 깊이 값 지정*/
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .skew:hover {
+      transform: skewX(30deg);
+    }
+    .skewy:hover {
+      transform: skewY(15deg);
+    }
+    .skewxy:hover {
+      transform: skew(-25deg, -15deg);
+    }
+  </style>
+  <body>
+    <h1>변형</h1>
+    <h2>skew 함수</h2>
+    <h3>요소를 지정한 각도만큼 비틀어 왜곡</h3>
+    <fieldset>
+      <ul>
+        <li>기본형 transform:skew(ax,ay)</li>
+        <li>기본형 transform:skewX(ax)</li>
+        <li>기본형 transform:skewY(ay)</li>
+      </ul>
+    </fieldset>
+    <div class="origin">
+      <div class="skew">
+        <img src="../images/tire-1135376_640.png" alt="" />
+      </div>
+    </div>
+    <div class="origin">
+      <div class="skewy">
+        <img src="../images/tire-1135376_640.png" alt="" />
+      </div>
+    </div>
+    <div class="origin">
+      <div class="skewxy">
+        <img src="../images/tire-1135376_640.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
