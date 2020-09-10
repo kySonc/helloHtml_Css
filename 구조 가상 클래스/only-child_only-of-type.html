@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상 클래스와 가상 요소</title>
+  </head>
+  <style>
+    fieldset h1:only-child{/*오직 자식이 하나이여야 적용*/
+      color:green;
+    }
+    fieldset h1:only-of-type{
+      color:red;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>가상 클래스와 가상 요소</h1>
+      <h2>구조 가상 클래스</h2>
+      <h2>:only-child, :only-of-type</h2>
+      <ul>
+        <li>:only-child : 부모 요소 안에 자식 요소가 유일하게 하나일 때 스타일 적용</li>
+        <li>:only-of-type : 자신이 유일한 요소일 때 스타일 적용</li>
+      </ul>
+    </fieldset>
+    <hr />
+    <div>
+      <ul class="navi">
+        
+        <h1>java</h1>
+        <li class="home">
+          <a href="#">home</a>
+        </li>
+        <li class="html">
+          <a href="#">html</a>
+        </li>
+        <p>jsp</p>
+        <li class="css">
+          <a href="#">css</a>
+        </li>
+        <li class="jquery">
+          <a href="#">jquery</a>
+        </li>
+        <p>db</node></p>
+      </ul>
+    </div>
+  </body>
+</html>
