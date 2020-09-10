@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3와 애니메이션</title>
+  </head>
+  <style>
+    .origin {
+      border: 3px solid aqua;
+      display: inline-block;
+      width: 250px;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .scalex:hover {
+      transform: scaleX(1.2);
+    }
+    .scaley:hover {
+      transform: scaley(1.5);
+    }
+    .scalexyz:hover {
+      transform: scale3d(1.2, 1.5, 2);
+    }
+  </style>
+  <body>
+    <h1>변형</h1>
+    <h2>scale 함수</h2>
+    <h3>지정한 크기만큼 요소를 확대/축소</h3>
+    <fieldset>
+      <ul>
+        <li>기본형 transform:scale(sx,sy)</li>
+        <li>기본형 transform:scaleX(sx)</li>
+        <li>기본형 transform:scaleY(sy)</li>
+        <li>기본형 transform:scaleZ(sz)</li>
+        <li>기본형 transform:scale3d(sx,sy,sz)</li>
+      </ul>
+    </fieldset>
+    <div class="origin">
+      <div class="scalex"><img src="../images/P1234.png" alt="" /></div>
+    </div>
+    <div class="origin">
+      <div class="scaley"><img src="../images/P1234.png" alt="" /></div>
+    </div>
+    <div class="origin">
+      <div class="scalexyz"><img src="../images/P1234.png" alt="" /></div>
+    </div>
+  </body>
+</html>
