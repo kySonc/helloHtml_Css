@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상 클래스와 가상 요소</title>
+  </head>
+  <style>
+    p:not(#ex) {
+      color: blue;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <p>가상 클래스와 가상 요소</p>
+      <p id="ex">:not</p>
+      <p>괄호 안에 있는 요소를 제외한 부분에 스타일 지정</p>
+    </fieldset>
+    <hr />
+    <p><a href="#intro">click</a></p>
+    <p id="intro">id=intro</p>
+  </body>
+</html>
