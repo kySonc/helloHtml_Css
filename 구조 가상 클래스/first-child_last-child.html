@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상 클래스와 가상 요소</title>
+  </head>
+  <style>
+    .navi li {
+      border: 1px solid;
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+    }
+    ul.navi li:first-child {
+      border-top-left-radius: 1em;
+      border-bottom-left-radius: 1em;
+    }
+    ul.navi li:last-child {
+      border-top-right-radius: 1em;
+      border-bottom-right-radius: 1em;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>가상 클래스와 가상 요소</h1>
+      <h2>구조 가상 클래스</h2>
+      <h2>:first-child와 :last-child</h2>
+      <ul>
+        <li>:first-child : 첫 번째 자식 요소에 스타일 적용</li>
+        <li>:last-child : 마지막 자식 요소에 스타일 적용</li>
+      </ul>
+    </fieldset>
+    <hr />
+    <div>
+      <ul class="navi">
+        <li class="home">
+          <a href="#">home</a>
+        </li>
+        <li class="html">
+          <a href="#">html</a>
+        </li>
+        <li class="css">
+          <a href="#">css</a>
+        </li>
+        <li class="jquery">
+          <a href="#">jquery</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
