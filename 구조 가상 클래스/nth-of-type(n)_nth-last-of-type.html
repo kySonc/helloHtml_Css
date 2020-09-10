@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상 클래스와 가상 요소</title>
+  </head>
+  <style>
+    table tr:nth-of-type(3) {
+      background: blue;
+      color: white;
+    }
+    table tr:nth-last-of-type(2) {
+      background: red;
+      color: black;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>가상 클래스와 가상 요소</h1>
+      <h2>구조 가상 클래스</h2>
+      <h2>:nth-of-type(n)와 :nth-last-of-type(n)</h2>
+      <ul>
+        <li>:nth-of-type(n) : 앞에서부터 n번째 자식 요소에 스타일 적용</li>
+        <li>:nth-last-of-type(n) : 뒤에서부터 n번째 자식 요소에 스타일 적용</li>
+      </ul>
+    </fieldset>
+    <hr />
+    <h3>건강에 좋은 건강 식품</h3>
+    <table>
+      <tr>
+        <td>블루베리</td>
+      </tr>
+      <tr>
+        <td>귀리</td>
+      </tr>
+      <tr>
+        <td>토마토</td>
+      </tr>
+      <tr>
+        <td>시금치</td>
+      </tr>
+      <tr>
+        <td>적포도주</td>
+      </tr>
+      <tr>
+        <td>견과류</td>
+      </tr>
+      <tr>
+        <td>브로콜리</td>
+      </tr>
+      <tr>
+        <td>연어</td>
+      </tr>
+      <tr>
+        <td>마늘</td>
+      </tr>
+      <tr>
+        <td>녹차</td>
+      </tr>
+    </table>
+  </body>
+</html>
