@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상 클래스와 가상 요소</title>
+  </head>
+  <style>
+    ul li {
+      margin: 15px;
+    }
+    li.hot::after {
+      content: "NEW!!";
+      font-size: x-small;
+      padding: 2px 4px;
+      margin: 0 10px;
+      border-radius: 2px;
+      background: #f00;
+      color: #fff;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>가상 클래스와 가상 요소</h1>
+      <h2>::before, ::after</h2>
+      <h3>내용의 앞뒤에 콘텐츠 추가하기</h3>
+    </fieldset>
+
+    <p class="fl">
+      이 요소를 사용하면 특정 요소의 내용 앞(::before)이나 뒤(::after)에 지정한
+      내용을 넣을 수 있습니다.
+    </p>
+    <p class="fl">
+      다시 말해 요소의 앞뒤에 텍스트나 이미지 등을 추가할 수 있습니다.
+    </p>
+    <hr />
+    <ul>
+      <li class="hot">제품 A</li>
+      <li>제품 B</li>
+      <li>제품 C</li>
+      <li class="hot">제품 D</li>
+    </ul>
+  </body>
+</html>
