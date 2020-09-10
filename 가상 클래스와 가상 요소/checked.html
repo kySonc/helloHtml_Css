@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상 클래스와 가상 요소</title>
+  </head>
+  <style>
+    input:disabled {
+      background: burlywood;
+      border: 1px solid red;
+    }
+    input:checked + span {
+      color: blue;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>가상 클래스와 가상 요소</h1>
+      <h2>UI 요소 상태에 따른 가상 클래스</h2>
+      <h2>:checked</h2>
+      <h3>라디오 박스나 체크 박스에서 해당 항목을 선택했을 때의 스타일 지정</h3>
+      <table border="1">
+        <colgroup>
+          <col style="width: 100px" />
+          <col style="width: 1000px" />
+        </colgroup>
+        <tr>
+          <th>표기</th>
+          <th>설명</th>
+        </tr>
+        <tr>
+          <td>:checked</td>
+          <td>
+            라디오 박스나 체크 박스에서 해당 항목을 선택했을 때의 스타일 지정
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+    <hr />
+    <form>
+      <fieldset>
+        <legend>사용자 정보</legend>
+        <label>이름 <input type="text" disabled /></label>
+      </fieldset>
+      <fieldset>
+        <legend>신청 과목</legend>
+        <p>이 달에 신청할 과목을 선택하세요</p>
+        <label
+          ><input type="radio" name="subject" value="speaking" /><span
+            >회화</span
+          ></label
+        >
+        <label
+          ><input type="radio" name="subject" value="grammar" /><span
+            >문법</span
+          ></label
+        >
+        <label
+          ><input type="radio" name="subject" value="writing" /><span
+            >작문</span
+          ></label
+        >
+      </fieldset>
+    </form>
+  </body>
+</html>
