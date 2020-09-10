@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상 클래스와 가상 요소</title>
+  </head>
+  <style>
+    table tr:nth-child(2n + 1) {
+      background: lightgray;
+      color: black;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>가상 클래스와 가상 요소</h1>
+      <h2>구조 가상 클래스</h2>
+      <h2>:nth-child(n)와 :nth-last-child(n)</h2>
+      <ul>
+        <li>:nth-child(n) : 앞에서부터 n번째 자식 요소에 스타일 적용</li>
+        <li>:nth-last-child(n) : 뒤에서부터 n번째 자식 요소에 스타일 적용</li>
+        <li>
+          위치를 나타낼 때 an+b 처럼 수식을 사용할 수도 있음. 이 때 n값은 0부터
+        </li>
+      </ul>
+      <table border="1">
+        <tr>
+          <th>예시</th>
+          <th>설명</th>
+        </tr>
+        <tr>
+          <td>div p:nth-child(3)</td>
+          <td>div 요소 안에서 세 번째 자식 요소인 p요소에 스타일 적용</td>
+        </tr>
+        <tr>
+          <td>div p:nth-child(odd), div p:nth-child(2n+1)</td>
+          <td>
+            div 요소 안에서 홀수 번째로 나타나는 자식 요소인 p요소에 스타일 적용
+          </td>
+        </tr>
+        <tr>
+          <td>
+            div p:nth-child(even), div p:nth-child(2n+0), div p:nth-child(2n)
+          </td>
+          <td>
+            div 요소 안에서 짝수 번째로 나타나는 자식 요소인 p요소에 스타일 적용
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+    <hr />
+    <h3>건강에 좋은 건강 식품</h3>
+    <table>
+      <tr>
+        <td>블루베리</td>
+      </tr>
+      <tr>
+        <td>귀리</td>
+      </tr>
+      <tr>
+        <td>토마토</td>
+      </tr>
+      <tr>
+        <td>시금치</td>
+      </tr>
+      <tr>
+        <td>적포도주</td>
+      </tr>
+      <tr>
+        <td>견과류</td>
+      </tr>
+      <tr>
+        <td>브로콜리</td>
+      </tr>
+      <tr>
+        <td>연어</td>
+      </tr>
+      <tr>
+        <td>마늘</td>
+      </tr>
+      <tr>
+        <td>녹차</td>
+      </tr>
+    </table>
+  </body>
+</html>
