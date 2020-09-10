@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3와 애니메이션</title>
+  </head>
+  <style>
+    .hr1 {
+      width: 100px;
+    }
+    .hr2 {
+      width: 100px;
+
+      transform: rotate(90deg);
+      transform: translate(50px, 50px);
+    }
+  </style>
+  <body>
+    <h1>변형</h1>
+    <h2>transform과 변형 함수</h2>
+    <h3>
+      변형(transform, 트랜스폼) : 특정 요소의 크기나 형태 등 스타일이 바뀌는 것
+    </h3>
+    <fieldset>
+      <legend>2차원 변형</legend>
+      <ul>
+        <li>수평이나 수직으로 웹 요소 변형</li>
+        <li>크기나 각도만 지정하면 됨</li>
+        <li>2차원 좌표 사용</li>
+      </ul>
+      <table border="1">
+        <tr>
+          <th>변형 함수</th>
+          <th>설명</th>
+        </tr>
+        <tr>
+          <td>translate(tx,ty)</td>
+          <td>지정한 크기만큼 x축과 y축으로 이동</td>
+        </tr>
+        <tr>
+          <td>translateX(tx)</td>
+          <td>지정한 크기만큼 x축으로 이동</td>
+        </tr>
+        <tr>
+          <td>translateY(ty)</td>
+          <td>지정한 크기만큼 y축으로 이동</td>
+        </tr>
+        <tr>
+          <td>scale(sx,sy)</td>
+          <td>지정한 크기만큼 x축과 y축으로 확대/축소</td>
+        </tr>
+        <tr>
+          <td>scaleX(sx)</td>
+          <td>지정한 크기만큼 x축으로 확대/축소</td>
+        </tr>
+        <tr>
+          <td>scaleY(sy)</td>
+          <td>지정한 크기만큼 y축으로 확대/축소</td>
+        </tr>
+        <tr>
+          <td>rotate(각도)</td>
+          <td>지정한 각도만큼 회전</td>
+        </tr>
+        <tr>
+          <td>skew(ax,ay)</td>
+          <td>지정한 각도만틈 x축과 y축으로 왜곡</td>
+        </tr>
+        <tr>
+          <td>skewX(ax)</td>
+          <td>지정한 각도만틈 x축으로 왜곡</td>
+        </tr>
+        <tr>
+          <td>skewY(ay)</td>
+          <td>지정한 각도만틈 y축으로 왜곡</td>
+        </tr>
+      </table>
+    </fieldset>
+    <fieldset>
+      <legend>3차원 변형</legend>
+      <ul>
+        <li>X축과 y축에 원근감 추가</li>
+        <li>z축은 앞뒤로 이동. 보는 사람 쪽으로 다가올 수록 값이 더 커짐</li>
+      </ul>
+      <table border="1">
+        <tr>
+          <th>변형 함수</th>
+          <th>설명</th>
+        </tr>
+        <tr>
+          <td>matrix3d( n[, n] )</td>
+          <td>4 X 4 행렬을 이용해 이동과 확대/축소, 회전 등의 변환을 지정</td>
+        </tr>
+        <tr>
+          <td>translate3d(tx, ty, tz)</td>
+          <td>지정한 크기만큼 x축과 y축, z축으로 이동</td>
+        </tr>
+        <tr>
+          <td>translateZ(tz)</td>
+          <td>지정한 크기만큼 z축으로 이동</td>
+        </tr>
+        <tr>
+          <td>scale3d(sx,sy,sz)</td>
+          <td>지정한 크기만큼 x축과 y축, z축으로 확대/축소</td>
+        </tr>
+        <tr>
+          <td>scaleZ(sz)</td>
+          <td>지정한 크기만큼 z축으로 확대/축소</td>
+        </tr>
+        <tr>
+          <td>rotate3d(rx,ry,rz,각도)</td>
+          <td>지정한 각도만큼 회전</td>
+        </tr>
+        <tr>
+          <td>rotateX(각도)</td>
+          <td>지정한 각도만큼 x축으로 회전</td>
+        </tr>
+        <tr>
+          <td>rotateY(각도)</td>
+          <td>지정한 각도만틈 y축으로 회전</td>
+        </tr>
+        <tr>
+          <td>rotateZ(각도)</td>
+          <td>지정한 각도만틈 z축으로 회전</td>
+        </tr>
+        <tr>
+          <td>perspective(길이)</td>
+          <td>입체적으로 보일 수 있는 깊이 값을 지정</td>
+        </tr>
+      </table>
+    </fieldset>
+  </body>
+</html>
