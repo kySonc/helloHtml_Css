@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3와 애니메이션</title>
+  </head>
+  <style>
+    .origin {
+      border: 2px solid aqua;
+      display: inline-block;
+      width: 250px;
+      perspective: 200px; /*입체적으로 보일 수 있는 깊이 값 지정*/
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .rotate1:hover {
+      transform: rotate(-250deg);
+    }
+    .rotate2:hover {
+      transform: rotateZ(-50deg);
+    }
+    .rotate3:hover {
+      transform: rotate3d(2.5, 1.2, -0.1, -60deg);
+    }
+    .scaley:hover {
+      transform: scaley(1.5);
+    }
+    .scalexyz:hover {
+      transform: scale3d(1.2, 1.5, 2);
+    }
+  </style>
+  <body>
+    <h1>변형</h1>
+    <h2>rotate 함수</h2>
+    <h3>각도만큼 웹 요소를 시계 방향이나 시계 반대 방향으로 회전</h3>
+    <h3>일반 각도(degree)나 래디얀(radian) 값 사용(1래디안=1/180°)</h3>
+    <fieldset>
+      <ul>
+        <li>2차원 함수 기본형 transform:rotate(각도)</li>
+      </ul>
+      <ul>
+        <li>3차원 함수 기본형 transform:rotateX(각도)</li>
+        <li>3차원 함수 기본형 transform:rotateY(각도)</li>
+        <li>3차원 함수 기본형 transform:rotateZ(각도)</li>
+        <li>3차원 함수 기본형 transform:rotate(rx,ry,각도)</li>
+        <li>3차원 함수 기본형 transform:rotate3d(rx,ry,rz,각도)</li>
+      </ul>
+    </fieldset>
+    <div class="origin">
+      <div class="rotate1"><img src="../images/P1235.png" alt="" /></div>
+    </div>
+    <div class="origin">
+      <div class="rotate2"><img src="../images/P1235.png" alt="" /></div>
+    </div>
+    <div class="origin">
+      <div class="rotate3"><img src="../images/P1235.png" alt="" /></div>
+    </div>
+  </body>
+</html>
