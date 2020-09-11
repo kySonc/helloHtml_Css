@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>트랜지션</title>
+  </head>
+  <style>
+    .tr1 {
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      background-color: blue;
+      border: 1px solid black;
+      transition-property: background-color, transform, width, height;
+      transition-duration: 2s, 3s; /*너비 값은 2초 , 높이 값은 1초에 걸쳐 트랜지션 */
+      transition-timing-function:ease-in;
+    }
+    .tr1:hover {
+      width: 200px;
+      height: 120px;
+      background-color: #ff6e5f;
+      transform: rotate(180deg);
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>트랜지션</h1>
+      <h2>transition-timing-function 속성</h2>
+      <ul>
+        <li>트랜지션의 시작과 중간,끝에서의 속도 지정</li>
+      </ul>
+      <h3>
+        기본형 transition-timing-function: linear | ease | ease-in | ease-out |
+        ease-in-out | cubic-bezier(n,n,n,n)
+      </h3>
+      <table border="1">
+        <tr>
+          <th>속성 값</th>
+          <th>설명</th>
+        </tr>
+        <tr>
+          <td>linear</td>
+          <td>시작부터 끝까지 똑같은 속도로 트랜지션을 진행</td>
+        </tr>
+        <tr>
+          <td>ease</td>
+          <td>
+            처음에는 천천히 시작되고 점점 빨라지다가 마지막에는 천천히 끝냅니다.
+            기본 값
+          </td>
+        </tr>
+        <tr>
+          <td>ease-in</td>
+          <td>시작을 느리게 합니다</td>
+        </tr>
+        <tr>
+          <td>ease-out</td>
+          <td>느리게 끝냅니다</td>
+        </tr>
+        <tr>
+          <td>ease-in-out</td>
+          <td>느리게 시작하고 느리게 끝냅니다</td>
+        </tr>
+        <tr>
+          <td>cubic-bezier(n,n,n,n)</td>
+          <td>
+            배지에 함수를 직접 정의해 사용합니다. n에서 사용할 수 있는 값은
+            0~1입니다.
+          </td>
+        </tr>
+      </table>
+      <ul>
+      
+    </fieldset>
+    <hr />
+    <div class="tr1"><h1>!</h1></div>
+  </body>
+</html>
