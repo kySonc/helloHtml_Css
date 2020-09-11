@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>트랜지션</title>
+  </head>
+  <style>
+    .tr1 {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      border: 1px solid black;
+      transition-property: width, height; /*너비와 높이에 트랜지션 적용 */
+      /*transition-property: background-color, transform, width, height;*/
+      transition-duration: 2s, 3s; /*너비 값은 2초 , 높이 값은 1초에 걸쳐 트랜지션 */
+    }
+    .tr1:hover {
+      width: 200px;
+      height: 120px;
+      background-color: yellowgreen;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>트랜지션</h1>
+      <h2>transition property 속성</h2>
+      <ul>
+        <li>트랜지션을 적용할 속성 선택</li>
+        <li>이 속성을 지정하지 않으면 모든 속성이 트랜지션 대상이 됨</li>
+      </ul>
+      <h3>기본형 transition-property: all | none | <속성 이름></h3>
+      <table border="1">
+        <tr>
+          <th>속성 값</th>
+          <th>설명</th>
+        </tr>
+        <tr>
+          <td>all</td>
+          <td>
+            all 값을 사용하거나 transition-property를 생략할 경우, 요소의 모든
+            속성이 트랜지션 대상이 된다. 기본 값
+          </td>
+        </tr>
+        <tr>
+          <td>none</td>
+          <td>트랜지션 동안 아무 속성도 바뀌지 않는다</td>
+        </tr>
+        <tr>
+          <td><속성 이름></td>
+          <td>
+            트랜지션 효과를 적용할 속성 이름을 지정. 예를 들어 배경 색만 바꿀
+            것인지, width 값을 바꿀 것인지 원하는 대상만 골라 지정할 수 있다.
+            속성이 여러 개일 경우, 쉼표( , )로 구분해 나열한다
+          </td>
+        </tr>
+      </table>
+      <ul>
+        <li>
+          transition-property:all; /*해당 요소의 모든 속성에 트랜지션 적용*/
+        </li>
+        <li>
+          transition-property:background-color; /*해당 요소의 배경 색에 트랜지션
+          적용*/
+        </li>
+        <li>
+          transition-property:width, height; /*해당 요소의 너비와 높이에
+          트랜지션 적용*/
+        </li>
+      </ul>
+    </fieldset>
+    <hr />
+    <div class="tr1"></div>
+  </body>
+</html>
