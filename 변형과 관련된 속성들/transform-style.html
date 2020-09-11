@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>변형과 관련된 속성들</title>
+  </head>
+  <style>
+    .container {
+      border: 1px solid black;
+      display: inline-block;
+      perspective: 300px;
+    }
+    .box1 {
+      border: 1px solid red;
+      width: 200px;
+      height: 100px;
+      background: #82cbd8;
+      transform: rotateY(45deg);
+    }
+    .box2 {
+      width: 200px;
+      height: 100px;
+      background: #0d6097;
+      transform-origin: left top;
+      transform: rotateX(45deg);
+    }
+    #tr-style1 {
+      transform-style: flat;
+    }
+    #tr-style2 {
+      transform-style: preserve-3d;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>변형과 관련된 속성들</h1>
+      <h2>transform-style 속성</h2>
+      <ul>
+        <li>부모 요소에 적용한 3D 변형을 하위 요소에도 적용</li>
+      </ul>
+      <h3>기본형 transform-style: flat | preserve-3d</h3>
+      <table border="1">
+        <tr>
+          <th>속성 값</th>
+          <th>설명</th>
+        </tr>
+        <tr>
+          <td>flat</td>
+          <td>하위 요소를 평면으로 처리한다</td>
+        </tr>
+        <tr>
+          <td>preserve-3d</td>
+          <td>하위 요소들에 3D효과를 적용한다</td>
+        </tr>
+      </table>
+    </fieldset>
+    <hr />
+    <div class="container">
+      <div class="box1" id="tr-style1">
+        <div class="box2"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="box1" id="tr-style2">
+        <div class="box2"></div>
+      </div>
+    </div>
+  </body>
+</html>
