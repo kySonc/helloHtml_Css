@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>변형과 관련된 속성들</title>
+  </head>
+  <style>
+    div{
+      display: inline-block;
+      border: 1px solid black;
+      padding: 0px;
+    }
+    img {
+      width: 200px;
+    }
+    .rotateX img{
+      transform:rotateX(50deg);
+    }
+    #pers{
+      
+      perspective:100px;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>변형과 관련된 속성들</h1>
+      <h2>perspective 속성</h2>
+      <ul>
+        <li>원근감을 갖게 함</li>
+        <li>속성 값은 0보다 커야 하며 값이 클수록 사용자로부터 멀어짐</li>
+      </ul>
+      <h3>기본형 perspective: <크기> | none</h3>
+      <table border="1">
+        <tr>
+          <th>속성 값</th>
+          <th>설명</th>
+        </tr>
+        <tr>
+          <td>크기</td>
+          <td>
+            원래 위치에서 사용자가 있는 방향으로 얼마나 이동하는지를 픽셀 크리로
+            지정
+          </td>
+        </tr>
+        <tr>
+          <td>none</td>
+          <td>perspective를 지정하지 않습니다. 기본 값</td>
+        </tr>
+      </table>
+      <h2>perspective-origin 속성</h2>
+      <ul>
+        <li>입체적으로 표현할 요소의 아랫부분(bottom) 위치 지정</li>
+        <li>좀더 높은 곳에서 원근을 조절하는 듯한 느낌을 갖게 함</li>
+      </ul>
+      <h3>기본형 perspective-origin: < x축 값 > | < y축 값 >
+      <table border="1">
+        <tr>
+          <th>속성 값</th>
+          <th>설명</th>
+        </tr>
+        <tr>
+          <td>< x축 값 ></td>
+          <td>웹 요소가 x축에서 어디에 위치하는지를 지정.사용할 수 있는 값은 길이 값이나 백분율, left, right, center입니다. 기본 값 50%
+          </td>
+        </tr>
+        <tr>
+          <td>< y축 값 ></td>
+          <td>웹 요소가 y축에서 어디에 위치하는지를 지정.사용할 수 있는 값은 길이 값이나 백분율, top, center, bottom입니다. 기본 값 50%</td>
+        </tr>
+      </table>
+    </fieldset>
+    <hr />
+    <div>
+      <img
+        src="../images/porsche-911-gt3-2902657_1280.jpg"
+        alt=""
+      />
+    </div>
+    <div id="no-pers">
+      <div class="rotateX">
+        <img
+          src="../images/porsche-911-gt3-2902657_1280.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <div id="pers">
+      <div class="rotateX">
+        <img
+          src="../images/porsche-911-gt3-2902657_1280.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
