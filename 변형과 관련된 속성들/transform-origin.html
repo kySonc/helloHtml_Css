@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>변형과 관련된 속성들</title>
+  </head>
+  <style>
+    .origin{
+        display:inline-block;
+        border:1px solid black;
+        margin:50px;
+        padding:0px;
+    }  
+    img{
+        width:200px;
+    }
+    .car{
+        transform: rotateZ(10deg);
+    }
+    .ltop .car{
+        transform-origin:left top;
+    }
+    .rtop .car{
+        transform-origin:right top;
+    }
+    .lbottom .car{
+        transform-origin:left bottom;
+    }
+    .rbottom .car{
+        transform-origin:right bottom;
+    }
+    
+  </style>
+  <body>
+    <fieldset>
+      <h1>변형과 관련된 속성들</h1>
+      <h2>transform-origin 속성</h2>
+      <h3>특정 지점을 변형의 기준으로 설정</h3>
+      <h3>기본형 transform-origin: x축 y축 z축 | initial | inherit'</z></y></x></h3>
+      <table border="1">
+        <colgroup>
+          <col style="width: 100px" />
+          <col style="width: 1000px" />
+        </colgroup>
+        <tr>
+          <th>속성 값</th>
+          <th>설명</th>
+        </tr>
+        <tr>
+          <td>x축</td>
+          <td>원점 기준의 x좌표값으로 길이 값이나 <백분율>, left, center, right 중에서 사용할 수 있다</td>
+        </tr>
+        <tr>
+          <td>y축</td>
+          <td>원점 기준의 y좌표값으로 길이 값이나 <백분율>, top, center, bottom 중에서 선택할 수 있다</td>
+        </tr>
+        <tr>
+          <td>z축</td>
+          <td>원점 기준의 z좌표값으로 길이 값만 사용할 수 있다</td>
+        </tr>
+      </table>
+    </fieldset>
+    <hr />
+    <div class="origin">
+        <div class="ltop"><img src="../images/porsche-911-gt3-2902657_1280.jpg" alt="" class="car"></div>
+    </div>
+    <div class="origin">
+        <div class="rtop"><img src="../images/porsche-911-gt3-2902657_1280.jpg" alt="" class="car"></div>
+    </div>
+    <div class="origin">
+        <div class="lbottom"><img src="../images/porsche-911-gt3-2902657_1280.jpg" alt="" class="car"></div>
+    </div>
+    <div class="origin">
+        <div class="rbottom"><img src="../images/porsche-911-gt3-2902657_1280.jpg" alt="" class="car"></div>
+    </div>
+  </body>
+</html>
