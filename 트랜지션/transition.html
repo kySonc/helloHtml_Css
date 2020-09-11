@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>트랜지션</title>
+  </head>
+  <style>
+    .tr1 {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      border: 1px solid black;
+      transition: 2s ease-in; /*property : 기본 값 all, duration 2s, timing-funtion eas-in, delay 기본 값 0*/
+    }
+    .tr1:hover {
+      width: 200px;
+      height: 120px;
+      background-color: yellowgreen;
+      transform: rotate(270deg);
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>트랜지션</h1>
+      <h2>transition 속성 한꺼번에 표기하기</h2>
+      <hr />
+      <div class="tr1"></div>
+    </fieldset>
+  </body>
+</html>
