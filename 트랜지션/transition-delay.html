@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>트랜지션</title>
+  </head>
+  <style>
+    .tr1 {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      border: 1px solid black;
+      transition-property: width, height; /*너비와 높이에 트랜지션 적용 */
+      transition-duration: 2s, 3s; /*너비 값은 2초 , 높이 값은 1초에 걸쳐 트랜지션 */
+      transition-delay:2s;
+    }
+    .tr1:hover {
+      width: 200px;
+      height: 120px;
+      background-color: yellowgreen;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>트랜지션</h1>
+      <h2>transition-delay 속성</h2>
+      <ul>
+        <li>트랜지션이 언제부터 시작될지 지연 시간 지정</li>
+        <li>시간 단위는 초(seconds) 또는 밀리초(milliseconds), 기본 값0</li>
+        <li>트랜지션이 여러 개라면 쉼표( , )로 구분해 진행 시간 지정</li>
+      </ul>
+      <h3>기본형 transition-delay: s</h3>
+    <hr />
+    <div class="tr1"></div>
+  </body>
+</html>
