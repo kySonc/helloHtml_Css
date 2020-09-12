@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미디어 쿼리</title>
+  </head>
+  <style>
+
+  </style>
+  <body>
+    <fieldset>
+      <h1>미디어 쿼리</h1>
+      <h2>미디어 쿼리 구문</h2>
+      <h3>기본형 @media [only | not] 미디어 유형 [and 조건] * [and 조건]</h3>
+      <h3>화면에서 공간도 차지하지 않음</h3>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>연산자</th>
+            <th>설명</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>and</td>
+            <td>조건을 계속 추가할 수 있습니다.</td>
+          </tr>
+          <tr>
+            <td>,(쉼표)</td>
+            <td>동일한 스타일 유형을 사용할 미디어와 유형과 조건이 있다면 쉼표를 이용해 추가합니다.</td>
+          </tr>
+          <tr>
+            <td>only</td>
+            <td>미디어 쿼리를 지원하는 웹 브라우저에서만 조건을 인식하게 합니다. 이 키워드를 사용하면 미디어 쿼리를 지원하지 않는 웹 브라우저에서는 미디어 쿼리를 무시하고 실행하지 않습니다.IE에서는 미디어 쿼리를 제대로 인식하지 못하기 때문에 only키워드를 사용하더라도 큰 의미가 없습니다.</td>
+          </tr>
+          <tr>
+            <td>not</td>
+            <td>not 다음에 지정하는 미디어 유형을 제외합니다. 예를 들어 'not tv'라고 지정한다면 TV를 제외한 미디어 유형에만 적용합니다.</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>미디어 유형의 종류</h3>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>미디어 유형</th>
+            <th>사용 가능한 미디어</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>all</td>
+            <td>모든 미디어 유형</td>
+          </tr>
+          <tr>
+            <td>print</td>
+            <td>인쇄 장치</td>
+          </tr>
+          <tr>
+            <td>screen</td>
+            <td>컴퓨터 스크린(스마트폰 스크린 포함)</td>
+          </tr>
+          <tr>
+            <td>tv</td>
+            <td>음성과 영상이 동시 출력되는 TV</td>
+          </tr>
+          <tr>
+              <td>aural</td>
+              <td>음성 합성 장치(주로 화면을 읽어 소리로 출력해 주는 장치)</td>
+          </tr>
+          <tr>
+              <td>braille</td>
+              <td>점자 표시장치</td>
+          </tr>
+          <tr>
+              <td>handheld</td>
+              <td>패드(pad)처럼 손에 들고 다니는 장치</td>
+          </tr>
+          <tr>
+              <td>projection</td>
+              <td>프로젝터</td>
+          </tr>
+        </tbody>
+      </table>
+  </body>
+</html>
