@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가변 요소</title>
+  </head>
+  <style>
+    img {
+      max-width: 100%;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>가변 요소</h1>
+      <h2>가변 이미지</h2>
+      <ul>
+        <li>
+          브라우저 창의 너비가 변하더라도 이미지 너비 값은 변하지 않음 ->
+          브라우저 화면 너비를 줄일 경우 이미지 일부가 가려짐
+        </li>
+        <li>
+          가변 이미지(fluid image)로 만들면 창의 너비에 따라 이미지 너비도
+          조절됨
+        </li>
+      </ul>
+      <h3>css를 이용한 방법</h3>
+      <ul>
+        <li>
+          이미지를 감싸고 있는 부모 요소만큼만 커지거나 작아지도록 max-width
+          속성 값을 100%로 지정
+        </li>
+      </ul>
+    </fieldset>
+    <hr />
+    <img src="../images/j1000.jpg" alt="" />
+  </body>
+</html>
