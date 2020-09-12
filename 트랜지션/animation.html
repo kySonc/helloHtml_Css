@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>트랜지션</title>
+  </head>
+  <style>
+    .box {
+      background-color: #b6ff00;
+      width: 60px;
+      height: 60px;
+      margin: 60px;
+      animation-name: moving;
+      /*animation-duration: 3s;
+      animation-timing-function: ease-in;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;*/
+      animation: moving 3s alternate infinite ease-in;
+    }
+    @keyframes moving {
+      from {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        background: red;
+      }
+      50% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(0deg);
+        background-color: green;
+      }
+      to {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
+        background-color: blue;
+      }
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>트랜지션</h1>
+      <h2>animation 속성</h2>
+      <ul>
+        <li>여러 개의 애니메이션 속성을 하나의 속성으로 줄여서 사용</li>
+        <li>
+          지정하지 않은 속성은 기본 값 사용. 하지만 animation-duration 속성 값은
+          반드시 지정해야 함
+        </li>
+      </ul>
+      <h3>
+        기본형 animation: animation-name | animation-duration |
+        animation-timing-function | animation-delay | animation-iteration-count>
+        | animation-direction
+      </h3>
+    </fieldset>
+    <hr />
+    <div class="box"></div>
+  </body>
+</html>
