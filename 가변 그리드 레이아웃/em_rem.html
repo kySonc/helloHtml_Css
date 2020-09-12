@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가변 요소</title>
+  </head>
+  <style>
+    #wrapper {
+      font-size: 16px;
+    }
+    .header-text {
+      /*wrapper:16x2em = 32px*/
+      font-size: 2em;
+    }
+    .fluid-text {
+      /*wrapper:16x header:2em x 1.5em = 48px*/
+      font-size: 1.5em;
+    }
+    .header-text1 {
+      /* body:16px x 2rem = 32px */
+      font-size: 2rem;
+    }
+    .fluid-text1 {
+      /* body:16px x 1.5rem = 24px */
+      font-size: 1.5rem;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>가변 요소</h1>
+      <h2>가변 글꼴</h2>
+      <h3>em 단위</h3>
+      <ul>
+        <li>부모 요소 폰트의 대문자 M 너비를 1em으로 지정. 1em = 16px</li>
+        <li>글자 크기 ( em ) = 글자 크기( px ) / 16px</li>
+        <li>em 단위가 쓰여지 곳의 폰트사이즈의 배수</li>
+        <li>부모 요소 모든 폰트사이즈의 배수 X</li>
+        <li>body:16px X h1:1.5em = h1: 24px</li>
+        <li>body:16px X p:1.5em x span:0.8em = span: 19.2px</li>
+        <li>
+          p.width:400px -> width:20em -> 폰트 사이즈 :: 16px X 1.5em X
+          width:20em ->width:480px
+        </li>
+      </ul>
+      <h3>rem 단위</h3>
+      <ul>
+        <li>
+          rem은 처음부터 기본 크기를 지정하고 그것을 기준으로 글자 크기 지정
+        </li>
+        <li>rem : 문서의 기본 값(16px)의 배수</li>
+        <li>:root { //문서 기본 값 변경 font-size:12px; }</li>
+        <li>16px X width:20rem = width:320px</li>
+        <li>pxtoem.com</li>
+      </ul>
+    </fieldset>
+    <hr />
+    <div id="wrapper">
+      <header class="header-text">
+        <p>가변 그리드 레이아웃</p>
+        <p class="fluid-text">가변 폰트</p>
+      </header>
+    </div>
+    <div id="wrapper">
+      <header class="header-text1">
+        <p>가변 그리드 레이아웃</p>
+        <p class="fluid-text1">가변 폰트</p>
+      </header>
+    </div>
+  </body>
+</html>
