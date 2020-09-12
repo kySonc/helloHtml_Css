@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미디어 쿼리</title>
+  </head>
+  <style>
+    body {
+      background: url(../images/p1005.png) no-repeat fixed;
+      background-size: cover;
+    }
+    @media screen and (max-width: 1024px) {
+      body {
+        background: url(../images/p1001.png) no-repeat fixed;
+        background-size: cover;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      body {
+        background: url(../images/p1007.png) no-repeat fixed;
+        background-size: cover;
+      }
+    }
+    @media screen and (max-width: 320px) {
+      body {
+        background: url(../images/j1000.jpg) no-repeat fixed;
+        background-size: cover;
+      }
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>미디어 쿼리</h1>
+      <h2>미디어 쿼리 조건</h2>
+      <h3>웹 문서의 가로 너비와 세로 높이 (뷰포트)</h3>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>가로, 세로 값 설정하는 속성</th>
+            <th>설명</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>width, height</td>
+            <td>웹 페이지의 가로 너비, 세로 높이</td>
+          </tr>
+          <tr>
+            <td>min-width, min-height</td>
+            <td>최소 너비, 최소 높이</td>
+          </tr>
+          <tr>
+            <td>max-width, max-height</td>
+            <td>최대 너비, 최대 높이</td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+  </body>
+</html>
