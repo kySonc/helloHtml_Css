@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>모바일 기기와 웹 디자인</title>
+  </head>
+  <style>
+    .navi a:link {
+      display: block;
+      padding: 10px 10px 10px 10px;
+      border: 1px solid yellow;
+    }
+    .navi a:active {
+      background-color: #f00; /*배경색*/
+      color: burlywood;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>모바일 기기와 웹 디자인</h1>
+      <h2>뷰포트(viewport)</h2>
+      <ul>
+        <li>뷰포트: 실제 내용이 표시되는 영역</li>
+        <li>
+          PC화면과 모바일 화면의 픽셀 표시 방법이 다르기 때문에 모바일 화면에서
+          의도한대로 표시되지 않음
+        </li>
+        <li>->뷰포트를 지정하면 기기 화면에 맞춰 확대 / 축소해서 내용 표시</li>
+      </ul>
+      <h3>뷰포트 지정하기</h3>
+      <ul>
+        <li>head 태그 안에서 meta 태그를 이용해 뷰포트 지정</li>
+        <h3>
+          기본형 < meta name="viewport" content="<속성1=값>, <속성2=값2>,..." >
+        </h3>
+        <li>
+          일반적인 사용법 : 뷰포트의 너비를 스마트폰 화면 너비에 맞추고 초기
+          화면 배율을 1로 지정
+        </li>
+        < meta name="viewport" content="width=device-width, initial-scale=1" >
+      </ul>
+      <table border="1">
+        <tr>
+          <th>속성</th>
+          <th>설명</th>
+          <th>사용 가능한 값</th>
+          <th>기본 값</th>
+        </tr>
+        <tr>
+          <td>width</td>
+          <td>뷰포트 너비</td>
+          <td>device-width 또는 크기</td>
+          <td>브라우저 기본 값</td>
+        </tr>
+        <tr>
+          <td>height</td>
+          <td>뷰포트 높이</td>
+          <td>device-height 또는 크기</td>
+          <td>브라우저 기본 값</td>
+        </tr>
+        <tr>
+          <td>user-scalable</td>
+          <td>확대 / 축소 가능 여부</td>
+          <td>yes 또는 no</td>
+          <td>yes</td>
+        </tr>
+        <tr>
+          <td>initial-scale</td>
+          <td>초기 확대 / 축소 값</td>
+          <td>1~10</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>minimum-scale</td>
+          <td>최소 확대 / 축소 값</td>
+          <td>0~10</td>
+          <td>0.25</td>
+        </tr>
+        <tr>
+          <td>maximum-scale</td>
+          <td>최대 확대 / 축소 값</td>
+          <td>0~10</td>
+          <td>1.6</td>
+        </tr>
+      </table>
+    </fieldset>
+    <hr />
+  </body>
+</html>
