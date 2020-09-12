@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미디어 쿼리</title>
+  </head>
+  <style>
+    @media all and (divice-aspect-ratio: 16/9) {
+    }
+    @media all and (min-divice-aspect-ratio: 16/9) {
+    }
+    @media all and (max-divice-aspect-ratio: 16/9) {
+    }
+    /*컬러를 지원하면 실행*/
+    @media all and (color) {
+    }
+    /*컬러를 지원하지 않으면 실행*/
+    @media all and (color: 0) {
+    }
+    /*8비트 색상이라면 실행*/
+    @media all and (color: 3) {
+    }
+    /*8비트 이하 색상이라면 실행*/
+    @media all and (min-color: 3) {
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>미디어 쿼리</h1>
+      <h2>미디어 쿼리 조건</h2>
+      <h3>화면 비율</h3>
+      <h4>단말기 브라우저 화면의 너비 값을 높이 값으로 나눈 것</h4>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>속성</th>
+            <th>설명</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>aspect-ratio</td>
+            <td>화면 비율(width 값/ height 값)</td>
+          </tr>
+          <tr>
+            <td>min-aspect-ratio</td>
+            <td>최소 화면 비율</td>
+          </tr>
+          <tr>
+            <td>max-aspect-ratio</td>
+            <td>최대 화면 비율</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <h3>단말기 화면 비율</h3>
+      <h4>단말기 너비 값을 높이 값으로 나눈 것</h4>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>속성</th>
+            <th>설명</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>device-aspect-ratio</td>
+            <td>단말기 화면 비율(width 값/ height 값)</td>
+          </tr>
+          <tr>
+            <td>min-device-aspect-ratio</td>
+            <td>단말기 최소 화면 비율</td>
+          </tr>
+          <tr>
+            <td>max-device-aspect-ratio</td>
+            <td>단말기 최대 화면 비율</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <h3>색상당 비트 수</h3>
+      <h4>단말기의 최대 색상 비트 수를 조건으로 사용</h4>
+      <ul>
+        <li>color: 1 -> 2x1 = 2</li>
+        <li>color: 2 -> 2x1 = 4</li>
+        <li>color: 3 -> 2x3 = 8</li>
+      </ul>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>속성 값</th>
+            <th>설명</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>color</td>
+            <td>비트 수</td>
+          </tr>
+          <tr>
+            <td>min-color</td>
+            <td>최소 비트 수</td>
+          </tr>
+          <tr>
+            <td>max-color</td>
+            <td>최대 비트 수</td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+  </body>
+</html>
