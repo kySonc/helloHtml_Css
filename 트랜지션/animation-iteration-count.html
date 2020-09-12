@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>트랜지션</title>
+  </head>
+  <style>
+    .box {
+      margin-top: 50px;
+      margin-left: 100px;
+      padding: 20px;
+      height: 60px;
+      animation-name: moving;
+      animation-duration: 3s;
+      animation-direction: normal;
+      animation-iteration-count: infinite;
+    }
+    @keyframes moving {
+      from {
+        width: 200px;
+        background: #faef7c;
+        opacity: 0.5;
+        transform: scale(0.5) rotate(15deg);
+      }
+      to {
+        width: 400px;
+        background: #ff9400;
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+      }
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>트랜지션</h1>
+      <h2>animation-iteration-count 속성</h2>
+      <ul>
+        <li>애니메이션 반복 횟수 지정하기</li>
+      </ul>
+      <h2>기본형 animation-iteration-count: <숫자> | infinite</h2>
+      <table border="1">
+        <tr>
+          <th>속성 값</th>
+          <th>설명</th>
+        </tr>
+        <tr>
+          <td><숫자></td>
+          <td>입력산 숫자만큼 반복합나디. 기본값 1</td>
+        </tr>
+        <tr>
+          <td>infinite</td>
+          <td>무한반복합니다.</td>
+        </tr>
+      </table>
+    </fieldset>
+    <hr />
+    <div class="box">
+      <h3>CSS3 Animation</h3>
+    </div>
+  </body>
+</html>
