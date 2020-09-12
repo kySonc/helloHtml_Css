@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가변 요소</title>
+  </head>
+  <style></style>
+  <body>
+    <fieldset>
+      <h1>가변 요소</h1>
+      <h2>가변 이미지</h2>
+      <h2>picture 태그와 source 태그</h2>
+      <ul>
+        <li>화면 해상도뿐만 아니라 화면 너비에 따라 다른 이미지 파일 표시</li>
+      </ul>
+      <table border="1">
+        <tr>
+          <th>속성</th>
+          <th>설명</th>
+        </tr>
+        <tr>
+          <td>srcset</td>
+          <td>이미지 파일의 경로</td>
+        </tr>
+        <tr>
+          <td>media</td>
+          <td>srcset에 지정한 이미지를 표시하기 위한 조건</td>
+        </tr>
+        <tr>
+          <td>type</td>
+          <td>파일 유형</td>
+        </tr>
+        <tr>
+          <td>sizes</td>
+          <td>파일의 크기</td>
+        </tr>
+      </table>
+    </fieldset>
+    <hr />
+    <picture>
+      <source srcset="../images/j1007.jpg" media="(min-width:1024px)" />
+      <source srcset="../images/j1007.jpg" media="(min-width:768px)" />
+      <source srcset="../images/j1007.jpg" media="(min-width:320px)" />
+      <img src="../images/j1007.jpg" alt="car" style="width: 100%" />
+    </picture>
+  </body>
+</html>
