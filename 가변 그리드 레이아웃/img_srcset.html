@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가변 요소</title>
+  </head>
+  <style>
+    img {
+      max-width: 100%;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>가변 요소</h1>
+      <h2>가변 이미지</h2>
+      <h2>img 태그와 srcset 속성</h2>
+      <ul>
+        <li>
+          화면 너비 값이나 픽셀 밀도에 따라 고해상도의 이미지 파일 지정 가능
+        </li>
+        <h3>
+          < img src="<이미지>" srcset="<이미지1>[,<이미지2>, <이미지3>,...]" >
+        </h3>
+        <li>
+          예) < img src="../images/j1000.jpg" srcset="../images/j1000-hd.jpg 2x"
+          alt="자동차" >
+        </li>
+      </ul>
+    </fieldset>
+    <hr />
+    <img src="../images/j1000.jpg" alt="" />
+  </body>
+</html>
