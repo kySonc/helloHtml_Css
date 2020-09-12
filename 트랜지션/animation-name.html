@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>트랜지션</title>
+  </head>
+  <style>
+    #box1 {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background-color: #4cff00;
+      border: 1px solid black;
+      animation-name: shape;
+      animation-duration: 3s;
+    }
+    #box2 {
+      float: left;
+      width: 100px;
+      height: 100px;
+      background-color: #8f06b0;
+      border: 1px solid black;
+      animation-name: rotate;
+      animation-duration: 3s;
+    }
+    @keyframes shape {
+      from {
+        border: 1px solid black;
+      }
+      to {
+        border: 1px solid back;
+        border-radius: 50%;
+      }
+    }
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(45deg);
+      }
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>트랜지션</h1>
+      <h2>animation-name 속성</h2>
+      <ul>
+        <li>@keyframes 속성에서 만든 애니메이션 이름을 사용</li>
+        <li>@keyframes을 이용해 shape와 rotate라는 애니메이션 정의</li>
+        <li>#box1에는 animation-name:shape를,</li>
+        <li>#box2에는 anination-name:rotate를 사용해 애니메이션 실행</li>
+      </ul>
+    </fieldset>
+    <hr />
+    <div id="box1"></div>
+    <div id="box2"></div>
+  </body>
+</html>
