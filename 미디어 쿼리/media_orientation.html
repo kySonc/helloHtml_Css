@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미디어 쿼리</title>
+  </head>
+  <style>
+    body {
+      background-color: #eee;
+    }
+    @media screen and (orientation: landscape) {
+      body {
+        background-color: orange;
+      }
+    }
+    @media screen and (orientation: portrait) {
+      body {
+        background-color: yellow;
+      }
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>미디어 쿼리</h1>
+      <h2>미디어 쿼리 조건</h2>
+      <h3>단말기의 가로 너비와 세로 높이</h3>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>단말기의 가로, 세로 값을 설정하는 속성</th>
+            <th>설명</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>device-width, device-height</td>
+            <td>단말기의 가로 너비, 세로 높이</td>
+          </tr>
+          <tr>
+            <td>min-device-width, min-device-height</td>
+            <td>단말기의 최소 너비, 최소 높이</td>
+          </tr>
+          <tr>
+            <td>max-device-width, max-device-height</td>
+            <td>단말기의 최대 너비, 최대 높이</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>
+        단말기 크기와 뷰포트 크기를 하나로 통일해 사용하기 위해 뷰포트를 지정할
+        때 width="device-width"로 놓고 사용
+      </h3>
+      <hr />
+      <h3>화면 회전</h3>
+      <h4>orientation 속성을 사용해서 화면 방향 체크</h4>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>단말기의 가로, 세로 값을 설정하는 속성</th>
+            <th>설명</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>orientation: portrait</td>
+            <td>단말기 세로 방향</td>
+          </tr>
+          <tr>
+            <td>orientation: landscape</td>
+            <td>단말기 가로 방향</td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+  </body>
+</html>
