@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>플렉서블 박스 레이아웃</title>
+  </head>
+  <style>
+    .wrapper {
+      display: -webkit-box; /*IOS 6 이하, 사파리 3.1*/
+      display: -moz-box; /*파이어폭스 19이하*/
+      display: -ms-flexbox; /*IE 10*/
+      display: -webkit-flex; /*웹킷 구 버전*/
+      display: flex; /*표준 스펙*/
+      width: auto;
+      height: 200px;
+      border: 1px solid blueviolet;
+      /*align-items: baseline;*/
+      align-items: center;
+    }
+    .wrapper div {
+      border: 1px solid red;
+      background: #ccc;
+      width: 50px;
+    }
+    #sf {
+      align-self: flex-start;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>플렉서블 박스 레이아웃 기본 속성</h1>
+      <h2>플렉스 항목 배치를 위한 속성</h2>
+      <h3>align-items 속성, align-self 속성</h3>
+      <h4>교차축을 기준으로 하느 배치 방법 조절</h4>
+      <h4>
+        기본형 align-items : stretch | flex-start | flex-end | center | baseline
+      </h4>
+      <h4>
+        기본형 align-self : auto | stretch | flex-start | flex-end | center |
+        baseline
+      </h4>
+      <table border="1">
+        <tr>
+          <th>속성 값</th>
+          <th>설명</th>
+        </tr>
+        <tr>
+          <td>stretch</td>
+          <td>플렉스 항목을 확장해 교차축을 꽉 채운다. 기본 값</td>
+        </tr>
+        <tr>
+          <td>flex-start</td>
+          <td>교차축의 시작점을 기준으로 배치</td>
+        </tr>
+        <tr>
+          <td>flex-end</td>
+          <td>교차축의 끝점을 기준으로 배치</td>
+        </tr>
+        <tr>
+          <td>center</td>
+          <td>교차축의 중앙을 기준으로 배치</td>
+        </tr>
+        <tr>
+          <td>baseline</td>
+          <td>
+            시작점과 글자 기준선이 가장 먼 플렉스 항목(미리보기에서는 2번 항목의
+            글자 크기가 가장 크기 때문에 글자 기준선이 가장 멀리 떨어져 있음)을
+            시작점에 배치. 그리고 그 글자의 기준선과 다른 항목의 기준선을 맞추어
+            배치
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+    <hr />
+    <div class="wrapper">
+      <div><h1>1</h1></div>
+      <div><h2>2</h2></div>
+      <div><h3>3</h3></div>
+      <div id="sf"><h4>4</h4></div>
+    </div>
+  </body>
+</html>
