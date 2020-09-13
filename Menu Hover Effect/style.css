@@ -1,0 +1,27 @@
+body {
+  background: #000;
+}
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 67%;
+  transform: translate(-50%, -50%); /* 화면 중앙 정렬*/
+}
+.wrapper a {
+  padding: 10px 20px;
+  display: inlin-block;
+  color: #00d9e4;
+  text-decoration: none;
+  margin: 15px;
+  font-family: poppins;
+  text-transform: uppercase; /*모든 글자 대문자로 바꿈 */
+  transition: 0.5s; /*자연스러운 변형*/
+  letter-spacing: 5px; /*글자 사이의 간격*/
+}
+.wrapper a:hover {
+  color: #fff;
+  background: #00d9e4; /* 가로 거리 , 세로 거리, 번짐 정도, 색상 */
+  box-shadow: 0 0 5px #00d9e4, 0 0 5px #00d9e4, 0 0 25px #00d9e4,
+    0 0 100px #00d9e4;
+}
