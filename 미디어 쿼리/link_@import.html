@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미디어 쿼리 사용한 사이트 구성</title>
+  </head>
+  <style>
+    /*스마트폰 세로*/
+    @media only screeen and (min-width: 320px) {
+    }
+    /*스마트폰 가로*/
+    @media only screeen and (min-width: 480px) {
+    }
+    /*태블릿 세로*/
+    @media only screeen and (min-width: 768px) {
+    }
+    /*태블릿 가로 / 데스크톱*/
+    @media only screeen and (min-width: 1024px) {
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>미디어 쿼리 사용한 사이트 구성</h1>
+      <h2>외부 CSS 파일 연결</h2>
+      <h4>특정 조건에 맞을 경우, 지정한 css 파일을 가져와 적용</h4>
+      <h3>< link >태그 사용하기</h3>
+      <h4>< head > 와 < /head > 사이에 삽입</h4>
+      <ul>
+        <li>
+          기본형 < link rel="stylesheet" media="미디어 쿼리 조건" href="css 파일
+          경로" >
+        </li>
+        <li>
+          예) 화면 너비가 768px 이하일 때 미리 만들어 놓은 태블릿용 스타일 시트
+          파일을 적용하려면
+        </li>
+        <li>
+          < link rel="stylesheet" media="screen and (max-width:768px)"
+          href="css/tablet.css">
+        </li>
+      </ul>
+      <hr />
+      <h3>@import 구문 사용하기</h3>
+      <h4>< style > 와 < /style > 사이에 삽입</h4>
+      <ul>
+        <li>기본형 @import url(css파일 경로) 미디어 쿼리 조건</li>
+        <li>
+          예) 화면 너비가 321px 이상 768px 이하일 때 미리 만들어 놓은 태블릿용
+          스타일 시트 파일을 적용하려면
+        </li>
+        <li>
+          @import url("css/tablet.css") only screen and (min-width"321px) and
+          (max-width:768px);
+        </li>
+      </ul>
+    </fieldset>
+  </body>
+</html>
