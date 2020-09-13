@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>플렉서블 박스 레이아웃</title>
+  </head>
+  <style>
+    .wrapper {
+      display: -webkit-box; /*IOS 6 이하, 사파리 3.1*/
+      display: -moz-box; /*파이어폭스 19이하*/
+      display: -ms-flexbox; /*IE 10*/
+      display: -webkit-flex; /*웹킷 구 버전*/
+      display: flex; /*표준 스펙*/
+    }
+    .wrapper div {
+      width: 200px;
+      border: 1px solid red;
+      background: #ccc;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>플렉서블 박스 레이아웃</h1>
+      <h2>display 속성</h2>
+      <h3>배치 요소들을 감싸는 부모 요소를 플렉스 컨테이너로 지정</h3>
+      <h4>기본형 display:flex | inline flex</h4>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>속성 값</th>
+            <th>설명</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>flex</td>
+            <td>플렉스 박스를 박스 레벨 요소로 정의합니다.</td>
+          </tr>
+          <tr>
+            <td>inline-flex</td>
+            <td>플렉스 박스를 인라인 레벨 요소로 정의합니다.</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      <h2>display 속성과 브라우저 접두사</h2>
+      <ul>
+        <li>
+          최신 모던 브라우저에서는 모두 지원되고 대부분의 구식 버전에서도 지원됨
+        </li>
+        <li>
+          하지만, 브라우저마다 플렉스 박스를 지원하는 방벙이 달라 브라우저
+          접두사를 붙여야 함
+        </li>
+      </ul>
+    </fieldset>
+    <div class="wrapper">
+      <div>1</div>
+      <div>2</div>
+    </div>
+  </body>
+</html>
