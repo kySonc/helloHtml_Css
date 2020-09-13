@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미디어 쿼리 사용한 사이트 구성</title>
+    <style media="screen and (max-width:1020px)">
+      body {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <style>
+    @media screen and (max-width: 768px) {
+      body {
+        background-color: blue;
+      }
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>미디어 쿼리 사용한 사이트 구성</h1>
+      <h2>웹 문서에서 직접 정의하기</h2>
+      <h3>style 태그 안에 media 속성 사용</h3>
+      <h4>기본형 style media="미디어 쿼리 조건" > 스타일 규칙들 /style</h4>
+      <ul>
+        <li>예) 최대 너비가 320px일 때 즉 너비가 320px 이하인 경우</li>
+        <li>
+          style media="screen and (max-width:320px)">{ body{
+          background-color:orange; } } /style
+        </li>
+      </ul>
+      <hr />
+      <h3>style 태그 안에 @import 구문 사용하기</h3>
+      <h4>style > @import 미디어 쿼리 조건{ 스타일 규칙들 } /style</h4>
+      <ul>
+        <li>
+          예) 화면 너비가 768px 이하일 때 배경 색을 주황색으로 바꾸는 미디어
+          쿼리
+        </li>
+        <li>
+          style > @media screen and (max-width:768px) { body { background-color:
+          orange; } } /style
+        </li>
+      </ul>
+    </fieldset>
+  </body>
+</html>
