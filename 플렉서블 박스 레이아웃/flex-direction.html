@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>플렉서블 박스 레이아웃</title>
+  </head>
+  <style>
+    .wrapper {
+      display: -webkit-box; /*IOS 6 이하, 사파리 3.1*/
+      display: -moz-box; /*파이어폭스 19이하*/
+      display: -ms-flexbox; /*IE 10*/
+      display: -webkit-flex; /*웹킷 구 버전*/
+      display: flex; /*표준 스펙*/
+      flex-direction:column;
+    }
+    .wrapper div {
+      width: 200px;
+      border: 1px solid red;
+      background: #ccc;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>플렉서블 박스 레이아웃</h1>
+      <h2>flex-direction 속성</h2>
+      <h3>플렉스 항목 배치 방향 지정</h3>
+      <h4>기본형 flex-direction: row | row-inverse | column-inverse</h4>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>속성 값</th>
+            <th>설명</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>row</td>
+            <td>
+              주축을 가로로 교차축을 세로로 지정합니다. 플렉스 항목은 주축
+              시작점에서 끝점으로 (왼쪽에서 오른쪽으로) 배치됩니다.
+            </td>
+          </tr>
+          <tr>
+            <td>row-inverse</td>
+            <td>
+              주축을 가로로 교차축을 세로로 지정합니다. 플렉스 항목은 주축
+              끝점에서 시작점으로 ( 오른쪽에서 왼쪽으로) 배치됩니다.
+            </td>
+          </tr>
+          <tr>
+            <td>column</td>
+            <td>
+              주축을 세로로 교차축을 가로로 지정합니다.플렉스 항목은 주축
+              시작점에서 끝점으로(위쪽에서 아래쪽으로)배치됩니다.
+            </td>
+          </tr>
+          <tr>
+            <td>column-inverse</td>
+            <td>
+              주축을 세로로 교차축을 가로로 지정합니다.플렉스 항목은 주축
+              끝점에서 시작점으로(아래쪽에서 위쪽으로)배치됩니다.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      
+    <div class="wrapper">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </body>
+</html>
