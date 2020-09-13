@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>플렉서블 박스 레이아웃</title>
+  </head>
+  <style>
+    .wrapper {
+      display: -webkit-box; /*IOS 6 이하, 사파리 3.1*/
+      display: -moz-box; /*파이어폭스 19이하*/
+      display: -ms-flexbox; /*IE 10*/
+      display: -webkit-flex; /*웹킷 구 버전*/
+      display: flex; /*표준 스펙*/
+      flex-wrap:wrap-reverse;
+    }
+    .wrapper div {
+      width: 500px;
+      border: 1px solid red;
+      background: #ccc;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>플렉서블 박스 레이아웃 기본 속성</h1>
+      <h2>flex-wrap 속성</h2>
+      <h3>플렉스 항목을 한 줄 또는 여러 줄로 배치</h3>
+      <h4>기본형 flex-wrap : no-wrap | wrap | wrap-reverse</h4>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>속성 값</th>
+            <th>설명</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>no-wrap</td>
+            <td>플렉스 항목들을 한 줄에 표시합니다. 기본 값
+            </td>
+          </tr>
+          <tr>
+            <td>wrap</td>
+            <td>플렉스 항목을 여러 줄에 표시합니다.</td>
+          </tr>
+          <tr>
+            <td>wrap-reverse</td>
+            <td>플렉스 항목을 여러 줄에 표시하되 기존 방향과 반대로 배치합니다.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr />
+      
+    <div class="wrapper">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </body>
+</html>
