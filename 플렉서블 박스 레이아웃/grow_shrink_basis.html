@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>플렉서블 박스 레이아웃</title>
+  </head>
+  <style>
+    .wrapper {
+      display: -webkit-box; /*IOS 6 이하, 사파리 3.1*/
+      display: -moz-box; /*파이어폭스 19이하*/
+      display: -ms-flexbox; /*IE 10*/
+      display: -webkit-flex; /*웹킷 구 버전*/
+      display: flex; /*표준 스펙*/
+      flex-flow: row wrap-reverse;
+    }
+    .wrapper div {
+      width: 460px;
+      border: 1px solid red;
+      background: #ccc;
+    }
+    #box1 {
+      order: 2;
+    }
+    #box2 {
+      order: 4;
+      flex: 1 1 0;
+    }
+    #box3 {
+      order: 1;
+    }
+    #box4 {
+      order: 3;
+      flex: 2 2 0; /* 2배 늘이거나 2배 줄임 */
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>플렉서블 박스 레이아웃 기본 속성</h1>
+      <h2>flex 속성</h2>
+      <ul>
+        <li>플렉스항목의 크기 조절</li>
+        <li>
+          flex-grow와 flex-shrink, flex-basis 속성은 별개의 속성이지만 따로 쓰지
+          않고 flex 속성으로 묶어 사용.
+        </li>
+      </ul>
+      <h3>
+        기본형 flex : [ flex-grow flex-shrink flex-basis ] | auto | inital
+      </h3>
+      <table border="1">
+        <tr>
+          <th>속성 값</th>
+          <th>설명</th>
+        </tr>
+        <tr>
+          <td>flex-grow</td>
+          <td>플렉스 항목의 너비를 얼마나 늘일지 숫자로 지정</td>
+        </tr>
+        <tr>
+          <td>flex-shrink</td>
+          <td>플렉스 항목의 너비를 얼마나 줄일지 숫자로 지정</td>
+        </tr>
+        <tr>
+          <td>flex-basis</td>
+          <td>
+            플렉스 항목의 기본 크기를 지정. width 속성처럼 너비 값을 지정할 수도
+            있고 0이나 auto를 지정할 수도 있다. 0일 경우, flex-grow와
+            flex-shrink의 인수 값을 함께 사용하고 auto일 경우, 플렉스 항목의
+            너비 값을 사용한다
+          </td>
+        </tr>
+        <tr>
+          <td>inital</td>
+          <td>
+            항목의 width / height 값에 의해 크기가 결정되는 데 플렉스 컨테이너의
+            공간이 부족할 경우, 최소 크기까지 줄입니다.
+          </td>
+        </tr>
+        <tr>
+          <td>auto</td>
+          <td>
+            항목의 width / height 값에 의해 크기가 결정되지만 플렉스 컨테이너의
+            공간에 따라 늘이거나 줄인다
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+    <hr />
+    <div class="wrapper">
+      <div id="box1"><h1>1</h1></div>
+      <div id="box2"><h1>2</h1></div>
+      <div id="box3"><h1>3</h1></div>
+      <div id="box4"><h1>4</h1></div>
+    </div>
+  </body>
+</html>
