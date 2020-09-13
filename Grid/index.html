@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Gride</title>
+    <style>
+      .wrapper {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        /*
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        */
+
+        grid-gap: 1em;
+      }
+
+      .wrapper > div {
+        background: #eee;
+        padding: 1em;
+      }
+      .wrapper > div:nth-child(odd) {
+        /*홀수번째만 스타일 적용*/
+        background: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, harum
+        assumenda? Maiores architecto quas ex sed, ab, sunt dolorum laboriosam
+        est quisquam iure omnis reprehenderit asperiores numquam magni velit
+        obcaecati beatae quos laborum necessitatibus repudiandae minima at
+        neque. Voluptate iste quisquam, deleniti ea repellendus eaque qui ullam.
+        Minima, provident rerum voluptatem sed totam commodi nulla praesentium
+        amet nesciunt id dignissimos quibusdam qui, cum, eaque vitae
+        omnis.Voluptatum quis provident distinctio quaerat? Voluptatem ducimus
+        consequuntur blanditiis vel iste aperiam odio. Odit.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem,
+        ut, commodi eum maxime ducimus sequi, fugit quae perspiciatis natus
+        possimus quisquam! liquam hic cumque qui odit perspiciatis nemo
+        recusandae aut!
+      </div>
+
+      <div>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, harum
+        assumenda? Maiores architecto quas ex sed, ab, sunt dolorum laboriosam
+        est quisquam iure omnis reprehenderit asperiores numquam magni velit
+        obcaecati beatae quos laborum necessitatibus repudiandae minima at
+        neque. Voluptate iste quisquam, deleniti ea repellendus eaque qui ullam.
+        Minima, provident rerum voluptatem sed totam commodi nulla praesentium
+        amet nesciunt id dignissimos quibusdam qui, cum, eaque vitae
+        omnis.Voluptatum quis provident distinctio quaerat? Voluptatem ducimus
+        consequuntur blanditiis vel iste aperiam odio. Odit.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem,
+        ut, commodi eum maxime ducimus sequi, fugit quae perspiciatis natus
+        possimus quisquam! liquam hic cumque qui odit perspiciatis nemo
+        recusandae aut!
+      </div>
+    </div>
+  </body>
+</html>
