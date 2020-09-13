@@ -51,5 +51,5 @@ body {
   /*grid-column-start: 1;
   grid-column-end: 3;*/
   /*grid-column: 1 / span 2; /*1번째 컬럼라인 에서 컬럼라인 2번 이동 - 위에 두줄과 같다 */
-  grid-column: 1 / span 12; /*1번째 컬럼라인 에서 컬럼라인 2번 이동 - 위에 두줄과 같다 */
+  grid-column: 1 / span 12;
 }
