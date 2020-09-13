@@ -1,0 +1,62 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2em;
+}
+.container div:nth-child(1) {
+  background: #96ce64;
+}
+.container div:nth-child(2) {
+  background: #00ce64;
+}
+.container div:nth-child(3) {
+  background: #ffce64;
+}
+.container div:nth-child(4) {
+  background: #291e6f;
+}
+.container div:nth-child(5) {
+  background: #ff2e6f;
+}
+.container div:nth-child(6) {
+  background: #ff66ef;
+}
+.container div:nth-child(7) {
+  background: #ad6ef7;
+}
+.container div:nth-child(8) {
+  background: #dfd11d;
+}
+.container div:nth-child(9) {
+  background: #9aa119;
+}
+.container div:nth-child(10) {
+  background: #9afeff;
+}
+.container div:nth-child(11) {
+  background: #1daeee;
+}
+.container div:nth-child(12) {
+  background: #111eee;
+}
+
+.container {
+  display: grid;
+  grid-gap: 5px;
+
+  /*컬럼 너비 100px을 자동 채우기, 자동 행변환, 반응형일 때 빈공간이 생김*/
+  /*grid-template-columns: repeat(auto-fit, 100px);*/
+
+  /*grid-template-columns: repeat(auto-fit, 1fr); /* 1fr으로 채우다 */
+
+  /*minmax : 최소값은 100px, 최대값은 1fr*/
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+  grid-template-rows: repeat(2, 100px);
+}
