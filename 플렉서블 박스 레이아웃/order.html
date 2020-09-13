@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>플렉서블 박스 레이아웃</title>
+  </head>
+  <style>
+    .wrapper {
+      display: -webkit-box; /*IOS 6 이하, 사파리 3.1*/
+      display: -moz-box; /*파이어폭스 19이하*/
+      display: -ms-flexbox; /*IE 10*/
+      display: -webkit-flex; /*웹킷 구 버전*/
+      display: flex; /*표준 스펙*/
+      flex-flow: row wrap-reverse;
+    }
+    .wrapper div {
+      width: 460px;
+      border: 1px solid red;
+      background: #ccc;
+    }
+    #box1 {
+      order: 2;
+    }
+    #box2 {
+      order: 4;
+    }
+    #box3 {
+      order: 1;
+    }
+    #box4 {
+      order: 3;
+    }
+  </style>
+  <body>
+    <fieldset>
+      <h1>플렉서블 박스 레이아웃 기본 속성</h1>
+      <h2>order 속성</h2>
+      <ul>
+        <li>플렉스 항목의 배치 순서 바꾸기</li>
+        <li>order 값에 지정된 순서에 따라 배치됨</li>
+      </ul>
+    </fieldset>
+    <hr />
+    <div class="wrapper">
+      <div id="box1"><h1>1</h1></div>
+      <div id="box2"><h1>2</h1></div>
+      <div id="box3"><h1>3</h1></div>
+      <div id="box4"><h1>4</h1></div>
+    </div>
+  </body>
+</html>
