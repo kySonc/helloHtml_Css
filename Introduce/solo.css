@@ -1,0 +1,95 @@
+/* Reset */
+body,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: inherit; /* 부모요소로 부터 상속 받겠다 */
+  margin: 0;
+}
+
+:root {
+  font-family: "arial";
+  line-height: 1.5; /* 한 줄의 높이 */
+}
+/* Design */
+body {
+  background-color: #efefef;
+}
+
+.container {
+  background-color: purple;
+  color: white;
+  max-width: 960px; /* 반응형 최대너비 960px보다 커질 수는 없지만 작아질 수 있다.*/
+  margin: 100px auto; /* 상하단 margin:100px /margin을 이용해 가운데 정렬 */
+  /*display: flex; /*flex로 지정하게 되면 기본적으로 가로 배치가 된다 / 컨텐츠의 height가 전체 높이 만큼 증가*/
+  /*align-items: center; /*flex를 이용한 item 세로 정렬 */
+
+  /* table의 기본적인 세로 가운데 정렬을 이용한 배치 */
+  display: table;
+}
+
+.cover {
+  /*background-color: orange;*/
+  width: 60%; /* 부모요소의 너비의 60% */
+  /*float: left; /* 가로 배치 */
+  display: table-cell; /*table를 이용한 세로 가운데 정렬 */
+}
+
+.cover-photo {
+  width: 100%; /*부모요소의 너비의 100% */
+  vertical-align: top; /* 이미지 아래의 알수 없는 공간 없애기 */
+}
+
+.contents {
+  /*background-color: orangered;*/
+  width: 40%; /* 부모요소의 너비의 40% */
+  /*float: left; /* 가로 배치 */
+  text-align: center; /* 블록요소 안에 있는 inline 가로 가운데 정렬 */
+  display: table-cell; /*table를 이용한 세로 가운데 정렬 */
+  vertical-align: middle; /*세로 가운데 정렬 vertical-align을 쓰기 위한 table태그 사용 */
+  padding: 0 40px;
+}
+
+.contents span,
+.contents p {
+  opacity: 0.5; /*글자 투명도*/
+}
+
+.contents h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: bold; /*폰트 굵게*/
+}
+
+@media (max-width: 720px) {
+  .container {
+    margin: 0; /* 상단 빈공간 없애기 */
+    position: relative;
+  }
+  .container,
+  .cover,
+  .contents {
+    display: block; /* 다시 한줄을 쓰는 블럭으로 바꿔준다 */
+    width: auto; /* 60% 40% width를 기본값으로 바꿔준다 */
+  }
+  .contents {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: inherit; /*부모요소에게 상속 받는다*/
+    max-width: 200px;
+    margin: 10px;
+    padding: 10px;
+    text-align: right;
+  }
+  .contents p {
+    font-size: 10px;
+  }
+}
