@@ -1,0 +1,19 @@
+main {
+  background: #f2f4f7;
+}
+.main-container {
+  width: 1080px; /*사용 너비*/
+  margin: auto; /*좌우 마진 auto 가운데 정렬*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 균일한 크기로 3등분 */
+
+  /* 40px로 24등분 -><main> 영역의 전체 height가 계산된다면 height 지정 후 1frfh 사용*/
+  grid-template-rows: repeat(24, 40px);
+  gap: 10px;
+}
+.temp-box {
+  background: skyblue;
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid red;
+}
