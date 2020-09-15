@@ -1,0 +1,31 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  justify-content: center; /*container 안 item 가로 가운데 정렬*/
+}
+.contents {
+  height: 100vh;
+  display: grid;
+  background: #ff7d7d;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  width: 1194px;
+  grid-gap: 30px;
+  /*margin: 0 auto; /*전체 container안에서 가운데 정렬*/
+  /*align-items: center; /*text 너비로 변경 후 세로 정렬*/
+  /*justify-items: center; /*text 너비로 변경 후 가로 가운데정렬*/
+  text-align: center; /*item 너비상태로 text 가로 가운데 정렬*/
+}
+.contents > div {
+  border: 1px solid blueviolet;
+  background-color: yellow;
+  line-height: 92px; /*수직 가운데 정렬 */
+  /*align-self: center; /*text 너비로 변경 후 세로 정렬*/
+  /*justify-self: center; /*text 너비로 변경 후 가로 정렬*/
+}
