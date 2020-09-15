@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  height: 100vh;
+  border: 1px solid blue;
+}
+.contents {
+  display: grid;
+  border: 1px solid red;
+  height: 100vh;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  text-align: center;
+  width: 1194px;
+  grid-gap: 30px;
+  margin: 0 auto;
+}
