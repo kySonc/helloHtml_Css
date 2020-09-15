@@ -1,0 +1,132 @@
+@keyframes fly {
+  0% {
+    transform: translateY(5%); /* 5% y축으로 내리고*/
+  }
+  100% {
+    transform: rotate(13deg) translateY(-100%); /* 50% y축으로 올린다*/
+  }
+}
+
+body,
+h2,
+p {
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+body {
+  background-color: #000;
+  color: #999;
+  font-family: "arial";
+  line-height: 1.4; /*줄 간격*/
+}
+.cover {
+  /*전체가 클릭될 수 있게 만든다*/
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  /*background-color: red;*/
+  display: flex; /* 이미지 가운데 정렬을 하기 위한 flex 이미지가 위 아래로 늘어난다*/
+  justify-content: center; /* 가운데 정렬 */
+  align-items: center; /*세로 가운데 정렬 늘어난 이미지를 원상태로 바꾼다*/
+}
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed; /* 떠 있게 한다*/
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.4s;
+  display: flex; /*window 정렬*/
+  justify-content: center;
+  align-items: center;
+}
+/*해시정보가 해당 요소의 아이디와 일치할 때*/
+.modal:target {
+  /*background-color: blue;*/
+  opacity: 1;
+  pointer-events: auto; /*원상 복귀*/
+  -webkit-backdrop-filter: blur(4px); /*불러 처리 (뿌여짐)*/
+  backdrop-filter: blur(2px); /*불러 처리 (이미지 뿌여짐)*/
+}
+.modal:target .window {
+  /*target이 됬을 때 하위에 있는 window*/
+  transform: translateY(0%);
+  opacity: 1;
+}
+.window {
+  transition: all 2s;
+  background-color: #222;
+  flex-basis: 820px; /*window 너비*/
+  display: flex; /* 가로배치 */
+  /*transform: translateY(-50%); 모달 창이 위로 올라감*/
+  transform: translateY(-150%);
+  opacity: 0;
+}
+.window-contents {
+  /*contents의 비중을 넓게 차지하기 위해 flex-grow*/
+  flex-grow: 1;
+  padding: 32px;
+}
+.window-contents h2 {
+  color: crimson;
+  margin-bottom: 16px;
+  /*border-left: 10px solid; /*왼쪽 보더 라인*/
+  position: relative;
+}
+.window-contents h2:before {
+  /*왼쪽 보더 라인 만들기*/
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0.4em;
+  background-color: currentColor;
+  margin-left: -32px;
+}
+.window-contents p + p {
+  margin-top: 1em;
+}
+.window-sidebar {
+  background-color: #191919;
+  padding: 32px;
+}
+
+.window-sidebar-cover {
+  max-width: 200px;
+  margin-bottom: 0px;
+  animation-name: fly; /* 애니메이션 keyfarmes이름 */
+  animation-duration: 0.5s; /*지속시간*/
+  animation-iteration-count: infinite; /*몇번 실행*/
+  animation-direction: alternate; /*애니메이션 방향 0%~100%->100%~0% */
+}
+.window-sidebar-bottom {
+  line-height: 50px;
+}
+.button {
+  background-color: dodgerblue;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 8px 0;
+  border: 1px solid dodgerblue;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.2em; /*자간*/
+  text-indent: 0.2em; /*들여쓰기*/
+}
+.button.line {
+  background-color: transparent; /*투명처리*/
+  color: dodgerblue;
+}
+.button + .button {
+  margin-top: 20px;
+}
