@@ -1,0 +1,26 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  height: 100vh;
+  border: 1px solid blue;
+}
+.contents {
+  display: grid;
+  border: 1px solid red;
+  height: 100vh;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  width: 1194px;
+  grid-gap: 30px;
+  margin: 0 auto;
+  text-align: center; /*가로 정렬*/
+  align-items: center; /*세로 정렬*/
+}
+.contents > div {
+  display: inline-block;
+  border: 1px solid blueviolet;
+  background-color: yellow;
+}
