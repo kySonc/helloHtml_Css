@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>circle Drawing</title>
+  </head>
+  <body>
+    <canvas width="500" height="500"></canvas>
+    <script>
+      var canvas = document.querySelector("canvas");
+      var ctx = canvas.getContext("2d");
+      ctx.beginPath();
+      //arc() 원을 그리거나 곡선을 그릴 수 있음
+      // x , y : 원을 그리게 될 가운데 위치
+      // radius: 반지름 값 - 100
+      // startAngle : angle 시작 점 0
+      // endAngle : angle 끝나는 점 Math.PI*2
+      // clockwise: 옵션값. 시계 또는 반시계 방향을 결정함()
+      ctx.arc(300, 250, 100, Math.PI * 0, Math.PI * 2);
+      ctx.stroke();
+    </script>
+  </body>
+</html>
