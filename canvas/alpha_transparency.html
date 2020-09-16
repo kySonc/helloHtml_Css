@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>투명도</title>
+    <script type="application/javascript">
+      function draw() {
+        var canvas = document.getElementById("canvas");
+        if (canvas.getContext) {
+          var ctx = canvas.getContext("2d");
+
+          ctx.fillStyle = "rgb(200,100,50)";
+          //body 기준 x,y(10,10) 도형 (너비, 높이)
+          ctx.fillRect(10, 10, 50, 50);
+          //색상 투명도
+          ctx.fillStyle = "rgba(100, 200, 200, 0.5)";
+          ctx.fillRect(30, 50, 50, 50);
+        }
+      }
+    </script>
+  </head>
+  <body onload="draw();">
+    <canvas id="canvas" width="150" height="150"></canvas>
+  </body>
+</html>
