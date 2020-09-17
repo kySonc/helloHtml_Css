@@ -30,9 +30,6 @@ body {
   /*align-self: center; /*text 너비로 변경 후 세로 정렬*/
   /*justify-self: center; /*text 너비로 변경 후 가로 정렬*/
 }
-.header {
-  width: ;
-}
 
 .navbar {
   background-color: #3b5998;
