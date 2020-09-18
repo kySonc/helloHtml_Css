@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>arcTo</title>
+  </head>
+  <body>
+    <canvas id="canvas1" width="200" height="150"></canvas>
+    <script>
+      var canvas = document.querySelector("#canvas1");
+      var ctx = canvas.getContext("2d");
+      ctx.beginPath();
+      /*시작점 x :20 , y : 20 */
+      ctx.moveTo(20, 20);
+      /*커브점1 x : 20 , y : 130*/
+      /*커브점2 x : 180 , y : 130*/
+      /*종료점 x : 180 , y : 20*/
+      ctx.bezierCurveTo(20, 130, 180, 130, 180, 20);
+      ctx.stroke();
+    </script>
+  </body>
+</html>
