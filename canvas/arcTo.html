@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>arcTo</title>
+  </head>
+  <body>
+    <canvas id="canvas1" width="200" height="200"></canvas>
+    <script>
+      var canvas = document.querySelector("#canvas1");
+      var ctx = canvas.getContext("2d");
+
+      ctx.beginPath();
+
+      ctx.moveTo(50, 50);
+      /*시작위치 x : 50 시작위치 y : 50  두번째 x : 150 두번째 y : 150 반지름 : 100*/
+      ctx.arcTo(150, 50, 150, 150, 100);
+      ctx.stroke();
+    </script>
+  </body>
+</html>
