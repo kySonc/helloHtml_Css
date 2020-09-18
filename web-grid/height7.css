@@ -1,0 +1,48 @@
+body,
+button {
+  font-family: 맑은 고딕;
+  font-size: 11pt;
+  text-decoration: none;
+}
+
+li {
+  float: left;
+  margin-right: 50px;
+  list-style: none;
+}
+li > div {
+  border: solid 3px blue;
+}
+
+/* 아래 세 줄이 중요한 스타일임 */
+div.aspect_1_1 {
+  width: 80px;
+  height: 80px;
+}
+div.aspect_4_3 {
+  width: 100px;
+  height: 75px;
+  /* 16 : 9 비율
+  width: 170px;
+  height: 84.375px;*/
+}
+div.aspect_4_5 {
+  /*width: 80px;
+  height: 100px;*/
+  /*10:16 비율*/
+  width: 87px;
+  height: 140px;
+}
+
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+.footer {
+  width: 600px;
+  text-align: center;
+  margin-top: 5em;
+}
