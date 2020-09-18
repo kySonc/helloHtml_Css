@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>arcTo</title>
+  </head>
+  <body>
+    <!--paths Data-->
+    <!--속성 : 영문 대, 소문자 -->
+    <!--영문 이니셜은 패스를 그리는 moveTo(), lineTo, closePath, curve 등을 의미 -->
+    <!--M : 절대 좌표, m : 상대좌표-->
+    <!--width	도형의 너비를 설정함.
+        height	도형의 높이를 설정함.
+        stroke	도형의 테두리 색상을 설정함.
+        stroke-width	도형의 테두리 굵기를 설정함.
+        fill	도형을 채울 색상을 설정함.
+        opacity	도형의 투명도를 설정함.-->
+    <svg>
+      <!--절대 좌표 M248.761,92) -->
+      <!--closepath ( Z , z ) 패스 그리기 종료 / 종료가 되면 현재 점에서 시작 점까지 직선을 그린다.-->
+      <!--closepath 명령 뒤에 moveTo 명령이 있을 경우, 이전 패스그리그를 종료한 후 새 패스 그리기 시작 점으로 이동-->
+      <!--closepath 명령은 대소문자 역할이 동일-->
+      <path
+        d="M248.761,92c0,9.801-7.93,17.731-17.71,17.731c-0.319,0-0.617,0-0.935-0.021c-10.035,37.291-51.174,65.206-100.414,65.206 c-49.261,0-90.443-27.979-100.435-65.334c-0.765,0.106-1.531,0.149-2.317,0.149c-9.78,0-17.71-7.93-17.71-17.731 c0-9.78,7.93-17.71,17.71-17.71c0.787,0,1.552,0.042,2.317,0.149C39.238,37.084,80.419,9.083,129.702,9.083c49.24,0,90.379,27.937,100.414,65.228h0.021c0.298-0.021,0.617-0.021,0.914-0.021C240.831,74.29,248.761,82.22,248.761,92z"
+        fill="#f9ef21"
+        stroke="#f9cf01"
+        stroke-width="7"
+        stroke-linejoin="round"
+      />
+    </svg>
+    <!--x	사각형의 왼쪽 위 꼭짓점의 x좌표를 설정함.
+        y	사각형의 왼쪽 위 꼭짓점의 y좌표를 설정함.
+        rx	사각형 모서리 굴곡의 x축 반지름을 설정함.
+        ry	사각형 모서리 굴곡의 y축 반지름을 설정함.-->
+    <h1>svg 요소를 이용한 타원 그리기</h1>
+    <svg width="300" height="300">
+      <ellipse
+        cx="150"
+        cy="100"
+        rx="120"
+        ry="70"
+        stroke="orange"
+        stroke-width="5"
+        fill="yellow"
+      />
+    </svg>
+    <svg>
+      <path
+        d="M10,55 C35,30 80,0 120,55"
+        fill="none"
+        stroke="#333333"
+        stroke-width="3"
+      />
+    </svg>
+    <svg>
+      <path
+        d="M10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80"
+        stroke="#eb6e4c"
+        fill="none"
+        stroke-width="6"
+        stroke-linecap="round"
+      />
+    </svg>
+    <svg>
+      <path
+        d="M20,50 Q60,75 100,50"
+        fill="none"
+        stroke="#b13138"
+        stroke-width="6"
+        stroke-linecap="round"
+      />
+    </svg>
+    <svg>
+      <path
+        d="M10 80 Q 52.5 10, 95 80 T 180 80"
+        stroke="#9389bf"
+        fill="none"
+        stroke-width="6"
+        stroke-linecap="round"
+      />
+    </svg>
+    <svg>
+      <path
+        d="M105,20 a20,20 0 1,1 50,25"
+        fill="none"
+        stroke="#4286f0"
+        stroke-width="8"
+      />
+    </svg>
+    <!--lineTo 명령: 직선, 수평선, 수직선 현재 점에서 새 점으로 직선을 그림-->
+    <!-- L 및 l 명령은 현재 점에서 다음 점까지 직선을 그림. L 절대 좌표 / l 상대 좌표-->
+    <svg width="400" height="400" viewBox="0 0 400 400">
+      <path
+        d="M10,315
+               L110,215
+               A30,50 0 0,1 162.55,162.45
+               L172.55, 152.45
+               A30,50 -45 0,1 215.1,109.9
+               L315,10"
+        stroke="#4286f0"
+        fill="#4286f0"
+        stroke-width="4"
+        stroke-linecap="round"
+        fill-opacity="0.2"
+      />
+    </svg>
+    <!-- H 및 h 명령은 현재 점에서 수평선을 그림. H 절대좌표 / h 상대좌표-->
+    <!-- V 및 v 명령은 현재 점에서 수직선을 그림. V 절대좌표 / v 상대좌표 -->
+  </body>
+</html>
