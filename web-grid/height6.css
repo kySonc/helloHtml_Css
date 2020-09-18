@@ -45,7 +45,7 @@ section > div:nth-child(2) {
   height: 100px;
 }
 .imag3 {
-  /*background-image의 이용하기 위해서 width 값 지정*/
+  /*background-image의 이미지를 전체나오게 하기 위해서 width 값 지정*/
   width: 72px;
 }
 /* 이미지 링크 사용 불가능*/
@@ -63,28 +63,80 @@ section > div:nth-child(3) {
 /*position를 이용한 이미지 넣기*/
 .imag4 img {
   position: absolute;
-  width:100%;
+  width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.imag5{
-  width:72px;
-  height:100px;
+.imag5 {
+  width: 72px;
 }
-section > div > img:nth-child(5) {
-  max-width: 100%;
-  height:100px;
+section > div:nth-child(5) {
+  background-image: url("../Introduce/images/j5.jpg.jpg");
+  background-size: cover;
 }
-section > div:nth-child(7) {
+.imag8 {
+  width: 72px;
 }
 section > div:nth-child(8) {
+  background-image: url("../Introduce/images/j1007.jpg.jpg");
+  background-size: cover;
 }
-section > div:nth-child(9) {
+.imag9 > a {
+  background: red;
+  display: block;
+  height: 100px;
+  width: 72px;
+  position: relative;
+}
+.imag9 > a > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 72px;
+  height: 100%;
+  overflow: hidden;
 }
 section > div:nth-child(10) {
+  background-image: url("../Introduce/images/p1.png");
+  background-size: cover;
 }
-section > div:nth-child(11) {
+.imag10 {
+  width: 72px; /*이미지 오른쪽 여백 지우기*/
+  color: red;
 }
-section > div:nth-child(12) {
-}*/
+
+.imag10 > a > img {
+  /* 이미지 링크 가능 */
+  /* 1첫번째 방법 : div의 크기에 맞게 이미지 넣기: 직접 이미지 크기를 조절해야한다*/
+  width: 72px;
+  height: 100px;
+  object-fit: cover;
+  border: 1px solid yellow;
+}
+.imag11 {
+  width: 72px; /*이미지 오른쪽 여백 지우기*/
+  color: red;
+}
+
+.imag11 > a > img {
+  /* 이미지 링크 가능 */
+  /* 1첫번째 방법 : div의 크기에 맞게 이미지 넣기: 직접 이미지 크기를 조절해야한다*/
+  width: 72px;
+  height: 100px;
+  object-fit: cover;
+  border: 1px solid yellow;
+}
+.imag12 {
+  width: 72px; /*이미지 오른쪽 여백 지우기*/
+  color: red;
+}
+
+.imag12 > a > img {
+  /* 이미지 링크 가능 */
+  /* 1첫번째 방법 : div의 크기에 맞게 이미지 넣기: 직접 이미지 크기를 조절해야한다*/
+  width: 72px;
+  height: 100px;
+  object-fit: cover;
+  border: 1px solid yellow;
+}
