@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>arcTo</title>
+  </head>
+  <body>
+    <canvas id="canvas1" width="200" height="200"></canvas>
+    <script>
+      var canvas = document.querySelector("#canvas1");
+      var ctx = canvas.getContext("2d");
+
+      ctx.moveTo(20, 20);
+      ctx.lineTo(150, 20);
+      ctx.arcTo(170, 20, 170, 40, 20);
+      ctx.lineTo(170, 80);
+      ctx.stroke();
+    </script>
+  </body>
+</html>
