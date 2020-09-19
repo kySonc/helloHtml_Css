@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multilevel Dropdown Menu</title>
+    <link rel="stylesheet" href="multilevel.css" />
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="menu-header">
+      <i class="fa fa-bars"></i>
+    </div>
+    <div class="menu-content">
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">about us</a></li>
+        <li>
+          <a href="#" class="dropbtn"
+            >services <span class="fa fa-plus"></span
+          ></a>
+          <ul class="dropdown">
+            <li><a href="#">services 1</a></li>
+            <li><a href="#">services 2</a></li>
+            <li><a href="#">services 3</a></li>
+            <li><a href="#">services 4</a></li>
+            <li>
+              <a href="#" class="dropbtn2"
+                >services 5 <span class="fa fa-plus"></span
+              ></a>
+              <ul class="dropdown2">
+                <li><a href="#">service 5.1</a></li>
+                <li><a href="#">service 5.2</a></li>
+                <li><a href="#">service 5.3</a></li>
+              </ul>
+            </li>
+            <li><a href="#">services 6</a></li>
+          </ul>
+        </li>
+        <li><a href="#">gallery</a></li>
+        <li><a href="#">blog</a></li>
+        <li><a href="#">career</a></li>
+        <li><a href="#">faq</a></li>
+        <li><a href="#">contact us</a></li>
+      </ul>
+    </div>
+    <script>
+      $(".dropbtn").click(function () {
+        $(".dropdown").toggleClass("display");
+        $(".dropdown2").removeClass("display");
+      });
+      $(".dropbtn2").click(function () {
+        $(".dropdown2").toggleClass("display");
+      });
+      $(".fa-bars").click(function () {
+        $(".menu-content").toggle();
+      });
+    </script>
+  </body>
+</html>
