@@ -107,6 +107,8 @@ p {
   z-index: 1;
   overflow-x: hidden; /* 가로 스크롤바가 나타나지 않을 뿐 브라우저에 따라 세로 스크롤바는 나타남 */
 }
+#header .nav-list ul.active {
+}
 #header .nav-list ul a {
   font-size: 2.5rem;
   font-weight: 500;
