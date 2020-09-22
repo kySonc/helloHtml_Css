@@ -7,6 +7,7 @@
 html {
   font-size: 10px;
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth; /* 부드러운 스크롤링 */
 }
 a {
   text-decoration: none;
@@ -82,6 +83,7 @@ p {
 #header .header {
   min-height: 8vh;
   background-color: rgba(31, 30, 30, 0.24);
+  transition: 0.3s ease background-color;
 }
 #header .nav-bar {
   display: flex;
@@ -106,8 +108,10 @@ p {
   align-items: center;
   z-index: 1;
   overflow-x: hidden; /* 가로 스크롤바가 나타나지 않을 뿐 브라우저에 따라 세로 스크롤바는 나타남 */
+  transition: 0.5s ease left;
 }
 #header .nav-list ul.active {
+  left: 0%; /* hamburger 화면 가득 채움 */
 }
 #header .nav-list ul a {
   font-size: 2.5rem;
@@ -131,8 +135,14 @@ p {
   transition: 0.3s ease letter-spacing;
 }
 #header .nav-list ul li:hover a::after {
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(0.5);
   letter-spacing: initial;
+  margin-bottom: 0%;
+  padding-bottom: 0%;
+  color: white;
+}
+#header .nav-list ul li:hover a {
+  color: crimson;
 }
 #header .hamburger {
   height: 60px;
@@ -146,6 +156,18 @@ p {
   justify-content: center;
   z-index: 100;
   cursor: pointer;
+  transform: scale(0.8);
+  margin-right: 20px;
+}
+/* hamburger animation */
+#header .hamburger:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid white;
+  animation: hamburger_plus 1s ease infinite;
 }
 #header .hamburger .bar {
   height: 2px;
@@ -516,6 +538,16 @@ p {
 /* End contact Section */
 
 /*keyframes */
+@keyframes hamburger_plus {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.4);
+  }
+}
 @keyframes text_reveal_box {
   50% {
     width: 100%;
@@ -621,11 +653,12 @@ p {
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 20px;
+    justify-content: space-evenly; /* 간격 동일 고르게 분포 */
     margin: 0;
   }
   #contact .contact-item {
-    margin: 20px;
+    width: 30%;
+    margin: 0;
     flex-direction: row;
   }
   #contact .contact-item .icon {
@@ -646,6 +679,27 @@ p {
 
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
+  /* header */
+  #header .hamburger {
+    display: none;
+  }
+  #header .nav-list ul {
+    position: initial; /* 처음 값과 동일 */
+    display: block;
+    height: auto;
+    width: fit-content;
+    background-color: transparent;
+  }
+  #header .nav-list ul li {
+    display: inline-block;
+  }
+  #header .nav-list ul li a {
+    font-size: 1.8rem;
+  }
+  #header .nav-list ul a:after {
+    display: none;
+  }
+  /* End header */
   #services .service-bottom .service-item {
     flex-basis: 22%;
     margin: 1.5%;
