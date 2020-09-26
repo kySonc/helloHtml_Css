@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>product-image-galley</title>
+    <style type="text/css">
+      @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+      * {
+        padding: 0;
+        margin: 0;
+        color: #454545;
+      }
+      h1 {
+        width: 3%;
+        position: relative;
+        top: 60px;
+        cursor: pointer;
+      }
+      h1:before {
+        content: attr(data-count);
+        color: white;
+        position: absolute;
+        right: 16px;
+        font-size: 15px;
+        text-align: center;
+        top: -12px;
+        width: 20px;
+        height: 20px;
+        background: red;
+        border-radius: 50%;
+        opacity: 0;
+      }
+      h1.zero:before {
+        opacity: 1;
+      }
+      section {
+        margin: auto;
+        margin-top: 100px;
+        width: 80%;
+        height: 450px;
+        background: #f5f5f5;
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+      }
+      section .item {
+        width: 10%;
+        height: 100%;
+      }
+      section .item img {
+        width: 96%;
+        height: 60px;
+        opacity: 0.5;
+        margin: 10px auto;
+        cursor: pointer;
+      }
+      section .item img.active {
+        opacity: 1;
+        border: 2px solid #cccccc;
+      }
+      section .main {
+        width: 50%;
+        height: 100%;
+      }
+      section.main img {
+        width: 100%;
+      }
+      section .main video {
+        width: 100%;
+        margin-top: 20px;
+        display: none;
+      }
+      section .details {
+        width: 30%;
+        height: 100%;
+      }
+      p {
+        margin: 10px;
+      }
+      li {
+        margin: 5px;
+        margin-left: 30px;
+      }
+      button {
+        padding: 10px 20px;
+        background: red;
+        font-weight: bold;
+        color: white;
+        margin: 50px 20px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+      button:nth-of-type(2) {
+        background: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <i class="fa fa-shopping-cart"></i>
+    </h1>
+    <section>
+      <div class="item">
+        <img src="/images/j1.jpg.jpg" class="indicator active" />
+        <img src="/images/j2.jpg.jpg" class="indicator" />
+        <img src="/images/j4.jpg.jpg" class="indicator" />
+        <img src="/images/j5.jpg.jpg" class="indicator" />
+        <img src="/images/j8.jpg.jpg" class="indicator" />
+      </div>
+      <div class="main">
+        <img src="/images/j1.jpg.jpg" class="content" />
+        <video src="" autoplay></video>
+      </div>
+      <div class="details">
+        <h2>Microsoft Surface Book 3</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore fugit
+          quasi animi aut vitae libero odio officia, perspiciatis quis
+          doloremque architecto, eaque veniam fugiat consectetur, facilis culpa
+          blanditiis at? Inventore?
+        </p>
+        <ul>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <h4>$2570.45</h4>
+        <button>Add-cart</button>
+        <button>Buy-Now</button>
+      </div>
+    </section>
+  </body>
+</html>
+<script type="text/javascript">
+  var indicator = document.getElementsByClassName("indicator");
+  var main = document.querySelector(".content");
+  var video = document.querySelector("video");
+  for (var i = 0; i < indicator.length; i++) {
+    indicator[i].onclick = function (e) {
+      var indicator_image = document.getElementsByClassName("active");
+      indicator_image[0].className = indicator_image[0].className.replace(
+        "active",
+        ""
+      );
+      this.className += " active";
+      if (indicator_image) {
+        main.src = e.target.src;
+        main.style.display = "block";
+        video.style.dispay = "none";
+        video.src = "";
+      }
+      if (e.target == indicator[4]) {
+        main.style.display = "none";
+        video.style.dispay = "block";
+        video.src = "video.mp4";
+      }
+    };
+  }
+  var noti = document.querySelector("h1");
+  var button = document.querySelector("button");
+  button.onclick = () => {
+    var n = Number(noti.getAttribute("data-count") || 0);
+    noti.setAttribute("data-count", n + 1);
+    noti.classList.add("zero");
+    if (n >= 1) {
+      confirm("이 아이템은 이미 당신의 카트에 추가됨.");
+      noti.setAttribute("data-count", 1);
+    }
+  };
+</script>
