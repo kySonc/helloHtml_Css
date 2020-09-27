@@ -135,7 +135,7 @@
           </tr>
           <tr>
             <td><input type="checkbox" class="select" name="" /></td>
-            <td>01</td>
+            <td>02</td>
             <td>sample gkthsdrn</td>
             <td>admin</td>
             <td>admin@gmail.com</td>
@@ -144,7 +144,7 @@
           </tr>
           <tr>
             <td><input type="checkbox" class="select" name="" /></td>
-            <td>01</td>
+            <td>03</td>
             <td>sample gkthsdrn</td>
             <td>admin</td>
             <td>admin@gmail.com</td>
@@ -153,7 +153,7 @@
           </tr>
           <tr>
             <td><input type="checkbox" class="select" name="" /></td>
-            <td>01</td>
+            <td>04</td>
             <td>sample gkthsdrn</td>
             <td>admin</td>
             <td>admin@gmail.com</td>
@@ -162,7 +162,7 @@
           </tr>
           <tr>
             <td><input type="checkbox" class="select" name="" /></td>
-            <td>01</td>
+            <td>05</td>
             <td>sample gkthsdrn</td>
             <td>admin</td>
             <td>admin@gmail.com</td>
@@ -171,7 +171,7 @@
           </tr>
           <tr>
             <td><input type="checkbox" class="select" name="" /></td>
-            <td>01</td>
+            <td>06</td>
             <td>sample gkthsdrn</td>
             <td>admin</td>
             <td>admin@gmail.com</td>
@@ -180,7 +180,7 @@
           </tr>
           <tr>
             <td><input type="checkbox" class="select" name="" /></td>
-            <td>01</td>
+            <td>07</td>
             <td>sample gkthsdrn</td>
             <td>admin</td>
             <td>admin@gmail.com</td>
@@ -189,7 +189,7 @@
           </tr>
           <tr>
             <td><input type="checkbox" class="select" name="" /></td>
-            <td>01</td>
+            <td>08</td>
             <td>sample gkthsdrn</td>
             <td>admin</td>
             <td>admin@gmail.com</td>
@@ -198,7 +198,7 @@
           </tr>
           <tr>
             <td><input type="checkbox" class="select" name="" /></td>
-            <td>01</td>
+            <td>09</td>
             <td>sample gkthsdrn</td>
             <td>admin</td>
             <td>admin@gmail.com</td>
@@ -207,7 +207,7 @@
           </tr>
           <tr>
             <td><input type="checkbox" class="select" name="" /></td>
-            <td>01</td>
+            <td>10</td>
             <td>sample gkthsdrn</td>
             <td>admin</td>
             <td>admin@gmail.com</td>
@@ -216,7 +216,7 @@
           </tr>
           <tr>
             <td><input type="checkbox" class="select" name="" /></td>
-            <td>01</td>
+            <td>11</td>
             <td>sample gkthsdrn</td>
             <td>admin</td>
             <td>admin@gmail.com</td>
@@ -225,7 +225,7 @@
           </tr>
           <tr>
             <td><input type="checkbox" class="select" name="" /></td>
-            <td>01</td>
+            <td>12</td>
             <td>sample gkthsdrn</td>
             <td>admin</td>
             <td>admin@gmail.com</td>
@@ -318,7 +318,39 @@
         li.appendChild(a);
         a.innerText = i;
         ul.insertBefore(li, ul.querySelector(".next"));
+
+        a.onclick = (e) => {
+          let x = e.target.getAttribute("data-page");
+          tbody.innerHTML = "";
+          x--;
+          let start = limit * x;
+          let end = start + limit;
+          let page = arrayTr.slice(start, end);
+
+          for (let i = 0; i < page.length; i++) {
+            let item = page[i];
+            tbody.appendChild(item);
+          }
+        };
       }
     }
+
+    let z = 0;
+    function nextElement() {
+      if (this.id == "next") {
+        z == arrayTr.length - limit ? (z = 0) : (z += limit);
+      }
+      if (this.id == "prev") {
+        z == 0 ? arrayTr.length - limit : (z -= limit);
+      }
+
+      tbody.innerHTML = "";
+      for (let c = z; c < z + limit; c++) {
+        tbody.appendChild(arrayTr[c]);
+      }
+    }
+
+    document.getElementById("prev").onclick = nextElement;
+    document.getElementById("next").onclick = nextElement;
   }
 </script>
