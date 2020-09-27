@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notification system</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .content {
+        width: 300px;
+        margin: 20px auto;
+        box-shadow: 1px 1px 10px 2px #333;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+      .header {
+        background: brown;
+        color: white;
+        padding: 15px 0px;
+      }
+      .moving-body {
+        padding: 4px;
+        height: 300px;
+      }
+      .m-par {
+        text-align: center;
+        padding: 4px;
+        border-bottom: 1px solid #afafaf;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1 class="header" align="center">Notifications</h1>
+      <!--scrollamount : 속도-->
+      <!--direction : scroll의 방향-->
+      <!--onmouseover :마우스가 들어오면 효과를 멈춘다.-->
+      <!--onmouseout :마우스가 밖으로 나가면 이동 효과 되돌리기.-->
+      <marquee
+        behavior="scroll"
+        scrollamount="8"
+        direction="up"
+        class="moving-body"
+        onmouseover="this.setAttribute('scrollamount', 0, 0); this.stop();"
+        onmouseout="this.setAttribute('scrollamount', 2, 0); this.start();"
+      >
+        <!--6개의 단락을 marquee 안에 추가.-->
+        <script>
+          for (var i = 0; i <= 5; i++) {
+            document.write(
+              "<p class='m-par'>Moving element : " +
+                i +
+                " add here more elements as well</p>"
+            );
+          }
+        </script>
+      </marquee>
+    </div>
+  </body>
+</html>
