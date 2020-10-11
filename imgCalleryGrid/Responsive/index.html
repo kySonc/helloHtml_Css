@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masonry Image Grid</title>
+    <style>
+        h1{
+            font-family:arial;
+            text-align:center;
+        }
+        .container{
+            margin:0 auto;
+            max-width:1000px;
+            padding:20px;
+            background:#eee;
+            box-shadow:0px 0px 50px #000;
+            column-count:3;
+            column-gap:20px;
+            column-width:33.3333%;
+        }
+        img{
+            width:100%;
+            height:auto;
+            margin-bottom:20px;
+        }
+        @media only screen and (min-width:500px) and (max-width:750px){
+            .container{
+                column-count:2;
+                column-width:50%;
+            }
+        }
+        @media only screen and (max-width:499px){
+            .container{
+                column-count:1;
+                column-width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Masonry Image Gallery</h1>
+    <div class="container">
+        <img src="/images/j1.jpg.jpg" alt="">
+        <img src="/images/j2.jpg.jpg" alt="">
+        <img src="/images/j4.jpg.jpg" alt="">
+        <img src="/images/j5.jpg.jpg" alt="">
+        <img src="/images/j6.jpg.jpg" alt="">
+        <img src="/images/j8.jpg.jpg" alt="">
+        <img src="/images/j1000.jpg.jpg" alt="">
+        <img src="/images/j1007.jpg.jpg" alt="">
+        <img src="/images/p1.png" alt="">
+        <img src="/images/p1233.png.png" alt="">
+        <img src="/images/p1236.png.png" alt="">
+        <img src="/images/p1237.png.png" alt="">
+        <img src="/images/j1.jpg.jpg" alt="">
+        <img src="/images/j2.jpg.jpg" alt="">
+        <img src="/images/j4.jpg.jpg" alt="">
+        <img src="/images/j5.jpg.jpg" alt="">
+        <img src="/images/j6.jpg.jpg" alt="">
+        <img src="/images/j8.jpg.jpg" alt="">
+        <img src="/images/j1000.jpg.jpg" alt="">
+        <img src="/images/j1007.jpg.jpg" alt="">
+        <img src="/images/p1.png" alt="">
+    </div>
+</body>
+</html>
