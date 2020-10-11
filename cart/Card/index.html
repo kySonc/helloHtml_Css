@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Card</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <style>
+        *{
+            font-family:"Open Sans",sans-serif;
+            margin:0;
+            padding:0;
+        }
+        .outer{
+            width:300px;
+            height:400px;
+            position:absolute;
+            left:50%;
+            top:50%;
+            transform:translate(-50%,-50%);
+            background:url(/images/j5.jpg.jpg);
+            overflow:hidden;
+            background-size:150%;
+            border-radius:15px;
+            padding:20px;
+            box-sizing:border-box;
+            box-shadow:0 0 15px #aaa, 0 0 45px #aaa;
+            animation:animate 25s linear infinite;
+        }
+        h1{
+            color:#ff4d4d;
+            margin-bottom:30px;
+        }
+        p{
+            color:#fff;
+        }
+        p.temp{
+            text-align:right;
+            font-size:22px;
+        }
+        .button{
+            padding:10px;
+            display:inline-block;
+            letter-spacing:2px;
+            margin-top:40px;
+            background:#eee;
+            text-decoration:none;
+            color:#000;
+            font-size:14px;
+            transition:0.5s;
+        }
+        .button:hover{
+            background:#ff4d4d;
+        }
+        .call{
+            position:absolute;
+            bottom:20px;
+            left:20px;
+            font-size:14px;
+            letter-spacing:2px;
+            font-weight:bold;
+            color:#ff4d4d;
+        }
+        @keyframes animate{
+            0%,100%{background-size:150%}
+            50%{background-size:100%}
+        }
+        .fa-map-marker{
+            font-size:35px;
+            color:#ddd;
+            position:absolute;
+            bottom:20px;
+            right:20px;
+        }
+        .outer:after{
+            position:absolute;
+            content:"";
+            width:100%;
+            height:100%;
+            background:rgba(0,0,0,0.5);
+            left:0;
+            top:0;
+            z-index:-1;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <p class="temp">18 &#8451;</p>
+        <h1>Greenland</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat molestiae reiciendis praesentium libero distinctio ipsa quisquam fugit sapiente. Placeat hic, accusamus nam quia aperiam assumenda.</p>
+
+        <a href="#" class="button">Book Travel Plan<i class="fas fa-long-arrow-alt-right"></i></a>
+
+        <p class="call"><b>call us-</b> xxx-xxxx-xxx</p>
+
+        <i class="fas fa-map-marker"></i>
+    </div>
+</body>
+</html>
