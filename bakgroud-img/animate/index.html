@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Design using HTML and CSS</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gugi">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            margin:0;
+            padding:0;
+            font-family:Gugi;
+        }
+        .container{
+            width:100%;
+            height:100vh;
+            background-color:#eee;
+        }
+        .container h1{
+            font-size:4em;
+            text-shadow:1px 3px 2px #888;
+        }
+        .container h2{
+            background-color:#000;
+            color:#fff;
+            padding:10px 150px 10px 10px;
+            border-radius:5px;
+            display:inline-block;
+        }
+        .content{
+            position:absolute;
+            right:200px;
+            top:100px;
+            z-index:10
+        }
+        .bx1{
+            width:600px;
+            height:600px;
+            position:absolute;
+            background-color:#16a085;
+            right:250px;
+            border-radius:30px;
+            transform:rotate(45deg);
+        }
+        ul li{
+            list-style:none;
+            display:inline-block;
+            margin-right:10px;
+            margin-left:10px;
+            position:absolute;            
+            bottom:0;
+        }
+        ul li:nth-child(1){
+            width:50px;
+            height:50px;
+            background-color:#e74c3c;
+            border-radius:10px;
+            animation: a1 40s linear infinite;
+        }
+        @keyframes a1{
+            0%{bottom:0px}
+            100%{bottom:100%; transform:rotate(360deg);}
+        }
+        ul li:nth-child(2){
+            width:100px;
+            height:100px;
+            background-color:#f1c40f;
+            border-radius:20px;
+            animation: a2 20s linear infinite;
+            left:150px;
+        }
+        @keyframes a2{
+            0%{bottom:0px}
+            100%{bottom:100%; transform:rotate(480deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bx1"></div>
+        <div class="content">
+            <h1>Page Design using HTML and CSS</h1>
+            <h2>csPoint web designing tutorials</h2>
+        </div>
+        <ul>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>
