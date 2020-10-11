@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure CSS Accordion</title>
+    <style>
+        .container{
+            width:500px;
+            height:auto;
+            margin:200px auto;
+            border:1px solid #999;
+            border-top-width:0;
+            font-family:arial;
+            box-shadow:0px 10px 10px -10px #000;
+        }
+        .container label{
+            display:block;
+            background-color:#333;
+            height:40px;
+            font-size:22px;
+            line-height:40px;
+            font-weight:bold;
+            color:#fff;
+            padding:10px;
+            cursor:pointer;
+            border-top:1px solid #999;
+            transition:0.5s;
+        }
+        .container label:hover{
+            background-color:#666;
+        }
+        .container input{
+            display:none;
+        }
+        .container article{
+            overflow:hidden;
+            height:0;
+            transition:1s
+        }
+        article p{
+            padding: 0px 30px
+        }
+        article h3{
+            padding: 0px 30px
+        }
+        .container input:checked ~ article{
+            height:280px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <input type="radio" name="accordion" id="one">
+            <label for="one">Section One</label>
+            <article>
+                <h3>Section One</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nemo voluptas accusantium aspernatur ducimus inventore temporibus explicabo enim nulla nisi facilis excepturi odio veniam doloremque corrupti, velit sed numquam, ipsa dolorum tenetur, pariatur minus molestiae sit quisquam? Nulla est voluptates sit harum quas molestiae beatae iste tenetur natus obcaecati magnam odio adipisci maiores, nihil voluptate possimus veritatis itaque repudiandae maxime tempora fugiat veniam debitis at. Voluptatum numquam eos iste sapiente sunt omnis aperiam atque voluptates, velit dicta. Itaque eveniet cum sed dolore quod doloribus labore, totam quasi iste eius </p>
+            </article>
+        </div>
+        <div>
+            <input type="radio" name="accordion" id="two">
+            <label for="two">Section Two</label>
+            <article>
+                <h3>Section Two</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nemo voluptas accusantium aspernatur ducimus inventore temporibus explicabo enim nulla nisi facilis excepturi odio veniam doloremque corrupti, velit sed numquam, ipsa dolorum tenetur, pariatur minus molestiae sit quisquam? Nulla est voluptates sit harum quas molestiae beatae iste tenetur natus obcaecati magnam odio adipisci maiores, nihil voluptate possimus veritatis itaque repudiandae maxime tempora fugiat veniam debitis at. Voluptatum numquam eos iste sapiente sunt omnis aperiam atque voluptates, velit dicta. Itaque eveniet cum sed dolore quod doloribus labore, totam quasi iste eius </p>
+            </article>
+        </div>
+        <div>
+            <input type="radio" name="accordion" id="three">
+            <label for="three">Section Three</label>
+            <article>
+                <h3>Section Three</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nemo voluptas accusantium aspernatur ducimus inventore temporibus explicabo enim nulla nisi facilis excepturi odio veniam doloremque corrupti, velit sed numquam, ipsa dolorum tenetur, pariatur minus molestiae sit quisquam? Nulla est voluptates sit harum quas molestiae beatae iste tenetur natus obcaecati magnam odio adipisci maiores, nihil voluptate possimus veritatis itaque repudiandae maxime tempora fugiat veniam debitis at. Voluptatum numquam eos iste sapiente sunt omnis aperiam atque voluptates, velit dicta. Itaque eveniet cum sed dolore quod doloribus labore, totam quasi iste eius </p>
+            </article>
+        </div>
+    </div>
+</body>
+</html>
