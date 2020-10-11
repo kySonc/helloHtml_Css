@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back to Top button on Scroll down</title>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    </script>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            font-family:arial;
+        }
+        .container{
+            width:80%;
+            margin:50px auto;
+        }
+        p{
+            font-size:22px;
+        }
+        h1{
+            margin-bottom:50px;
+            font-size:42px;
+        }
+        img{
+            width:100%;
+            margin-top:50px;
+            margin-bottom:50px;
+        }
+        #Back2Top{
+            width:50px;
+            height:50px;
+            line-height:50px;
+            display:inline-block;
+            background:#e55039;
+            font-size:42px;
+            text-align:center;
+            color:#fff;
+            font-weight:bold;
+            border-radius:50%;
+            position:fixed;
+            bottom:50px;
+            right:50px;
+            cursor:pointer;
+            transition:0.5s;
+            display:none;
+        }
+        #Back2Top:hover{
+            background-color:#f6b93b;
+        }
+    </style>
+</head>
+<body>
+    <span id="Back2Top">&#8593;</span>
+    <div class="container">
+        <h1>Back to Top Button on Scroll down</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dicta vel distinctio dolore itaque natus, perferendis eum placeat quibusdam facere minima culpa magnam harum totam eaque mollitia deleniti dolores. Eum mollitia tenetur reprehenderit iure beatae praesentium nisi inventore labore fugiat, dicta voluptatum pariatur explicabo magni dolores quas commodi dolore laborum tempore ab minus autem quisquam et! Magnam doloremque inventore a modi, suscipit quasi ducimus culpa, qui atque labore dolorum sequi dolore quo debitis voluptates rerum dignissimos odit ipsam! Doloribus, ut?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dicta vel distinctio dolore itaque natus, perferendis eum placeat quibusdam facere minima culpa magnam harum totam eaque mollitia deleniti dolores. Eum mollitia tenetur reprehenderit iure beatae praesentium nisi inventore labore fugiat, dicta voluptatum pariatur explicabo magni dolores quas commodi dolore laborum tempore ab minus autem quisquam et! Magnam doloremque inventore a modi, suscipit quasi ducimus culpa, qui atque labore dolorum sequi dolore quo debitis voluptates rerum dignissimos odit ipsam! Doloribus, ut?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dicta vel distinctio dolore itaque natus, perferendis eum placeat quibusdam facere minima culpa magnam harum totam eaque mollitia deleniti dolores. Eum mollitia tenetur reprehenderit iure beatae praesentium nisi inventore labore fugiat, dicta voluptatum pariatur explicabo magni dolores quas commodi dolore laborum tempore ab minus autem quisquam et! Magnam doloremque inventore a modi, suscipit quasi ducimus culpa, qui atque labore dolorum sequi dolore quo debitis voluptates rerum dignissimos odit ipsam! Doloribus, ut?</p>
+        <img src="/images/j1.jpg.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dicta vel distinctio dolore itaque natus, perferendis eum placeat quibusdam facere minima culpa magnam harum totam eaque mollitia deleniti dolores. Eum mollitia tenetur reprehenderit iure beatae praesentium nisi inventore labore fugiat, dicta voluptatum pariatur explicabo magni dolores quas commodi dolore laborum tempore ab minus autem quisquam et! Magnam doloremque inventore a modi, suscipit quasi ducimus culpa, qui atque labore dolorum sequi dolore quo debitis voluptates rerum dignissimos odit ipsam! Doloribus, ut?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dicta vel distinctio dolore itaque natus, perferendis eum placeat quibusdam facere minima culpa magnam harum totam eaque mollitia deleniti dolores. Eum mollitia tenetur reprehenderit iure beatae praesentium nisi inventore labore fugiat, dicta voluptatum pariatur explicabo magni dolores quas commodi dolore laborum tempore ab minus autem quisquam et! Magnam doloremque inventore a modi, suscipit quasi ducimus culpa, qui atque labore dolorum sequi dolore quo debitis voluptates rerum dignissimos odit ipsam! Doloribus, ut?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dicta vel distinctio dolore itaque natus, perferendis eum placeat quibusdam facere minima culpa magnam harum totam eaque mollitia deleniti dolores. Eum mollitia tenetur reprehenderit iure beatae praesentium nisi inventore labore fugiat, dicta voluptatum pariatur explicabo magni dolores quas commodi dolore laborum tempore ab minus autem quisquam et! Magnam doloremque inventore a modi, suscipit quasi ducimus culpa, qui atque labore dolorum sequi dolore quo debitis voluptates rerum dignissimos odit ipsam! Doloribus, ut?</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dicta vel distinctio dolore itaque natus, perferendis eum placeat quibusdam facere minima culpa magnam harum totam eaque mollitia deleniti dolores. Eum mollitia tenetur reprehenderit iure beatae praesentium nisi inventore labore fugiat, dicta voluptatum pariatur explicabo magni dolores quas commodi dolore laborum tempore ab minus autem quisquam et! Magnam doloremque inventore a modi, suscipit quasi ducimus culpa, qui atque labore dolorum sequi dolore quo debitis voluptates rerum dignissimos odit ipsam! Doloribus, ut?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dicta vel distinctio dolore itaque natus, perferendis eum placeat quibusdam facere minima culpa magnam harum totam eaque mollitia deleniti dolores. Eum mollitia tenetur reprehenderit iure beatae praesentium nisi inventore labore fugiat, dicta voluptatum pariatur explicabo magni dolores quas commodi dolore laborum tempore ab minus autem quisquam et! Magnam doloremque inventore a modi, suscipit quasi ducimus culpa, qui atque labore dolorum sequi dolore quo debitis voluptates rerum dignissimos odit ipsam! Doloribus, ut?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dicta vel distinctio dolore itaque natus, perferendis eum placeat quibusdam facere minima culpa magnam harum totam eaque mollitia deleniti dolores. Eum mollitia tenetur reprehenderit iure beatae praesentium nisi inventore labore fugiat, dicta voluptatum pariatur explicabo magni dolores quas commodi dolore laborum tempore ab minus autem quisquam et! Magnam doloremque inventore a modi, suscipit quasi ducimus culpa, qui atque labore dolorum sequi dolore quo debitis voluptates rerum dignissimos odit ipsam! Doloribus, ut?</p>
+    </div>
+    <script>
+        $(window).scroll(function(){
+            var height =$(window).scrollTop();
+            if(height > 100){
+                $("#Back2Top").fadeIn();
+            }
+            else{
+                $("#Back2Top").fadeOut();
+            }
+        });
+
+        $(document).ready(function(){
+            $("#Back2Top").click(function(event){
+                event.preventDefault();
+                $("html,body").animate({scrollTop:0},"slow");
+                return false;
+            })
+        });
+    </script>
+</body>
+</html>
